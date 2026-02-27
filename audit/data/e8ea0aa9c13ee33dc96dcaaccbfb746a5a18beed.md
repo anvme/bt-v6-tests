@@ -1,0 +1,1051 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e4] [cursor=pointer]:
+    - /url: "#content"
+  - banner [ref=e5]:
+    - navigation "Main navigation" [ref=e6]:
+      - button "Toggle docs navigation" [ref=e8] [cursor=pointer]:
+        - img [ref=e9]
+      - link "Bootstrap" [ref=e11] [cursor=pointer]:
+        - /url: /
+        - img "Bootstrap" [ref=e12]
+      - generic [ref=e14]:
+        - button "Search (Ctrl+K)" [ref=e16] [cursor=pointer]:
+          - img [ref=e18]
+          - generic [ref=e20]:
+            - img [ref=e22]
+            - generic [ref=e24]: K
+        - button "Toggle navigation" [ref=e25] [cursor=pointer]:
+          - img [ref=e26]
+  - generic [ref=e28]:
+    - complementary
+    - main [ref=e29]:
+      - generic [ref=e30]:
+        - heading "Validation" [level=1] [ref=e31]
+        - paragraph [ref=e33]: Provide valuable, actionable feedback to your users with HTML5 form validation, via browser default behaviors or custom styles and JavaScript.
+        - link "GitHub Edit on GitHub" [ref=e35] [cursor=pointer]:
+          - /url: https://github.com/twbs/bootstrap/blob/v6.0.0-alpha1/site/src/content/docs/forms/validation.mdx
+          - img "GitHub" [ref=e36]
+          - text: Edit on GitHub
+      - generic [ref=e38]:
+        - button "On this page" [ref=e40] [cursor=pointer]:
+          - text: On this page
+          - img [ref=e41]
+        - generic [ref=e44]:
+          - generic [ref=e45]:
+            - link "ads via Carbon" [ref=e46] [cursor=pointer]:
+              - /url: https://srv.carbonads.net/ads/click/x/GTND427UCVYIC2QNFTS4YKQUCA7D523UCAYDCZ3JCASI627MCA7D527KC6YIVKJNCWBDL5QICTAIK2QNCTBDC2QIHEYI527LC6BIT23ECTNCYBZ52K
+              - img "ads via Carbon" [ref=e47]
+            - link "Check out the latest remote job listings from Authentic Jobs." [ref=e48] [cursor=pointer]:
+              - /url: https://srv.carbonads.net/ads/click/x/GTND427UCVYIC2QNFTS4YKQUCA7D523UCAYDCZ3JCASI627MCA7D527KC6YIVKJNCWBDL5QICTAIK2QNCTBDC2QIHEYI527LC6BIT23ECTNCYBZ52K
+          - link "ads via Carbon" [ref=e49] [cursor=pointer]:
+            - /url: http://carbonads.net/?utm_source=getbootstrapcom&utm_medium=ad_via_link&utm_campaign=in_unit&utm_term=carbon
+      - generic [ref=e50]:
+        - paragraph [ref=e52]: We are aware that currently the client-side custom validation styles and tooltips are not accessible, since they are not exposed to assistive technologies. While we work on a solution, we’d recommend either using the server-side option or the default browser validation method.
+        - 'heading "How it worksLink to this section: How it works" [level=2] [ref=e53]':
+          - text: How it works
+          - 'link "Link to this section: How it works" [ref=e54] [cursor=pointer]':
+            - /url: "#how-it-works"
+            - text: "#"
+        - paragraph [ref=e55]: "Here’s how form validation works with Bootstrap:"
+        - list [ref=e56]:
+          - listitem [ref=e57]:
+            - text: HTML form validation is applied via CSS’s two pseudo-classes,
+            - code [ref=e58]: :invalid
+            - text: and
+            - code [ref=e59]: :valid
+            - text: . It applies to
+            - code [ref=e60]: <input>
+            - text: ","
+            - code [ref=e61]: <select>
+            - text: ", and"
+            - code [ref=e62]: <textarea>
+            - text: elements.
+          - listitem [ref=e63]:
+            - text: Bootstrap scopes the
+            - code [ref=e64]: :invalid
+            - text: and
+            - code [ref=e65]: :valid
+            - text: styles to parent
+            - code [ref=e66]: .was-validated
+            - text: class, usually applied to the
+            - code [ref=e67]: <form>
+            - text: . Otherwise, any required field without a value shows up as invalid on page load. This way, you may choose when to activate them (typically after form submission is attempted).
+          - listitem [ref=e68]:
+            - text: To reset the appearance of the form (for instance, in the case of dynamic form submissions using Ajax), remove the
+            - code [ref=e69]: .was-validated
+            - text: class from the
+            - code [ref=e70]: <form>
+            - text: again after submission.
+          - listitem [ref=e71]:
+            - text: As a fallback,
+            - code [ref=e72]: .is-invalid
+            - text: and
+            - code [ref=e73]: .is-valid
+            - text: classes may be used instead of the pseudo-classes for
+            - link "server-side validation" [ref=e74] [cursor=pointer]:
+              - /url: "#server-side"
+            - text: . They do not require a
+            - code [ref=e75]: .was-validated
+            - text: parent class.
+          - listitem [ref=e76]:
+            - text: Due to constraints in how CSS works, we cannot (at present) apply styles to a
+            - code [ref=e77]: <label>
+            - text: that comes before a form control in the DOM without the help of custom JavaScript.
+          - listitem [ref=e78]:
+            - text: All modern browsers support the
+            - link "constraint validation API" [ref=e79] [cursor=pointer]:
+              - /url: https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#the-constraint-validation-api
+            - text: ", a series of JavaScript methods for validating form controls."
+          - listitem [ref=e80]:
+            - text: Feedback messages may utilize the
+            - link "browser defaults" [ref=e81] [cursor=pointer]:
+              - /url: "#browser-defaults"
+            - text: (different for each browser, and unstylable via CSS) or our custom feedback styles with additional HTML and CSS.
+          - listitem [ref=e82]:
+            - text: You may provide custom validity messages with
+            - code [ref=e83]: setCustomValidity
+            - text: in JavaScript.
+        - paragraph [ref=e84]: With that in mind, consider the following demos for our custom form validation styles, optional server-side classes, and browser defaults.
+        - 'heading "Custom stylesLink to this section: Custom styles" [level=2] [ref=e85]':
+          - text: Custom styles
+          - 'link "Link to this section: Custom styles" [ref=e86] [cursor=pointer]':
+            - /url: "#custom-styles"
+            - text: "#"
+        - paragraph [ref=e87]:
+          - text: For custom Bootstrap form validation messages, you’ll need to add the
+          - code [ref=e88]: novalidate
+          - text: boolean attribute to your
+          - code [ref=e89]: <form>
+          - text: . This disables the browser default feedback tooltips, but still provides access to the form validation APIs in JavaScript. Try to submit the form below; our JavaScript will intercept the submit button and relay feedback to you. When attempting to submit, you’ll see the
+          - code [ref=e90]: :invalid
+          - text: and
+          - code [ref=e91]: :valid
+          - text: styles applied to your form controls.
+        - paragraph [ref=e92]:
+          - text: Custom feedback styles apply custom colors, borders, focus styles, and background icons to better communicate feedback. Background icons for
+          - code [ref=e93]: <select>
+          - text: s are only available with
+          - code [ref=e94]: .form-select
+          - text: ", and not"
+          - code [ref=e95]: .form-control
+          - text: .
+        - generic [ref=e96]:
+          - generic [ref=e98]:
+            - generic [ref=e99]:
+              - generic [ref=e100]: First name
+              - textbox "First name" [ref=e101]: Mark
+            - generic [ref=e102]:
+              - generic [ref=e103]: Last name
+              - textbox "Last name" [ref=e104]: Otto
+            - generic [ref=e105]:
+              - generic [ref=e106]: Username
+              - generic [ref=e107]:
+                - generic [ref=e108]: "@"
+                - textbox "Username" [ref=e109]
+            - generic [ref=e110]:
+              - generic [ref=e111]: City
+              - textbox "City" [ref=e112]
+            - generic [ref=e113]:
+              - generic [ref=e114]: State
+              - combobox "State" [ref=e115]:
+                - option "Choose..." [disabled] [selected]
+                - option "..."
+            - generic [ref=e116]:
+              - generic [ref=e117]: Zip
+              - textbox "Zip" [ref=e118]
+            - generic [ref=e120]:
+              - checkbox "Agree to terms and conditions" [ref=e121]
+              - generic [ref=e122]: Agree to terms and conditions
+            - button "Submit form" [ref=e124] [cursor=pointer]
+          - generic [ref=e125]:
+            - generic [ref=e126]: HTML
+            - button "Copy to clipboard" [ref=e128] [cursor=pointer]:
+              - img [ref=e129]
+          - code [ref=e132]:
+            - generic [ref=e133]: <form class="row g-3 needs-validation" novalidate>
+            - generic [ref=e134]: <div class="col-md-4">
+            - generic [ref=e135]: <label for="validationCustom01" class="form-label">First name</label>
+            - generic [ref=e136]: <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+            - generic [ref=e137]: <div class="valid-feedback">
+            - generic [ref=e138]: Looks good!
+            - generic [ref=e139]: </div>
+            - generic [ref=e140]: </div>
+            - generic [ref=e141]: <div class="col-md-4">
+            - generic [ref=e142]: <label for="validationCustom02" class="form-label">Last name</label>
+            - generic [ref=e143]: <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+            - generic [ref=e144]: <div class="valid-feedback">
+            - generic [ref=e145]: Looks good!
+            - generic [ref=e146]: </div>
+            - generic [ref=e147]: </div>
+            - generic [ref=e148]: <div class="col-md-4">
+            - generic [ref=e149]: <label for="validationCustomUsername" class="form-label">Username</label>
+            - generic [ref=e150]: <div class="input-group has-validation">
+            - generic [ref=e151]: <span class="input-group-text" id="inputGroupPrepend">@</span>
+            - generic [ref=e152]: <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+            - generic [ref=e153]: <div class="invalid-feedback">
+            - generic [ref=e154]: Please choose a username.
+            - generic [ref=e155]: </div>
+            - generic [ref=e156]: </div>
+            - generic [ref=e157]: </div>
+            - generic [ref=e158]: <div class="col-md-6">
+            - generic [ref=e159]: <label for="validationCustom03" class="form-label">City</label>
+            - generic [ref=e160]: <input type="text" class="form-control" id="validationCustom03" required>
+            - generic [ref=e161]: <div class="invalid-feedback">
+            - generic [ref=e162]: Please provide a valid city.
+            - generic [ref=e163]: </div>
+            - generic [ref=e164]: </div>
+            - generic [ref=e165]: <div class="col-md-3">
+            - generic [ref=e166]: <label for="validationCustom04" class="form-label">State</label>
+            - generic [ref=e167]: <select class="form-select" id="validationCustom04" required>
+            - generic [ref=e168]: <option selected disabled value="">Choose...</option>
+            - generic [ref=e169]: <option>...</option>
+            - generic [ref=e170]: </select>
+            - generic [ref=e171]: <div class="invalid-feedback">
+            - generic [ref=e172]: Please select a valid state.
+            - generic [ref=e173]: </div>
+            - generic [ref=e174]: </div>
+            - generic [ref=e175]: <div class="col-md-3">
+            - generic [ref=e176]: <label for="validationCustom05" class="form-label">Zip</label>
+            - generic [ref=e177]: <input type="text" class="form-control" id="validationCustom05" required>
+            - generic [ref=e178]: <div class="invalid-feedback">
+            - generic [ref=e179]: Please provide a valid zip.
+            - generic [ref=e180]: </div>
+            - generic [ref=e181]: </div>
+            - generic [ref=e182]: <div class="col-12">
+            - generic [ref=e183]: <div class="form-check">
+            - generic [ref=e184]: <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            - generic [ref=e185]: <label class="form-check-label" for="invalidCheck">
+            - generic [ref=e186]: Agree to terms and conditions
+            - generic [ref=e187]: </label>
+            - generic [ref=e188]: <div class="invalid-feedback">
+            - generic [ref=e189]: You must agree before submitting.
+            - generic [ref=e190]: </div>
+            - generic [ref=e191]: </div>
+            - generic [ref=e192]: </div>
+            - generic [ref=e193]: <div class="col-12">
+            - generic [ref=e194]: <button class="btn btn-primary" type="submit">Submit form</button>
+            - generic [ref=e195]: </div>
+            - generic [ref=e196]: </form>
+        - generic [ref=e197]:
+          - generic [ref=e198]:
+            - generic [ref=e199]: JavaScript
+            - button "Copy to clipboard" [ref=e201] [cursor=pointer]:
+              - img [ref=e202]
+          - code [ref=e205]:
+            - generic [ref=e206]: // Example starter JavaScript for disabling form submissions if there are invalid fields
+            - generic [ref=e207]: "(() => {"
+            - generic [ref=e208]: "'use strict'"
+            - generic [ref=e209]: // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            - generic [ref=e210]: const forms = document.querySelectorAll('.needs-validation')
+            - generic [ref=e211]: // Loop over them and prevent submission
+            - generic [ref=e212]: "Array.from(forms).forEach(form => {"
+            - generic [ref=e213]: "form.addEventListener('submit', event => {"
+            - generic [ref=e214]: "if (!form.checkValidity()) {"
+            - generic [ref=e215]: event.preventDefault()
+            - generic [ref=e216]: event.stopPropagation()
+            - generic [ref=e217]: "}"
+            - generic [ref=e218]: form.classList.add('was-validated')
+            - generic [ref=e219]: "}, false)"
+            - generic [ref=e220]: "})"
+            - generic [ref=e221]: "})()"
+        - 'heading "Browser defaultsLink to this section: Browser defaults" [level=2] [ref=e222]':
+          - text: Browser defaults
+          - 'link "Link to this section: Browser defaults" [ref=e223] [cursor=pointer]':
+            - /url: "#browser-defaults"
+            - text: "#"
+        - paragraph [ref=e224]: Not interested in custom validation feedback messages or writing JavaScript to change form behaviors? All good, you can use the browser defaults. Try submitting the form below. Depending on your browser and OS, you’ll see a slightly different style of feedback.
+        - paragraph [ref=e225]: While these feedback styles cannot be styled with CSS, you can still customize the feedback text through JavaScript.
+        - generic [ref=e226]:
+          - generic [ref=e228]:
+            - generic [ref=e229]:
+              - generic [ref=e230]: First name
+              - textbox "First name" [ref=e231]: Mark
+            - generic [ref=e232]:
+              - generic [ref=e233]: Last name
+              - textbox "Last name" [ref=e234]: Otto
+            - generic [ref=e235]:
+              - generic [ref=e236]: Username
+              - generic [ref=e237]:
+                - generic [ref=e238]: "@"
+                - textbox "Username" [ref=e239]
+            - generic [ref=e240]:
+              - generic [ref=e241]: City
+              - textbox "City" [ref=e242]
+            - generic [ref=e243]:
+              - generic [ref=e244]: State
+              - combobox "State" [ref=e245]:
+                - option "Choose..." [disabled] [selected]
+                - option "..."
+            - generic [ref=e246]:
+              - generic [ref=e247]: Zip
+              - textbox "Zip" [ref=e248]
+            - generic [ref=e250]:
+              - checkbox "Agree to terms and conditions" [ref=e251]
+              - generic [ref=e252]: Agree to terms and conditions
+            - button "Submit form" [ref=e254] [cursor=pointer]
+          - generic [ref=e255]:
+            - generic [ref=e256]: HTML
+            - button "Copy to clipboard" [ref=e258] [cursor=pointer]:
+              - img [ref=e259]
+          - code [ref=e262]:
+            - generic [ref=e263]: <form class="row g-3">
+            - generic [ref=e264]: <div class="col-md-4">
+            - generic [ref=e265]: <label for="validationDefault01" class="form-label">First name</label>
+            - generic [ref=e266]: <input type="text" class="form-control" id="validationDefault01" value="Mark" required>
+            - generic [ref=e267]: </div>
+            - generic [ref=e268]: <div class="col-md-4">
+            - generic [ref=e269]: <label for="validationDefault02" class="form-label">Last name</label>
+            - generic [ref=e270]: <input type="text" class="form-control" id="validationDefault02" value="Otto" required>
+            - generic [ref=e271]: </div>
+            - generic [ref=e272]: <div class="col-md-4">
+            - generic [ref=e273]: <label for="validationDefaultUsername" class="form-label">Username</label>
+            - generic [ref=e274]: <div class="input-group">
+            - generic [ref=e275]: <span class="input-group-text" id="inputGroupPrepend2">@</span>
+            - generic [ref=e276]: <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required>
+            - generic [ref=e277]: </div>
+            - generic [ref=e278]: </div>
+            - generic [ref=e279]: <div class="col-md-6">
+            - generic [ref=e280]: <label for="validationDefault03" class="form-label">City</label>
+            - generic [ref=e281]: <input type="text" class="form-control" id="validationDefault03" required>
+            - generic [ref=e282]: </div>
+            - generic [ref=e283]: <div class="col-md-3">
+            - generic [ref=e284]: <label for="validationDefault04" class="form-label">State</label>
+            - generic [ref=e285]: <select class="form-select" id="validationDefault04" required>
+            - generic [ref=e286]: <option selected disabled value="">Choose...</option>
+            - generic [ref=e287]: <option>...</option>
+            - generic [ref=e288]: </select>
+            - generic [ref=e289]: </div>
+            - generic [ref=e290]: <div class="col-md-3">
+            - generic [ref=e291]: <label for="validationDefault05" class="form-label">Zip</label>
+            - generic [ref=e292]: <input type="text" class="form-control" id="validationDefault05" required>
+            - generic [ref=e293]: </div>
+            - generic [ref=e294]: <div class="col-12">
+            - generic [ref=e295]: <div class="form-check">
+            - generic [ref=e296]: <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+            - generic [ref=e297]: <label class="form-check-label" for="invalidCheck2">
+            - generic [ref=e298]: Agree to terms and conditions
+            - generic [ref=e299]: </label>
+            - generic [ref=e300]: </div>
+            - generic [ref=e301]: </div>
+            - generic [ref=e302]: <div class="col-12">
+            - generic [ref=e303]: <button class="btn btn-primary" type="submit">Submit form</button>
+            - generic [ref=e304]: </div>
+            - generic [ref=e305]: </form>
+        - 'heading "Server-sideLink to this section: Server-side" [level=2] [ref=e306]':
+          - text: Server-side
+          - 'link "Link to this section: Server-side" [ref=e307] [cursor=pointer]':
+            - /url: "#server-side"
+            - text: "#"
+        - paragraph [ref=e308]:
+          - text: We recommend using client-side validation, but in case you require server-side validation, you can indicate invalid and valid form fields with
+          - code [ref=e309]: .is-invalid
+          - text: and
+          - code [ref=e310]: .is-valid
+          - text: . Note that
+          - code [ref=e311]: .invalid-feedback
+          - text: is also supported with these classes.
+        - paragraph [ref=e312]:
+          - text: For invalid fields, ensure that the invalid feedback/error message is associated with the relevant form field using
+          - code [ref=e313]: aria-describedby
+          - text: (noting that this attribute allows more than one
+          - code [ref=e314]: id
+          - text: to be referenced, in case the field already points to additional form text).
+        - paragraph [ref=e315]:
+          - text: To fix
+          - link "issues with border radius" [ref=e316] [cursor=pointer]:
+            - /url: https://github.com/twbs/bootstrap/issues/25110
+          - text: ", input groups require an additional"
+          - code [ref=e317]: .has-validation
+          - text: class.
+        - generic [ref=e318]:
+          - generic [ref=e320]:
+            - generic [ref=e321]:
+              - generic [ref=e322]: First name
+              - textbox "First name" [ref=e323]: Mark
+              - generic [ref=e324]: Looks good!
+            - generic [ref=e325]:
+              - generic [ref=e326]: Last name
+              - textbox "Last name" [ref=e327]: Otto
+              - generic [ref=e328]: Looks good!
+            - generic [ref=e329]:
+              - generic [ref=e330]: Username
+              - generic [ref=e331]:
+                - generic [ref=e332]: "@"
+                - textbox "Username" [ref=e333]
+                - generic [ref=e334]: Please choose a username.
+            - generic [ref=e335]:
+              - generic [ref=e336]: City
+              - textbox "City" [ref=e337]
+              - generic [ref=e338]: Please provide a valid city.
+            - generic [ref=e339]:
+              - generic [ref=e340]: State
+              - combobox "State" [ref=e341]:
+                - option "Choose..." [disabled] [selected]
+                - option "..."
+              - generic [ref=e342]: Please select a valid state.
+            - generic [ref=e343]:
+              - generic [ref=e344]: Zip
+              - textbox "Zip" [ref=e345]
+              - generic [ref=e346]: Please provide a valid zip.
+            - generic [ref=e348]:
+              - checkbox "Agree to terms and conditions" [ref=e349]
+              - generic [ref=e350]: Agree to terms and conditions
+              - generic [ref=e351]: You must agree before submitting.
+            - button "Submit form" [ref=e353] [cursor=pointer]
+          - generic [ref=e354]:
+            - generic [ref=e355]: HTML
+            - button "Copy to clipboard" [ref=e357] [cursor=pointer]:
+              - img [ref=e358]
+          - code [ref=e361]:
+            - generic [ref=e362]: <form class="row g-3">
+            - generic [ref=e363]: <div class="col-md-4">
+            - generic [ref=e364]: <label for="validationServer01" class="form-label">First name</label>
+            - generic [ref=e365]: <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
+            - generic [ref=e366]: <div class="valid-feedback">
+            - generic [ref=e367]: Looks good!
+            - generic [ref=e368]: </div>
+            - generic [ref=e369]: </div>
+            - generic [ref=e370]: <div class="col-md-4">
+            - generic [ref=e371]: <label for="validationServer02" class="form-label">Last name</label>
+            - generic [ref=e372]: <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
+            - generic [ref=e373]: <div class="valid-feedback">
+            - generic [ref=e374]: Looks good!
+            - generic [ref=e375]: </div>
+            - generic [ref=e376]: </div>
+            - generic [ref=e377]: <div class="col-md-4">
+            - generic [ref=e378]: <label for="validationServerUsername" class="form-label">Username</label>
+            - generic [ref=e379]: <div class="input-group has-validation">
+            - generic [ref=e380]: <span class="input-group-text" id="inputGroupPrepend3">@</span>
+            - generic [ref=e381]: <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+            - generic [ref=e382]: <div id="validationServerUsernameFeedback" class="invalid-feedback">
+            - generic [ref=e383]: Please choose a username.
+            - generic [ref=e384]: </div>
+            - generic [ref=e385]: </div>
+            - generic [ref=e386]: </div>
+            - generic [ref=e387]: <div class="col-md-6">
+            - generic [ref=e388]: <label for="validationServer03" class="form-label">City</label>
+            - generic [ref=e389]: <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+            - generic [ref=e390]: <div id="validationServer03Feedback" class="invalid-feedback">
+            - generic [ref=e391]: Please provide a valid city.
+            - generic [ref=e392]: </div>
+            - generic [ref=e393]: </div>
+            - generic [ref=e394]: <div class="col-md-3">
+            - generic [ref=e395]: <label for="validationServer04" class="form-label">State</label>
+            - generic [ref=e396]: <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+            - generic [ref=e397]: <option selected disabled value="">Choose...</option>
+            - generic [ref=e398]: <option>...</option>
+            - generic [ref=e399]: </select>
+            - generic [ref=e400]: <div id="validationServer04Feedback" class="invalid-feedback">
+            - generic [ref=e401]: Please select a valid state.
+            - generic [ref=e402]: </div>
+            - generic [ref=e403]: </div>
+            - generic [ref=e404]: <div class="col-md-3">
+            - generic [ref=e405]: <label for="validationServer05" class="form-label">Zip</label>
+            - generic [ref=e406]: <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
+            - generic [ref=e407]: <div id="validationServer05Feedback" class="invalid-feedback">
+            - generic [ref=e408]: Please provide a valid zip.
+            - generic [ref=e409]: </div>
+            - generic [ref=e410]: </div>
+            - generic [ref=e411]: <div class="col-12">
+            - generic [ref=e412]: <div class="form-check">
+            - generic [ref=e413]: <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+            - generic [ref=e414]: <label class="form-check-label" for="invalidCheck3">
+            - generic [ref=e415]: Agree to terms and conditions
+            - generic [ref=e416]: </label>
+            - generic [ref=e417]: <div id="invalidCheck3Feedback" class="invalid-feedback">
+            - generic [ref=e418]: You must agree before submitting.
+            - generic [ref=e419]: </div>
+            - generic [ref=e420]: </div>
+            - generic [ref=e421]: </div>
+            - generic [ref=e422]: <div class="col-12">
+            - generic [ref=e423]: <button class="btn btn-primary" type="submit">Submit form</button>
+            - generic [ref=e424]: </div>
+            - generic [ref=e425]: </form>
+        - 'heading "Supported elementsLink to this section: Supported elements" [level=2] [ref=e426]':
+          - text: Supported elements
+          - 'link "Link to this section: Supported elements" [ref=e427] [cursor=pointer]':
+            - /url: "#supported-elements"
+            - text: "#"
+        - paragraph [ref=e428]: "Validation styles are available for the following form controls and components:"
+        - list [ref=e429]:
+          - listitem [ref=e430]:
+            - code [ref=e431]: <input>
+            - text: s and
+            - code [ref=e432]: <textarea>
+            - text: s with
+            - code [ref=e433]: .form-control
+            - text: (including up to one
+            - code [ref=e434]: .form-control
+            - text: in input groups)
+          - listitem [ref=e435]:
+            - code [ref=e436]: <select>
+            - text: s with
+            - code [ref=e437]: .form-select
+          - listitem [ref=e438]:
+            - code [ref=e439]: .form-check
+            - text: s
+        - generic [ref=e440]:
+          - generic [ref=e442]:
+            - generic [ref=e443]:
+              - generic [ref=e444]: Textarea
+              - textbox "Textarea" [ref=e445]:
+                - /placeholder: Required example textarea
+              - generic [ref=e446]: Please enter a message in the textarea.
+            - generic [ref=e447]:
+              - checkbox "Check this checkbox" [ref=e448]
+              - generic [ref=e449]: Check this checkbox
+              - generic [ref=e450]: Example invalid feedback text
+            - generic [ref=e451]:
+              - radio "Toggle this radio" [ref=e452]
+              - generic [ref=e453]: Toggle this radio
+            - generic [ref=e454]:
+              - radio "Or toggle this other radio" [ref=e455]
+              - generic [ref=e456]: Or toggle this other radio
+              - generic [ref=e457]: More example invalid feedback text
+            - generic [ref=e458]:
+              - combobox "select example" [ref=e459]:
+                - option "Open this select menu" [selected]
+                - option "One"
+                - option "Two"
+                - option "Three"
+              - generic [ref=e460]: Example invalid select feedback
+            - generic [ref=e461]:
+              - button "file example" [ref=e462] [cursor=pointer]
+              - generic [ref=e463]: Example invalid form file feedback
+            - generic [ref=e464]:
+              - button "Submit form" [disabled]
+          - generic [ref=e465]:
+            - generic [ref=e466]: HTML
+            - button "Copy to clipboard" [ref=e468] [cursor=pointer]:
+              - img [ref=e469]
+          - code [ref=e472]:
+            - generic [ref=e473]: <form class="was-validated">
+            - generic [ref=e474]: <div class="mb-3">
+            - generic [ref=e475]: <label for="validationTextarea" class="form-label">Textarea</label>
+            - generic [ref=e476]: <textarea class="form-control" id="validationTextarea" placeholder="Required example textarea" required></textarea>
+            - generic [ref=e477]: <div class="invalid-feedback">
+            - generic [ref=e478]: Please enter a message in the textarea.
+            - generic [ref=e479]: </div>
+            - generic [ref=e480]: </div>
+            - generic [ref=e481]: <div class="form-check mb-3">
+            - generic [ref=e482]: <input type="checkbox" class="form-check-input" id="validationFormCheck1" required>
+            - generic [ref=e483]: <label class="form-check-label" for="validationFormCheck1">Check this checkbox</label>
+            - generic [ref=e484]: <div class="invalid-feedback">Example invalid feedback text</div>
+            - generic [ref=e485]: </div>
+            - generic [ref=e486]: <div class="form-check">
+            - generic [ref=e487]: <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
+            - generic [ref=e488]: <label class="form-check-label" for="validationFormCheck2">Toggle this radio</label>
+            - generic [ref=e489]: </div>
+            - generic [ref=e490]: <div class="form-check mb-3">
+            - generic [ref=e491]: <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required>
+            - generic [ref=e492]: <label class="form-check-label" for="validationFormCheck3">Or toggle this other radio</label>
+            - generic [ref=e493]: <div class="invalid-feedback">More example invalid feedback text</div>
+            - generic [ref=e494]: </div>
+            - generic [ref=e495]: <div class="mb-3">
+            - generic [ref=e496]: <select class="form-select" required aria-label="select example">
+            - generic [ref=e497]: <option value="">Open this select menu</option>
+            - generic [ref=e498]: <option value="1">One</option>
+            - generic [ref=e499]: <option value="2">Two</option>
+            - generic [ref=e500]: <option value="3">Three</option>
+            - generic [ref=e501]: </select>
+            - generic [ref=e502]: <div class="invalid-feedback">Example invalid select feedback</div>
+            - generic [ref=e503]: </div>
+            - generic [ref=e504]: <div class="mb-3">
+            - generic [ref=e505]: <input type="file" class="form-control" aria-label="file example" required>
+            - generic [ref=e506]: <div class="invalid-feedback">Example invalid form file feedback</div>
+            - generic [ref=e507]: </div>
+            - generic [ref=e508]: <div class="mb-3">
+            - generic [ref=e509]: <button class="btn btn-primary" type="submit" disabled>Submit form</button>
+            - generic [ref=e510]: </div>
+            - generic [ref=e511]: </form>
+        - 'heading "TooltipsLink to this section: Tooltips" [level=2] [ref=e512]':
+          - text: Tooltips
+          - 'link "Link to this section: Tooltips" [ref=e513] [cursor=pointer]':
+            - /url: "#tooltips"
+            - text: "#"
+        - paragraph [ref=e514]:
+          - text: If your form layout allows it, you can swap the
+          - code [ref=e515]: ".{valid|invalid}-feedback"
+          - text: classes for
+          - code [ref=e516]: ".{valid|invalid}-tooltip"
+          - text: classes to display validation feedback in a styled tooltip. Be sure to have a parent with
+          - code [ref=e517]: "position: relative"
+          - text: on it for tooltip positioning. In the example below, our column classes have this already, but your project may require an alternative setup.
+        - generic [ref=e518]:
+          - generic [ref=e520]:
+            - generic [ref=e521]:
+              - generic [ref=e522]: First name
+              - textbox "First name" [ref=e523]: Mark
+            - generic [ref=e524]:
+              - generic [ref=e525]: Last name
+              - textbox "Last name" [ref=e526]: Otto
+            - generic [ref=e527]:
+              - generic [ref=e528]: Username
+              - generic [ref=e529]:
+                - generic [ref=e530]: "@"
+                - textbox "Username" [ref=e531]
+            - generic [ref=e532]:
+              - generic [ref=e533]: City
+              - textbox "City" [ref=e534]
+            - generic [ref=e535]:
+              - generic [ref=e536]: State
+              - combobox "State" [ref=e537]:
+                - option "Choose..." [disabled] [selected]
+                - option "..."
+            - generic [ref=e538]:
+              - generic [ref=e539]: Zip
+              - textbox "Zip" [ref=e540]
+            - button "Submit form" [ref=e542] [cursor=pointer]
+          - generic [ref=e543]:
+            - generic [ref=e544]: HTML
+            - button "Copy to clipboard" [ref=e546] [cursor=pointer]:
+              - img [ref=e547]
+          - code [ref=e550]:
+            - generic [ref=e551]: <form class="row g-3 needs-validation" novalidate>
+            - generic [ref=e552]: <div class="col-md-4 position-relative">
+            - generic [ref=e553]: <label for="validationTooltip01" class="form-label">First name</label>
+            - generic [ref=e554]: <input type="text" class="form-control" id="validationTooltip01" value="Mark" required>
+            - generic [ref=e555]: <div class="valid-tooltip">
+            - generic [ref=e556]: Looks good!
+            - generic [ref=e557]: </div>
+            - generic [ref=e558]: </div>
+            - generic [ref=e559]: <div class="col-md-4 position-relative">
+            - generic [ref=e560]: <label for="validationTooltip02" class="form-label">Last name</label>
+            - generic [ref=e561]: <input type="text" class="form-control" id="validationTooltip02" value="Otto" required>
+            - generic [ref=e562]: <div class="valid-tooltip">
+            - generic [ref=e563]: Looks good!
+            - generic [ref=e564]: </div>
+            - generic [ref=e565]: </div>
+            - generic [ref=e566]: <div class="col-md-4 position-relative">
+            - generic [ref=e567]: <label for="validationTooltipUsername" class="form-label">Username</label>
+            - generic [ref=e568]: <div class="input-group has-validation">
+            - generic [ref=e569]: <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+            - generic [ref=e570]: <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
+            - generic [ref=e571]: <div class="invalid-tooltip">
+            - generic [ref=e572]: Please choose a unique and valid username.
+            - generic [ref=e573]: </div>
+            - generic [ref=e574]: </div>
+            - generic [ref=e575]: </div>
+            - generic [ref=e576]: <div class="col-md-6 position-relative">
+            - generic [ref=e577]: <label for="validationTooltip03" class="form-label">City</label>
+            - generic [ref=e578]: <input type="text" class="form-control" id="validationTooltip03" required>
+            - generic [ref=e579]: <div class="invalid-tooltip">
+            - generic [ref=e580]: Please provide a valid city.
+            - generic [ref=e581]: </div>
+            - generic [ref=e582]: </div>
+            - generic [ref=e583]: <div class="col-md-3 position-relative">
+            - generic [ref=e584]: <label for="validationTooltip04" class="form-label">State</label>
+            - generic [ref=e585]: <select class="form-select" id="validationTooltip04" required>
+            - generic [ref=e586]: <option selected disabled value="">Choose...</option>
+            - generic [ref=e587]: <option>...</option>
+            - generic [ref=e588]: </select>
+            - generic [ref=e589]: <div class="invalid-tooltip">
+            - generic [ref=e590]: Please select a valid state.
+            - generic [ref=e591]: </div>
+            - generic [ref=e592]: </div>
+            - generic [ref=e593]: <div class="col-md-3 position-relative">
+            - generic [ref=e594]: <label for="validationTooltip05" class="form-label">Zip</label>
+            - generic [ref=e595]: <input type="text" class="form-control" id="validationTooltip05" required>
+            - generic [ref=e596]: <div class="invalid-tooltip">
+            - generic [ref=e597]: Please provide a valid zip.
+            - generic [ref=e598]: </div>
+            - generic [ref=e599]: </div>
+            - generic [ref=e600]: <div class="col-12">
+            - generic [ref=e601]: <button class="btn btn-primary" type="submit">Submit form</button>
+            - generic [ref=e602]: </div>
+            - generic [ref=e603]: </form>
+        - 'heading "CSSLink to this section: CSS" [level=2] [ref=e604]':
+          - text: CSS
+          - 'link "Link to this section: CSS" [ref=e605] [cursor=pointer]':
+            - /url: "#css"
+            - text: "#"
+        - 'heading "VariablesLink to this section: Variables" [level=3] [ref=e606]':
+          - text: Variables
+          - 'link "Link to this section: Variables" [ref=e607] [cursor=pointer]':
+            - /url: "#variables"
+            - text: "#"
+        - paragraph [ref=e608]: As part of Bootstrap’s evolving CSS variables approach, forms now use local CSS variables for validation for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.
+        - generic [ref=e609]:
+          - generic [ref=e610]:
+            - generic [ref=e611]: SCSS
+            - button "Copy to clipboard" [ref=e613] [cursor=pointer]:
+              - img [ref=e614]
+          - code [ref=e617]:
+            - generic [ref=e618]: "--form-valid-color: #{$form-valid-color};"
+            - generic [ref=e619]: "--form-valid-border-color: #{$form-valid-border-color};"
+            - generic [ref=e620]: "--form-invalid-color: #{$form-invalid-color};"
+            - generic [ref=e621]: "--form-invalid-border-color: #{$form-invalid-border-color};"
+            - generic [ref=e622]: "color-scheme: light;"
+        - paragraph [ref=e623]: These variables are also color mode adaptive, meaning they change color while in dark mode.
+        - 'heading "Sass variablesLink to this section: Sass variables" [level=3] [ref=e624]':
+          - text: Sass variables
+          - 'link "Link to this section: Sass variables" [ref=e625] [cursor=pointer]':
+            - /url: "#sass-variables"
+            - text: "#"
+        - generic [ref=e626]:
+          - generic [ref=e627]:
+            - generic [ref=e628]: SCSS
+            - button "Copy to clipboard" [ref=e630] [cursor=pointer]:
+              - img [ref=e631]
+          - code [ref=e634]:
+            - generic [ref=e635]: "$form-feedback-margin-top: .5rem;"
+            - generic [ref=e636]: "$form-feedback-font-size: $font-size-sm;"
+            - generic [ref=e637]: "$form-feedback-font-style: null;"
+            - generic [ref=e638]: "$form-feedback-valid-color: var(--success);"
+            - generic [ref=e639]: "$form-feedback-invalid-color: var(--danger);"
+            - generic [ref=e640]: "$form-feedback-icon-valid-color: $form-feedback-valid-color;"
+            - generic [ref=e641]: "$form-feedback-icon-valid: url(\"data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'><path fill='#{$form-feedback-icon-valid-color}' d='M2.3 6.73.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1'/></svg>\");"
+            - generic [ref=e642]: "$form-feedback-icon-invalid-color: $form-feedback-invalid-color;"
+            - generic [ref=e643]: "$form-feedback-icon-invalid: url(\"data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='#{$form-feedback-icon-invalid-color}'><circle cx='6' cy='6' r='4.5'/><path stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/><circle cx='6' cy='8.2' r='.6' fill='#{$form-feedback-icon-invalid-color}' stroke='none'/></svg>\");"
+        - generic [ref=e644]:
+          - generic [ref=e645]:
+            - generic [ref=e646]: SCSS
+            - button "Copy to clipboard" [ref=e648] [cursor=pointer]:
+              - img [ref=e649]
+          - code [ref=e652]:
+            - generic [ref=e653]: "$form-valid-color: $form-feedback-valid-color;"
+            - generic [ref=e654]: "$form-valid-border-color: $form-feedback-valid-color;"
+            - generic [ref=e655]: "$form-invalid-color: $form-feedback-invalid-color;"
+            - generic [ref=e656]: "$form-invalid-border-color: $form-feedback-invalid-color;"
+        - 'heading "Sass mixinsLink to this section: Sass mixins" [level=3] [ref=e657]':
+          - text: Sass mixins
+          - 'link "Link to this section: Sass mixins" [ref=e658] [cursor=pointer]':
+            - /url: "#sass-mixins"
+            - text: "#"
+        - paragraph [ref=e659]:
+          - text: Two mixins are combined, through our
+          - link "loop" [ref=e660] [cursor=pointer]:
+            - /url: "#sass-loops"
+          - text: ", to generate our form validation feedback styles."
+        - generic [ref=e661]:
+          - generic [ref=e662]:
+            - generic [ref=e663]: SCSS
+            - button "Copy to clipboard" [ref=e665] [cursor=pointer]:
+              - img [ref=e666]
+          - code [ref=e669]:
+            - generic [ref=e670]: "@mixin form-validation-state-selector($state) {"
+            - generic [ref=e671]: "@if ($state == \"valid\" or $state == \"invalid\") {"
+            - generic [ref=e672]: ".was-validated #{if(sass(&): \"&\"; else: \"\")}:#{$state},"
+            - generic [ref=e673]: "#{if(sass(&): \"&\"; else: \"\")}.is-#{$state} {"
+            - generic [ref=e674]: "@content;"
+            - generic [ref=e675]: "}"
+            - generic [ref=e676]: "} @else {"
+            - generic [ref=e677]: "#{if(sass(&): \"&\"; else: \"\")}.is-#{$state} {"
+            - generic [ref=e678]: "@content;"
+            - generic [ref=e679]: "}"
+            - generic [ref=e680]: "}"
+            - generic [ref=e681]: "}"
+            - generic [ref=e682]: "@mixin form-validation-state("
+            - generic [ref=e683]: $state,
+            - generic [ref=e684]: $color,
+            - generic [ref=e685]: $icon,
+            - generic [ref=e686]: "$tooltip-color: color-contrast($color),"
+            - generic [ref=e687]: "$tooltip-bg-color: rgba($color, $form-feedback-tooltip-opacity),"
+            - generic [ref=e688]: "$focus-box-shadow: null, // mdo-do: fix"
+            - generic [ref=e689]: "$border-color: $color"
+            - generic [ref=e690]: ") {"
+            - generic [ref=e691]: ".#{$state}-feedback {"
+            - generic [ref=e692]: "display: none;"
+            - generic [ref=e693]: "width: 100%;"
+            - generic [ref=e694]: "margin-top: $form-feedback-margin-top;"
+            - generic [ref=e695]: "font-size: $form-feedback-font-size;"
+            - generic [ref=e696]: "font-style: $form-feedback-font-style;"
+            - generic [ref=e697]: "color: $color;"
+            - generic [ref=e698]: "}"
+            - generic [ref=e699]: ".#{$state}-tooltip {"
+            - generic [ref=e700]: "position: absolute;"
+            - generic [ref=e701]: "top: 100%;"
+            - generic [ref=e702]: "z-index: 5;"
+            - generic [ref=e703]: "display: none;"
+            - generic [ref=e704]: "max-width: 100%; // Contain to parent when possible"
+            - generic [ref=e705]: "padding: $form-feedback-tooltip-padding-y $form-feedback-tooltip-padding-x;"
+            - generic [ref=e706]: "margin-top: .1rem;"
+            - generic [ref=e707]: "font-size: $form-feedback-tooltip-font-size;"
+            - generic [ref=e708]: "line-height: $form-feedback-tooltip-line-height;"
+            - generic [ref=e709]: "color: $tooltip-color;"
+            - generic [ref=e710]: "background-color: $tooltip-bg-color;"
+            - generic [ref=e711]: "@include border-radius($form-feedback-tooltip-border-radius);"
+            - generic [ref=e712]: "}"
+            - generic [ref=e713]: "@include form-validation-state-selector($state) {"
+            - generic [ref=e714]: "~ .#{$state}-feedback,"
+            - generic [ref=e715]: "~ .#{$state}-tooltip {"
+            - generic [ref=e716]: "display: block;"
+            - generic [ref=e717]: "}"
+            - generic [ref=e718]: "}"
+            - generic [ref=e719]: ".form-control {"
+            - generic [ref=e720]: "@include form-validation-state-selector($state) {"
+            - generic [ref=e721]: "border-color: $border-color;"
+            - generic [ref=e722]: "@if $enable-validation-icons {"
+            - generic [ref=e723]: "padding-inline-end: $input-height-inner;"
+            - generic [ref=e724]: "background-image: escape-svg($icon);"
+            - generic [ref=e725]: "background-repeat: no-repeat;"
+            - generic [ref=e726]: "background-position: right $input-height-inner-quarter center;"
+            - generic [ref=e727]: "background-size: $input-height-inner-half $input-height-inner-half;"
+            - generic [ref=e728]: "}"
+            - generic [ref=e729]: "&:focus {"
+            - generic [ref=e730]: "border-color: $border-color;"
+            - generic [ref=e731]: "@if $enable-shadows {"
+            - generic [ref=e732]: "@include box-shadow($input-box-shadow, $focus-box-shadow);"
+            - generic [ref=e733]: "} @else {"
+            - generic [ref=e734]: // Avoid using mixin so we can pass custom focus shadow properly
+            - generic [ref=e735]: "box-shadow: $focus-box-shadow;"
+            - generic [ref=e736]: "}"
+            - generic [ref=e737]: "}"
+            - generic [ref=e738]: "}"
+            - generic [ref=e739]: "}"
+            - generic [ref=e740]: // stylelint-disable-next-line selector-no-qualifying-type
+            - generic [ref=e741]: "textarea.form-control {"
+            - generic [ref=e742]: "@include form-validation-state-selector($state) {"
+            - generic [ref=e743]: "@if $enable-validation-icons {"
+            - generic [ref=e744]: "padding-inline-end: $input-height-inner;"
+            - generic [ref=e745]: "background-position: top $input-height-inner-quarter right $input-height-inner-quarter;"
+            - generic [ref=e746]: "}"
+            - generic [ref=e747]: "}"
+            - generic [ref=e748]: "}"
+            - generic [ref=e749]: "// .form-select {"
+            - generic [ref=e750]: "// @include form-validation-state-selector($state) {"
+            - generic [ref=e751]: "// border-color: $border-color;"
+            - generic [ref=e752]: "// @if $enable-validation-icons {"
+            - generic [ref=e753]: // &:not([multiple]):not([size]),
+            - generic [ref=e754]: "// &:not([multiple])[size=\"1\"] {"
+            - generic [ref=e755]: "// --form-select-bg-icon: #{escape-svg($icon)};"
+            - generic [ref=e756]: "// padding-right: $form-select-feedback-icon-padding-end;"
+            - generic [ref=e757]: "// background-position: $form-select-bg-position, $form-select-feedback-icon-position;"
+            - generic [ref=e758]: "// background-size: $form-select-bg-size, $form-select-feedback-icon-size;"
+            - generic [ref=e759]: "// }"
+            - generic [ref=e760]: "// }"
+            - generic [ref=e761]: "// &:focus {"
+            - generic [ref=e762]: "// border-color: $border-color;"
+            - generic [ref=e763]: "// @if $enable-shadows {"
+            - generic [ref=e764]: // @include box-shadow($form-select-box-shadow, $focus-box-shadow);
+            - generic [ref=e765]: "// } @else {"
+            - generic [ref=e766]: // // Avoid using mixin so we can pass custom focus shadow properly
+            - generic [ref=e767]: "// box-shadow: $focus-box-shadow;"
+            - generic [ref=e768]: "// }"
+            - generic [ref=e769]: "// }"
+            - generic [ref=e770]: "// }"
+            - generic [ref=e771]: "// }"
+            - generic [ref=e772]: ".form-control-color {"
+            - generic [ref=e773]: "@include form-validation-state-selector($state) {"
+            - generic [ref=e774]: "@if $enable-validation-icons {"
+            - generic [ref=e775]: "width: add($form-color-width, $input-height-inner);"
+            - generic [ref=e776]: "}"
+            - generic [ref=e777]: "}"
+            - generic [ref=e778]: "}"
+            - generic [ref=e779]: ".form-check-input {"
+            - generic [ref=e780]: "@include form-validation-state-selector($state) {"
+            - generic [ref=e781]: "border-color: $border-color;"
+            - generic [ref=e782]: "&:checked {"
+            - generic [ref=e783]: "background-color: $color;"
+            - generic [ref=e784]: "}"
+            - generic [ref=e785]: "&:focus {"
+            - generic [ref=e786]: "box-shadow: $focus-box-shadow;"
+            - generic [ref=e787]: "}"
+            - generic [ref=e788]: "~ .form-check-label {"
+            - generic [ref=e789]: "color: $color;"
+            - generic [ref=e790]: "}"
+            - generic [ref=e791]: "}"
+            - generic [ref=e792]: "}"
+            - generic [ref=e793]: ".form-check-inline .form-check-input {"
+            - generic [ref=e794]: "~ .#{$state}-feedback {"
+            - generic [ref=e795]: "margin-inline-start: .5em;"
+            - generic [ref=e796]: "}"
+            - generic [ref=e797]: "}"
+            - generic [ref=e798]: ".input-group {"
+            - generic [ref=e799]: "> .form-control:not(:focus),"
+            - generic [ref=e800]: "> .form-select:not(:focus),"
+            - generic [ref=e801]: "> .form-floating:not(:focus-within) {"
+            - generic [ref=e802]: "@include form-validation-state-selector($state) {"
+            - generic [ref=e803]: "@if $state == \"valid\" {"
+            - generic [ref=e804]: "z-index: 3;"
+            - generic [ref=e805]: "} @else if $state == \"invalid\" {"
+            - generic [ref=e806]: "z-index: 4;"
+            - generic [ref=e807]: "}"
+            - generic [ref=e808]: "}"
+            - generic [ref=e809]: "}"
+            - generic [ref=e810]: "}"
+            - generic [ref=e811]: "}"
+        - 'heading "Sass mapsLink to this section: Sass maps" [level=3] [ref=e812]':
+          - text: Sass maps
+          - 'link "Link to this section: Sass maps" [ref=e813] [cursor=pointer]':
+            - /url: "#sass-maps"
+            - text: "#"
+        - paragraph [ref=e814]:
+          - text: This is the validation Sass map from
+          - code [ref=e815]: _variables.scss
+          - text: . Override or extend this to generate different or additional states.
+        - generic [ref=e816]:
+          - generic [ref=e817]:
+            - generic [ref=e818]: SCSS
+            - button "Copy to clipboard" [ref=e820] [cursor=pointer]:
+              - img [ref=e821]
+          - code [ref=e824]:
+            - generic [ref=e825]: "$form-validation-states: ("
+            - generic [ref=e826]: "\"valid\": ("
+            - generic [ref=e827]: "\"color\": var(--form-valid-color),"
+            - generic [ref=e828]: "\"icon\": $form-feedback-icon-valid,"
+            - generic [ref=e829]: "\"tooltip-color\": #fff,"
+            - generic [ref=e830]: "\"tooltip-bg-color\": var(--success),"
+            - generic [ref=e831]: "// \"focus-box-shadow\": 0 0 $input-btn-focus-blur $input-focus-width rgba(var(--success-rgb), $input-btn-focus-color-opacity),"
+            - generic [ref=e832]: "\"border-color\": var(--form-valid-border-color),"
+            - generic [ref=e833]: ),
+            - generic [ref=e834]: "\"invalid\": ("
+            - generic [ref=e835]: "\"color\": var(--form-invalid-color),"
+            - generic [ref=e836]: "\"icon\": $form-feedback-icon-invalid,"
+            - generic [ref=e837]: "\"tooltip-color\": #fff,"
+            - generic [ref=e838]: "\"tooltip-bg-color\": var(--danger),"
+            - generic [ref=e839]: "// \"focus-box-shadow\": 0 0 $input-btn-focus-blur $input-focus-width rgba(var(--danger-rgb), $input-btn-focus-color-opacity),"
+            - generic [ref=e840]: "\"border-color\": var(--form-invalid-border-color),"
+            - generic [ref=e841]: )
+            - generic [ref=e842]: );
+        - paragraph [ref=e843]:
+          - text: Maps of
+          - code [ref=e844]: $form-validation-states
+          - text: can contain three optional parameters to override tooltips and focus styles.
+        - 'heading "Sass loopsLink to this section: Sass loops" [level=3] [ref=e845]':
+          - text: Sass loops
+          - 'link "Link to this section: Sass loops" [ref=e846] [cursor=pointer]':
+            - /url: "#sass-loops"
+            - text: "#"
+        - paragraph [ref=e847]:
+          - text: Used to iterate over
+          - code [ref=e848]: $form-validation-states
+          - text: map values to generate our validation styles. Any modifications to the above Sass map will be reflected in your compiled CSS via this loop.
+        - generic [ref=e849]:
+          - generic [ref=e850]:
+            - generic [ref=e851]: SCSS
+            - button "Copy to clipboard" [ref=e853] [cursor=pointer]:
+              - img [ref=e854]
+          - code [ref=e857]:
+            - generic [ref=e858]: "@each $state, $data in $form-validation-states {"
+            - generic [ref=e859]: "@include form-validation-state($state, $data...);"
+            - generic [ref=e860]: "}"
+        - 'heading "CustomizingLink to this section: Customizing" [level=3] [ref=e861]':
+          - text: Customizing
+          - 'link "Link to this section: Customizing" [ref=e862] [cursor=pointer]':
+            - /url: "#customizing"
+            - text: "#"
+        - paragraph [ref=e863]:
+          - text: Validation states can be customized via Sass with the
+          - code [ref=e864]: $form-validation-states
+          - text: map. Located in our
+          - code [ref=e865]: _variables.scss
+          - text: file, this Sass map is how we generate the default
+          - code [ref=e866]: valid
+          - text: /
+          - code [ref=e867]: invalid
+          - text: validation states. Included is a nested map for customizing each state’s color, icon, tooltip color, and focus shadow. While no other states are supported by browsers, those using custom styles can easily add more complex form feedback.
+        - navigation [ref=e868]:
+          - generic [ref=e869]:
+            - link "← Previous Layout Forms" [ref=e870] [cursor=pointer]:
+              - /url: /docs/6.0/forms/layout/
+              - generic [ref=e871]: ← Previous
+              - generic [ref=e872]: Layout
+              - generic [ref=e873]: Forms
+            - link "Next → Accordion Components" [ref=e874] [cursor=pointer]:
+              - /url: /docs/6.0/components/accordion/
+              - generic [ref=e875]: Next →
+              - generic [ref=e876]: Accordion
+              - generic [ref=e877]: Components
+  - contentinfo [ref=e878]:
+    - generic [ref=e880]:
+      - generic [ref=e881]:
+        - link "Bootstrap" [ref=e882] [cursor=pointer]:
+          - /url: /
+          - img "Bootstrap" [ref=e883]
+          - generic [ref=e885]: Bootstrap
+        - list [ref=e886]:
+          - listitem [ref=e887]:
+            - text: Designed and built with all the love in the world by the
+            - link "Bootstrap team" [ref=e888] [cursor=pointer]:
+              - /url: /docs/6.0/about/team
+            - text: with the help of
+            - link "our contributors" [ref=e889] [cursor=pointer]:
+              - /url: https://github.com/twbs/bootstrap/graphs/contributors
+            - text: .
+          - listitem [ref=e890]:
+            - text: Code licensed
+            - link "MIT" [ref=e891] [cursor=pointer]:
+              - /url: https://github.com/twbs/bootstrap/blob/main/LICENSE
+            - text: ", docs"
+            - link "CC BY 3.0" [ref=e892] [cursor=pointer]:
+              - /url: https://creativecommons.org/licenses/by/3.0/
+            - text: .
+          - listitem [ref=e893]: Currently v6.0.0-alpha1.
+      - generic [ref=e894]:
+        - heading "Links" [level=5] [ref=e895]
+        - list [ref=e896]:
+          - listitem [ref=e897]:
+            - link "Home" [ref=e898] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=e899]:
+            - link "Docs" [ref=e900] [cursor=pointer]:
+              - /url: /docs/6.0/
+          - listitem [ref=e901]:
+            - link "Examples" [ref=e902] [cursor=pointer]:
+              - /url: /docs/6.0/examples
+          - listitem [ref=e903]:
+            - link "Icons" [ref=e904] [cursor=pointer]:
+              - /url: https://icons.getbootstrap.com/
+          - listitem [ref=e905]:
+            - link "Blog" [ref=e906] [cursor=pointer]:
+              - /url: https://blog.getbootstrap.com/
+          - listitem [ref=e907]:
+            - link "Swag Store" [ref=e908] [cursor=pointer]:
+              - /url: https://cottonbureau.com/people/bootstrap
+      - generic [ref=e909]:
+        - heading "Guides" [level=5] [ref=e910]
+        - list [ref=e911]:
+          - listitem [ref=e912]:
+            - link "Getting started" [ref=e913] [cursor=pointer]:
+              - /url: /docs/6.0/getting-started
+          - listitem [ref=e914]:
+            - link "Starter template" [ref=e915] [cursor=pointer]:
+              - /url: /docs/6.0/examples/starter-template
+          - listitem [ref=e916]:
+            - link "Webpack" [ref=e917] [cursor=pointer]:
+              - /url: /docs/6.0/guides/webpack
+          - listitem [ref=e918]:
+            - link "Parcel" [ref=e919] [cursor=pointer]:
+              - /url: /docs/6.0/guides/parcel
+          - listitem [ref=e920]:
+            - link "Vite" [ref=e921] [cursor=pointer]:
+              - /url: /docs/6.0/guides/vite
+      - generic [ref=e922]:
+        - heading "Projects" [level=5] [ref=e923]
+        - list [ref=e924]:
+          - listitem [ref=e925]:
+            - link "Bootstrap 6" [ref=e926] [cursor=pointer]:
+              - /url: https://github.com/twbs/bootstrap
+          - listitem [ref=e927]:
+            - link "Bootstrap 5" [ref=e928] [cursor=pointer]:
+              - /url: https://github.com/twbs/bootstrap/tree/v5-dev
+          - listitem [ref=e929]:
+            - link "Icons" [ref=e930] [cursor=pointer]:
+              - /url: https://github.com/twbs/icons
+          - listitem [ref=e931]:
+            - link "Examples repo" [ref=e932] [cursor=pointer]:
+              - /url: https://github.com/twbs/examples
+      - generic [ref=e933]:
+        - heading "Community" [level=5] [ref=e934]
+        - list [ref=e935]:
+          - listitem [ref=e936]:
+            - link "Issues" [ref=e937] [cursor=pointer]:
+              - /url: https://github.com/twbs/bootstrap/issues
+          - listitem [ref=e938]:
+            - link "Discussions" [ref=e939] [cursor=pointer]:
+              - /url: https://github.com/twbs/bootstrap/discussions
+          - listitem [ref=e940]:
+            - link "Corporate sponsors" [ref=e941] [cursor=pointer]:
+              - /url: https://github.com/sponsors/twbs
+          - listitem [ref=e942]:
+            - link "Open Collective" [ref=e943] [cursor=pointer]:
+              - /url: https://opencollective.com/bootstrap
+          - listitem [ref=e944]:
+            - link "Stack Overflow" [ref=e945] [cursor=pointer]:
+              - /url: https://stackoverflow.com/questions/tagged/bootstrap-5
+  - textbox [ref=e947]
+```

@@ -1,0 +1,1690 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - link "Skip to main content" [ref=e4] [cursor=pointer]:
+      - /url: "#content"
+    - link "Skip to docs navigation" [ref=e5] [cursor=pointer]:
+      - /url: "#bd-docs-nav"
+  - banner [ref=e6]:
+    - navigation "Main navigation" [ref=e7]:
+      - link "Bootstrap" [ref=e8] [cursor=pointer]:
+        - /url: /
+        - img "Bootstrap" [ref=e9]
+      - button "Search (Ctrl+K)" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]:
+          - img [ref=e14]
+          - generic [ref=e16]: Search
+        - generic [ref=e17]:
+          - img [ref=e19]
+          - generic [ref=e21]: K
+      - generic "Bootstrap" [ref=e22]:
+        - generic [ref=e23]:
+          - list [ref=e24]:
+            - listitem [ref=e25]:
+              - link "Docs" [ref=e26] [cursor=pointer]:
+                - /url: /docs/6.0/getting-started/install/
+            - listitem [ref=e27]:
+              - link "Examples" [ref=e28] [cursor=pointer]:
+                - /url: /docs/6.0/examples/
+            - listitem [ref=e29]:
+              - link "Icons" [ref=e30] [cursor=pointer]:
+                - /url: https://icons.getbootstrap.com/
+            - listitem [ref=e31]:
+              - link "Blog" [ref=e32] [cursor=pointer]:
+                - /url: https://blog.getbootstrap.com/
+          - list [ref=e33]:
+            - listitem [ref=e34]:
+              - link "GitHub" [ref=e35] [cursor=pointer]:
+                - /url: https://github.com/twbs
+                - img "GitHub" [ref=e36]
+            - listitem [ref=e38]:
+              - link "X" [ref=e39] [cursor=pointer]:
+                - /url: https://x.com/getbootstrap
+                - img "X" [ref=e40]
+            - listitem [ref=e42]:
+              - link "Open Collective" [ref=e43] [cursor=pointer]:
+                - /url: https://opencollective.com/bootstrap
+                - img "Open Collective" [ref=e44]
+            - listitem [ref=e47]
+            - listitem [ref=e49]:
+              - button "Bootstrap v6.0 (switch to other versions)" [ref=e50] [cursor=pointer]:
+                - generic [ref=e51]: Bootstrap
+                - text: v6.0
+                - generic [ref=e52]: (switch to other versions)
+            - listitem [ref=e53]
+            - listitem [ref=e55]:
+              - button "Toggle theme (light)" [ref=e56] [cursor=pointer]:
+                - img [ref=e57]
+  - generic [ref=e59]:
+    - complementary [ref=e60]:
+      - generic "Browse docs" [ref=e61]:
+        - navigation "Docs navigation" [ref=e63]:
+          - generic [ref=e64]:
+            - strong [ref=e65]:
+              - img [ref=e66]
+              - text: Getting started
+            - list [ref=e68]:
+              - listitem [ref=e69]:
+                - link "Install" [ref=e70] [cursor=pointer]:
+                  - /url: /docs/6.0/getting-started/install
+              - listitem [ref=e71]:
+                - link "Approach" [ref=e72] [cursor=pointer]:
+                  - /url: /docs/6.0/getting-started/approach
+              - listitem [ref=e73]:
+                - link "JavaScript" [ref=e74] [cursor=pointer]:
+                  - /url: /docs/6.0/getting-started/javascript
+              - listitem [ref=e75]:
+                - link "Accessibility" [ref=e76] [cursor=pointer]:
+                  - /url: /docs/6.0/getting-started/accessibility
+          - generic [ref=e77]:
+            - strong [ref=e78]:
+              - img [ref=e79]
+              - text: Guides
+            - list [ref=e81]:
+              - listitem [ref=e82]:
+                - link "Quickstart" [ref=e83] [cursor=pointer]:
+                  - /url: /docs/6.0/guides/quickstart
+              - listitem [ref=e84]:
+                - link "npm" [ref=e85] [cursor=pointer]:
+                  - /url: /docs/6.0/guides/npm
+              - listitem [ref=e86]:
+                - link "Webpack" [ref=e87] [cursor=pointer]:
+                  - /url: /docs/6.0/guides/webpack
+              - listitem [ref=e88]:
+                - link "Parcel" [ref=e89] [cursor=pointer]:
+                  - /url: /docs/6.0/guides/parcel
+              - listitem [ref=e90]:
+                - link "Vite" [ref=e91] [cursor=pointer]:
+                  - /url: /docs/6.0/guides/vite
+              - listitem [ref=e92]:
+                - link "Contribute" [ref=e93] [cursor=pointer]:
+                  - /url: /docs/6.0/guides/contribute
+          - generic [ref=e94]:
+            - strong [ref=e95]:
+              - img [ref=e96]
+              - text: Customize
+            - list [ref=e98]:
+              - listitem [ref=e99]:
+                - link "Overview" [ref=e100] [cursor=pointer]:
+                  - /url: /docs/6.0/customize/overview
+              - listitem [ref=e101]:
+                - link "Sass" [ref=e102] [cursor=pointer]:
+                  - /url: /docs/6.0/customize/sass
+              - listitem [ref=e103]:
+                - link "Options" [ref=e104] [cursor=pointer]:
+                  - /url: /docs/6.0/customize/options
+              - listitem [ref=e105]:
+                - link "Color" [ref=e106] [cursor=pointer]:
+                  - /url: /docs/6.0/customize/color
+              - listitem [ref=e107]:
+                - link "Theme" [ref=e108] [cursor=pointer]:
+                  - /url: /docs/6.0/customize/theme
+              - listitem [ref=e109]:
+                - link "Color modes" [ref=e110] [cursor=pointer]:
+                  - /url: /docs/6.0/customize/color-modes
+              - listitem [ref=e111]:
+                - link "Components" [ref=e112] [cursor=pointer]:
+                  - /url: /docs/6.0/customize/components
+              - listitem [ref=e113]:
+                - link "CSS variables" [ref=e114] [cursor=pointer]:
+                  - /url: /docs/6.0/customize/css-variables
+              - listitem [ref=e115]:
+                - link "Optimize" [ref=e116] [cursor=pointer]:
+                  - /url: /docs/6.0/customize/optimize
+          - generic [ref=e117]:
+            - strong [ref=e118]:
+              - img [ref=e119]
+              - text: Layout
+            - list [ref=e121]:
+              - listitem [ref=e122]:
+                - link "Breakpoints" [ref=e123] [cursor=pointer]:
+                  - /url: /docs/6.0/layout/breakpoints
+              - listitem [ref=e124]:
+                - link "Containers" [ref=e125] [cursor=pointer]:
+                  - /url: /docs/6.0/layout/containers
+              - listitem [ref=e126]:
+                - link "Grid" [ref=e127] [cursor=pointer]:
+                  - /url: /docs/6.0/layout/grid
+              - listitem [ref=e128]:
+                - link "Columns" [ref=e129] [cursor=pointer]:
+                  - /url: /docs/6.0/layout/columns
+              - listitem [ref=e130]:
+                - link "Gutters" [ref=e131] [cursor=pointer]:
+                  - /url: /docs/6.0/layout/gutters
+              - listitem [ref=e132]:
+                - link "Utilities" [ref=e133] [cursor=pointer]:
+                  - /url: /docs/6.0/layout/utilities
+              - listitem [ref=e134]:
+                - link "Z-index" [ref=e135] [cursor=pointer]:
+                  - /url: /docs/6.0/layout/z-index
+              - listitem [ref=e136]:
+                - link "CSS Grid" [ref=e137] [cursor=pointer]:
+                  - /url: /docs/6.0/layout/css-grid
+          - generic [ref=e138]:
+            - strong [ref=e139]:
+              - img [ref=e140]
+              - text: Content
+            - list [ref=e142]:
+              - listitem [ref=e143]:
+                - link "Reboot" [ref=e144] [cursor=pointer]:
+                  - /url: /docs/6.0/content/reboot
+              - listitem [ref=e145]:
+                - link "Typography" [ref=e146] [cursor=pointer]:
+                  - /url: /docs/6.0/content/typography
+              - listitem [ref=e147]:
+                - link "Images" [ref=e148] [cursor=pointer]:
+                  - /url: /docs/6.0/content/images
+              - listitem [ref=e149]:
+                - link "Tables" [ref=e150] [cursor=pointer]:
+                  - /url: /docs/6.0/content/tables
+              - listitem [ref=e151]:
+                - link "Figures" [ref=e152] [cursor=pointer]:
+                  - /url: /docs/6.0/content/figures
+              - listitem [ref=e153]:
+                - link "Prose" [ref=e154] [cursor=pointer]:
+                  - /url: /docs/6.0/content/prose
+          - generic [ref=e155]:
+            - strong [ref=e156]:
+              - img [ref=e157]
+              - text: Forms
+            - list [ref=e159]:
+              - listitem [ref=e160]:
+                - link "Overview" [ref=e161] [cursor=pointer]:
+                  - /url: /docs/6.0/forms/overview
+              - listitem [ref=e162]:
+                - link "Form control" [ref=e163] [cursor=pointer]:
+                  - /url: /docs/6.0/forms/form-control
+              - listitem [ref=e164]:
+                - link "Checkbox" [ref=e165] [cursor=pointer]:
+                  - /url: /docs/6.0/forms/checkbox
+              - listitem [ref=e166]:
+                - link "Radio" [ref=e167] [cursor=pointer]:
+                  - /url: /docs/6.0/forms/radio
+              - listitem [ref=e168]:
+                - link "Switch" [ref=e169] [cursor=pointer]:
+                  - /url: /docs/6.0/forms/switch
+              - listitem [ref=e170]:
+                - link "Range" [ref=e171] [cursor=pointer]:
+                  - /url: /docs/6.0/forms/range
+              - listitem [ref=e172]:
+                - link "Input group" [ref=e173] [cursor=pointer]:
+                  - /url: /docs/6.0/forms/input-group
+              - listitem [ref=e174]:
+                - link "Floating labels" [ref=e175] [cursor=pointer]:
+                  - /url: /docs/6.0/forms/floating-labels
+              - listitem [ref=e176]:
+                - link "Datepicker" [ref=e177] [cursor=pointer]:
+                  - /url: /docs/6.0/forms/datepicker
+              - listitem [ref=e178]:
+                - link "OTP input" [ref=e179] [cursor=pointer]:
+                  - /url: /docs/6.0/forms/otp-input
+              - listitem [ref=e180]:
+                - link "Password strength" [ref=e181] [cursor=pointer]:
+                  - /url: /docs/6.0/forms/password-strength
+              - listitem [ref=e182]:
+                - link "Chip input" [ref=e183] [cursor=pointer]:
+                  - /url: /docs/6.0/forms/chip-input
+              - listitem [ref=e184]:
+                - link "Form adorn" [ref=e185] [cursor=pointer]:
+                  - /url: /docs/6.0/forms/form-adorn
+              - listitem [ref=e186]:
+                - link "Layout" [ref=e187] [cursor=pointer]:
+                  - /url: /docs/6.0/forms/layout
+              - listitem [ref=e188]:
+                - link "Validation" [ref=e189] [cursor=pointer]:
+                  - /url: /docs/6.0/forms/validation
+          - generic [ref=e190]:
+            - strong [ref=e191]:
+              - img [ref=e192]
+              - text: Components
+            - list [ref=e194]:
+              - listitem [ref=e195]:
+                - link "Accordion" [ref=e196] [cursor=pointer]:
+                  - /url: /docs/6.0/components/accordion
+              - listitem [ref=e197]:
+                - link "Alert" [ref=e198] [cursor=pointer]:
+                  - /url: /docs/6.0/components/alert
+              - listitem [ref=e199]:
+                - link "Avatar" [ref=e200] [cursor=pointer]:
+                  - /url: /docs/6.0/components/avatar
+              - listitem [ref=e201]:
+                - link "Badge" [ref=e202] [cursor=pointer]:
+                  - /url: /docs/6.0/components/badge
+              - listitem [ref=e203]:
+                - link "Breadcrumb" [ref=e204] [cursor=pointer]:
+                  - /url: /docs/6.0/components/breadcrumb
+              - listitem [ref=e205]:
+                - link "Buttons" [ref=e206] [cursor=pointer]:
+                  - /url: /docs/6.0/components/buttons
+              - listitem [ref=e207]:
+                - link "Button group" [ref=e208] [cursor=pointer]:
+                  - /url: /docs/6.0/components/button-group
+              - listitem [ref=e209]:
+                - link "Card" [ref=e210] [cursor=pointer]:
+                  - /url: /docs/6.0/components/card
+              - listitem [ref=e211]:
+                - link "Carousel" [ref=e212] [cursor=pointer]:
+                  - /url: /docs/6.0/components/carousel
+              - listitem [ref=e213]:
+                - link "Close button" [ref=e214] [cursor=pointer]:
+                  - /url: /docs/6.0/components/close-button
+              - listitem [ref=e215]:
+                - link "Collapse" [ref=e216] [cursor=pointer]:
+                  - /url: /docs/6.0/components/collapse
+              - listitem [ref=e217]:
+                - link "Dialog" [ref=e218] [cursor=pointer]:
+                  - /url: /docs/6.0/components/dialog
+              - listitem [ref=e219]:
+                - link "Dropdown" [ref=e220] [cursor=pointer]:
+                  - /url: /docs/6.0/components/dropdown
+              - listitem [ref=e221]:
+                - link "List group" [ref=e222] [cursor=pointer]:
+                  - /url: /docs/6.0/components/list-group
+              - listitem [ref=e223]:
+                - link "Navbar" [ref=e224] [cursor=pointer]:
+                  - /url: /docs/6.0/components/navbar
+              - listitem [ref=e225]:
+                - link "Navs & tabs" [ref=e226] [cursor=pointer]:
+                  - /url: /docs/6.0/components/navs-tabs
+              - listitem [ref=e227]:
+                - link "Offcanvas" [ref=e228] [cursor=pointer]:
+                  - /url: /docs/6.0/components/offcanvas
+              - listitem [ref=e229]:
+                - link "Pagination" [ref=e230] [cursor=pointer]:
+                  - /url: /docs/6.0/components/pagination
+              - listitem [ref=e231]:
+                - link "Placeholder" [ref=e232] [cursor=pointer]:
+                  - /url: /docs/6.0/components/placeholder
+              - listitem [ref=e233]:
+                - link "Popover" [ref=e234] [cursor=pointer]:
+                  - /url: /docs/6.0/components/popover
+              - listitem [ref=e235]:
+                - link "Progress" [ref=e236] [cursor=pointer]:
+                  - /url: /docs/6.0/components/progress
+              - listitem [ref=e237]:
+                - link "Scrollspy" [ref=e238] [cursor=pointer]:
+                  - /url: /docs/6.0/components/scrollspy
+              - listitem [ref=e239]:
+                - link "Spinner" [ref=e240] [cursor=pointer]:
+                  - /url: /docs/6.0/components/spinner
+              - listitem [ref=e241]:
+                - link "Stepper" [ref=e242] [cursor=pointer]:
+                  - /url: /docs/6.0/components/stepper
+              - listitem [ref=e243]:
+                - link "Toasts" [ref=e244] [cursor=pointer]:
+                  - /url: /docs/6.0/components/toasts
+              - listitem [ref=e245]:
+                - link "Toggler" [ref=e246] [cursor=pointer]:
+                  - /url: /docs/6.0/components/toggler
+              - listitem [ref=e247]:
+                - link "Tooltip" [ref=e248] [cursor=pointer]:
+                  - /url: /docs/6.0/components/tooltip
+          - generic [ref=e249]:
+            - strong [ref=e250]:
+              - img [ref=e251]
+              - text: Helpers
+            - list [ref=e253]:
+              - listitem [ref=e254]:
+                - link "Focus ring" [ref=e255] [cursor=pointer]:
+                  - /url: /docs/6.0/helpers/focus-ring
+              - listitem [ref=e256]:
+                - link "Icon link" [ref=e257] [cursor=pointer]:
+                  - /url: /docs/6.0/helpers/icon-link
+              - listitem [ref=e258]:
+                - link "Position" [ref=e259] [cursor=pointer]:
+                  - /url: /docs/6.0/helpers/position
+              - listitem [ref=e260]:
+                - link "Stacks" [ref=e261] [cursor=pointer]:
+                  - /url: /docs/6.0/helpers/stacks
+              - listitem [ref=e262]:
+                - link "Stretched link" [ref=e263] [cursor=pointer]:
+                  - /url: /docs/6.0/helpers/stretched-link
+              - listitem [ref=e264]:
+                - link "Text truncation" [ref=e265] [cursor=pointer]:
+                  - /url: /docs/6.0/helpers/text-truncation
+              - listitem [ref=e266]:
+                - link "Vertical rule" [ref=e267] [cursor=pointer]:
+                  - /url: /docs/6.0/helpers/vertical-rule
+              - listitem [ref=e268]:
+                - link "Visually hidden" [ref=e269] [cursor=pointer]:
+                  - /url: /docs/6.0/helpers/visually-hidden
+          - generic [ref=e270]:
+            - strong [ref=e271]:
+              - img [ref=e272]
+              - text: Utilities
+            - list [ref=e274]:
+              - listitem [ref=e275]:
+                - link "API" [ref=e276] [cursor=pointer]:
+                  - /url: /docs/6.0/utilities/api
+              - listitem [ref=e277]: Color
+              - listitem [ref=e278]:
+                - link "Colors" [ref=e279] [cursor=pointer]:
+                  - /url: /docs/6.0/utilities/colors
+              - listitem [ref=e280]:
+                - link "Background" [ref=e281] [cursor=pointer]:
+                  - /url: /docs/6.0/utilities/background
+              - listitem [ref=e282]:
+                - link "Theme" [ref=e283] [cursor=pointer]:
+                  - /url: /docs/6.0/utilities/theme
+              - listitem [ref=e284]: Layout
+              - listitem [ref=e285]:
+                - link "Aspect ratio" [ref=e286] [cursor=pointer]:
+                  - /url: /docs/6.0/utilities/aspect-ratio
+              - listitem [ref=e287]:
+                - link "Display" [ref=e288] [cursor=pointer]:
+                  - /url: /docs/6.0/utilities/display
+              - listitem [ref=e289]:
+                - link "Float" [ref=e290] [cursor=pointer]:
+                  - /url: /docs/6.0/utilities/float
+              - listitem [ref=e291]:
+                - link "Object fit" [ref=e292] [cursor=pointer]:
+                  - /url: /docs/6.0/utilities/object-fit
+              - listitem [ref=e293]:
+                - link "Overflow" [ref=e294] [cursor=pointer]:
+                  - /url: /docs/6.0/utilities/overflow
+              - listitem [ref=e295]:
+                - link "Position" [ref=e296] [cursor=pointer]:
+                  - /url: /docs/6.0/utilities/position
+              - listitem [ref=e297]:
+                - link "Visibility" [ref=e298] [cursor=pointer]:
+                  - /url: /docs/6.0/utilities/visibility
+              - listitem [ref=e299]:
+                - link "Z-index" [ref=e300] [cursor=pointer]:
+                  - /url: /docs/6.0/utilities/z-index
+              - listitem [ref=e301]: Flex & Grid
+              - listitem [ref=e302]:
+                - link "Align content" [ref=e303] [cursor=pointer]:
+                  - /url: /docs/6.0/utilities/align-content
+              - listitem [ref=e304]:
+                - link "Align items" [ref=e305] [cursor=pointer]:
+                  - /url: /docs/6.0/utilities/align-items
+              - listitem [ref=e306]:
+                - link "Align self" [ref=e307] [cursor=pointer]:
+                  - /url: /docs/6.0/utilities/align-self
+              - listitem [ref=e308]:
+                - link "Flex" [ref=e309] [cursor=pointer]:
+                  - /url: /docs/6.0/utilities/flex
+              - listitem [ref=e310]:
+                - link "Gap" [ref=e311] [cursor=pointer]:
+                  - /url: /docs/6.0/utilities/gap
+              - listitem [ref=e312]:
+                - link "Grid" [ref=e313] [cursor=pointer]:
+                  - /url: /docs/6.0/utilities/grid
+              - listitem [ref=e314]:
+                - link "Justify content" [ref=e315] [cursor=pointer]:
+                  - /url: /docs/6.0/utilities/justify-content
+              - listitem [ref=e316]:
+                - link "Justify items" [ref=e317] [cursor=pointer]:
+                  - /url: /docs/6.0/utilities/justify-items
+              - listitem [ref=e318]:
+                - link "Place items" [ref=e319] [cursor=pointer]:
+                  - /url: /docs/6.0/utilities/place-items
+              - listitem [ref=e320]: Sizing
+              - listitem [ref=e321]:
+                - link "Width" [ref=e322] [cursor=pointer]:
+                  - /url: /docs/6.0/utilities/width
+              - listitem [ref=e323]:
+                - link "Height" [ref=e324] [cursor=pointer]:
+                  - /url: /docs/6.0/utilities/height
+              - listitem [ref=e325]: Spacing
+              - listitem [ref=e326]:
+                - link "Margin" [ref=e327] [cursor=pointer]:
+                  - /url: /docs/6.0/utilities/margin
+              - listitem [ref=e328]:
+                - link "Padding" [ref=e329] [cursor=pointer]:
+                  - /url: /docs/6.0/utilities/padding
+              - listitem [ref=e330]: Type
+              - listitem [ref=e331]:
+                - link "Font family" [ref=e332] [cursor=pointer]:
+                  - /url: /docs/6.0/utilities/font-family
+              - listitem [ref=e333]:
+                - link "Font size" [ref=e334] [cursor=pointer]:
+                  - /url: /docs/6.0/utilities/font-size
+              - listitem [ref=e335]:
+                - link "Font style" [ref=e336] [cursor=pointer]:
+                  - /url: /docs/6.0/utilities/font-style
+              - listitem [ref=e337]:
+                - link "Font weight" [ref=e338] [cursor=pointer]:
+                  - /url: /docs/6.0/utilities/font-weight
+              - listitem [ref=e339]:
+                - link "Line height" [ref=e340] [cursor=pointer]:
+                  - /url: /docs/6.0/utilities/line-height
+              - listitem [ref=e341]:
+                - link "Link" [ref=e342] [cursor=pointer]:
+                  - /url: /docs/6.0/utilities/link
+              - listitem [ref=e343]:
+                - link "Text alignment" [ref=e344] [cursor=pointer]:
+                  - /url: /docs/6.0/utilities/text-alignment
+              - listitem [ref=e345]:
+                - link "Text decoration" [ref=e346] [cursor=pointer]:
+                  - /url: /docs/6.0/utilities/text-decoration
+              - listitem [ref=e347]:
+                - link "Text transform" [ref=e348] [cursor=pointer]:
+                  - /url: /docs/6.0/utilities/text-transform
+              - listitem [ref=e349]:
+                - link "Text wrapping" [ref=e350] [cursor=pointer]:
+                  - /url: /docs/6.0/utilities/text-wrapping
+              - listitem [ref=e351]:
+                - link "Vertical align" [ref=e352] [cursor=pointer]:
+                  - /url: /docs/6.0/utilities/vertical-align
+              - listitem [ref=e353]:
+                - link "Word break" [ref=e354] [cursor=pointer]:
+                  - /url: /docs/6.0/utilities/word-break
+              - listitem [ref=e355]: Borders
+              - listitem [ref=e356]:
+                - link "Border" [ref=e357] [cursor=pointer]:
+                  - /url: /docs/6.0/utilities/border
+              - listitem [ref=e358]:
+                - link "Border color" [ref=e359] [cursor=pointer]:
+                  - /url: /docs/6.0/utilities/border-color
+              - listitem [ref=e360]:
+                - link "Border radius" [ref=e361] [cursor=pointer]:
+                  - /url: /docs/6.0/utilities/border-radius
+              - listitem [ref=e362]: Interactions
+              - listitem [ref=e363]:
+                - link "Pointer events" [ref=e364] [cursor=pointer]:
+                  - /url: /docs/6.0/utilities/pointer-events
+              - listitem [ref=e365]:
+                - link "User select" [ref=e366] [cursor=pointer]:
+                  - /url: /docs/6.0/utilities/user-select
+              - listitem [ref=e367]: Effects
+              - listitem [ref=e368]:
+                - link "Opacity" [ref=e369] [cursor=pointer]:
+                  - /url: /docs/6.0/utilities/opacity
+              - listitem [ref=e370]:
+                - link "Shadows" [ref=e371] [cursor=pointer]:
+                  - /url: /docs/6.0/utilities/shadows
+          - generic [ref=e372]:
+            - strong [ref=e373]:
+              - img [ref=e374]
+              - text: About
+            - list [ref=e376]:
+              - listitem [ref=e377]:
+                - link "Overview" [ref=e378] [cursor=pointer]:
+                  - /url: /docs/6.0/about/overview
+              - listitem [ref=e379]:
+                - link "Team" [ref=e380] [cursor=pointer]:
+                  - /url: /docs/6.0/about/team
+              - listitem [ref=e381]:
+                - link "Brand" [ref=e382] [cursor=pointer]:
+                  - /url: /docs/6.0/about/brand
+              - listitem [ref=e383]:
+                - link "License" [ref=e384] [cursor=pointer]:
+                  - /url: /docs/6.0/about/license
+              - listitem [ref=e385]:
+                - link "Translations" [ref=e386] [cursor=pointer]:
+                  - /url: /docs/6.0/about/translations
+          - link "Migration" [ref=e388] [cursor=pointer]:
+            - /url: /docs/6.0/migration/
+    - main [ref=e389]:
+      - generic [ref=e390]:
+        - heading "List group" [level=1] [ref=e391]
+        - paragraph [ref=e393]: List groups are a flexible and powerful component for displaying a series of content. Modify and extend them to support just about any content within.
+        - link "GitHub Edit on GitHub" [ref=e395] [cursor=pointer]:
+          - /url: https://github.com/twbs/bootstrap/blob/v6.0.0-alpha1/site/src/content/docs/components/list-group.mdx
+          - img "GitHub" [ref=e396]
+          - text: Edit on GitHub
+      - generic [ref=e398]:
+        - navigation [ref=e401]:
+          - list [ref=e402]:
+            - listitem [ref=e403]:
+              - link "Basic example" [ref=e404] [cursor=pointer]:
+                - /url: "#basic-example"
+            - listitem [ref=e405]:
+              - link "Active items" [ref=e406] [cursor=pointer]:
+                - /url: "#active-items"
+            - listitem [ref=e407]:
+              - link "Links and buttons" [ref=e408] [cursor=pointer]:
+                - /url: "#links-and-buttons"
+            - listitem [ref=e409]:
+              - link "Flush" [ref=e410] [cursor=pointer]:
+                - /url: "#flush"
+            - listitem [ref=e411]:
+              - link "Numbered" [ref=e412] [cursor=pointer]:
+                - /url: "#numbered"
+            - listitem [ref=e413]:
+              - link "Horizontal" [ref=e414] [cursor=pointer]:
+                - /url: "#horizontal"
+            - listitem [ref=e415]:
+              - link "Variants" [ref=e416] [cursor=pointer]:
+                - /url: "#variants"
+              - list [ref=e417]:
+                - listitem [ref=e418]:
+                  - link "For links and buttons" [ref=e419] [cursor=pointer]:
+                    - /url: "#for-links-and-buttons"
+            - listitem [ref=e420]:
+              - link "With badges" [ref=e421] [cursor=pointer]:
+                - /url: "#with-badges"
+            - listitem [ref=e422]:
+              - link "Custom content" [ref=e423] [cursor=pointer]:
+                - /url: "#custom-content"
+            - listitem [ref=e424]:
+              - link "Checkboxes and radios" [ref=e425] [cursor=pointer]:
+                - /url: "#checkboxes-and-radios"
+            - listitem [ref=e426]:
+              - link "CSS" [ref=e427] [cursor=pointer]:
+                - /url: "#css"
+              - list [ref=e428]:
+                - listitem [ref=e429]:
+                  - link "Variables" [ref=e430] [cursor=pointer]:
+                    - /url: "#variables"
+                - listitem [ref=e431]:
+                  - link "Sass variables" [ref=e432] [cursor=pointer]:
+                    - /url: "#sass-variables"
+            - listitem [ref=e433]:
+              - link "JavaScript behavior" [ref=e434] [cursor=pointer]:
+                - /url: "#javascript-behavior"
+              - list [ref=e435]:
+                - listitem [ref=e436]:
+                  - link "Using data attributes" [ref=e437] [cursor=pointer]:
+                    - /url: "#using-data-attributes"
+                - listitem [ref=e438]:
+                  - link "Via JavaScript" [ref=e439] [cursor=pointer]:
+                    - /url: "#via-javascript"
+                - listitem [ref=e440]:
+                  - link "Fade effect" [ref=e441] [cursor=pointer]:
+                    - /url: "#fade-effect"
+                - listitem [ref=e442]:
+                  - link "Methods" [ref=e443] [cursor=pointer]:
+                    - /url: "#methods"
+                - listitem [ref=e444]:
+                  - link "Events" [ref=e445] [cursor=pointer]:
+                    - /url: "#events"
+        - generic [ref=e447]:
+          - generic [ref=e448]:
+            - link "ads via Carbon" [ref=e449] [cursor=pointer]:
+              - /url: https://srv.carbonads.net/ads/click/x/GTND427UCVYICKJJC6A4YKQUCA7D5K7ECK7D6Z3JCASI653MCKSDC2QKCEYD52JLC67D453YFTBD653UCYSD5Z3JCASI6KQMCEYDTK3K2JWNABY
+              - img "ads via Carbon" [ref=e450]
+            - link "Join Beta and get 6 months of free AI integration for your ecommerce, no replatforming. Sign up!" [ref=e451] [cursor=pointer]:
+              - /url: https://srv.carbonads.net/ads/click/x/GTND427UCVYICKJJC6A4YKQUCA7D5K7ECK7D6Z3JCASI653MCKSDC2QKCEYD52JLC67D453YFTBD653UCYSD5Z3JCASI6KQMCEYDTK3K2JWNABY
+          - link "ads via Carbon" [ref=e452] [cursor=pointer]:
+            - /url: http://carbonads.net/?utm_source=getbootstrapcom&utm_medium=ad_via_link&utm_campaign=in_unit&utm_term=carbon
+      - generic [ref=e453]:
+        - 'heading "Basic exampleLink to this section: Basic example" [level=2] [ref=e454]':
+          - text: Basic example
+          - 'link "Link to this section: Basic example" [ref=e455] [cursor=pointer]':
+            - /url: "#basic-example"
+            - text: "#"
+        - paragraph [ref=e456]: The most basic list group is an unordered list with list items and the proper classes. Build upon it with the options that follow, or with your own CSS as needed.
+        - generic [ref=e457]:
+          - list [ref=e459]:
+            - listitem [ref=e460]: An item
+            - listitem [ref=e461]: A second item
+            - listitem [ref=e462]: A third item
+            - listitem [ref=e463]: A fourth item
+            - listitem [ref=e464]: And a fifth one
+          - generic [ref=e465]:
+            - generic [ref=e466]: HTML
+            - button "Copy to clipboard" [ref=e468] [cursor=pointer]:
+              - img [ref=e469]
+          - code [ref=e472]:
+            - generic [ref=e473]: <ul class="list-group">
+            - generic [ref=e474]: <li class="list-group-item">An item</li>
+            - generic [ref=e475]: <li class="list-group-item">A second item</li>
+            - generic [ref=e476]: <li class="list-group-item">A third item</li>
+            - generic [ref=e477]: <li class="list-group-item">A fourth item</li>
+            - generic [ref=e478]: <li class="list-group-item">And a fifth one</li>
+            - generic [ref=e479]: </ul>
+        - 'heading "Active itemsLink to this section: Active items" [level=2] [ref=e480]':
+          - text: Active items
+          - 'link "Link to this section: Active items" [ref=e481] [cursor=pointer]':
+            - /url: "#active-items"
+            - text: "#"
+        - paragraph [ref=e482]:
+          - text: Add
+          - code [ref=e483]: .active
+          - text: to a
+          - code [ref=e484]: .list-group-item
+          - text: to indicate the current active selection.
+        - generic [ref=e485]:
+          - list [ref=e487]:
+            - listitem [ref=e488]: An active item
+            - listitem [ref=e489]: A second item
+            - listitem [ref=e490]: A third item
+            - listitem [ref=e491]: A fourth item
+            - listitem [ref=e492]: And a fifth one
+          - generic [ref=e493]:
+            - generic [ref=e494]: HTML
+            - button "Copy to clipboard" [ref=e496] [cursor=pointer]:
+              - img [ref=e497]
+          - code [ref=e500]:
+            - generic [ref=e501]: <ul class="list-group">
+            - generic [ref=e502]: <li class="list-group-item active" aria-current="true">An active item</li>
+            - generic [ref=e503]: <li class="list-group-item">A second item</li>
+            - generic [ref=e504]: <li class="list-group-item">A third item</li>
+            - generic [ref=e505]: <li class="list-group-item">A fourth item</li>
+            - generic [ref=e506]: <li class="list-group-item">And a fifth one</li>
+            - generic [ref=e507]: </ul>
+        - 'heading "Links and buttonsLink to this section: Links and buttons" [level=2] [ref=e508]':
+          - text: Links and buttons
+          - 'link "Link to this section: Links and buttons" [ref=e509] [cursor=pointer]':
+            - /url: "#links-and-buttons"
+            - text: "#"
+        - paragraph [ref=e510]:
+          - text: Use
+          - code [ref=e511]: <a>
+          - text: s or
+          - code [ref=e512]: <button>
+          - text: s to create
+          - emphasis [ref=e513]: actionable
+          - text: list group items with hover, disabled, and active states by adding
+          - code [ref=e514]: .list-group-item-action
+          - text: . We separate these pseudo-classes to ensure list groups made of non-interactive elements (like
+          - code [ref=e515]: <li>
+          - text: s or
+          - code [ref=e516]: <div>
+          - text: s) don’t provide a click or tap affordance.
+        - paragraph [ref=e517]:
+          - text: Make
+          - code [ref=e518]: .list-group-item-action
+          - text: instances
+          - emphasis [ref=e519]: appear
+          - text: disabled by adding
+          - code [ref=e520]: .disabled
+          - text: ", and"
+          - code [ref=e521]: aria-disabled="true"
+          - text: to inform assistive technologies that the element is disabled. You may require additional JavaScript to fully disable links and buttons.
+        - paragraph [ref=e522]:
+          - text: Be sure to
+          - strong [ref=e523]:
+            - text: not use the standard
+            - code [ref=e524]: .btn
+            - text: classes here
+          - text: .
+        - generic [ref=e525]:
+          - generic [ref=e527]:
+            - link "The current link item" [ref=e528] [cursor=pointer]:
+              - /url: "#"
+            - link "A second link item" [ref=e529] [cursor=pointer]:
+              - /url: "#"
+            - link "A third link item" [ref=e530] [cursor=pointer]:
+              - /url: "#"
+            - link "A fourth link item" [ref=e531] [cursor=pointer]:
+              - /url: "#"
+            - link "A disabled link item" [disabled]:
+              - /url: "#"
+          - generic [ref=e532]:
+            - generic [ref=e533]: HTML
+            - button "Copy to clipboard" [ref=e535] [cursor=pointer]:
+              - img [ref=e536]
+          - code [ref=e539]:
+            - generic [ref=e540]: <div class="list-group">
+            - generic [ref=e541]: <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+            - generic [ref=e542]: The current link item
+            - generic [ref=e543]: </a>
+            - generic [ref=e544]: <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+            - generic [ref=e545]: <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+            - generic [ref=e546]: <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+            - generic [ref=e547]: <a href="#" class="list-group-item list-group-item-action disabled" aria-disabled="true">A disabled link item</a>
+            - generic [ref=e548]: </div>
+        - paragraph [ref=e549]:
+          - text: With
+          - code [ref=e550]: <button>
+          - text: s, you can also make use of the
+          - code [ref=e551]: disabled
+          - text: attribute instead of the
+          - code [ref=e552]: .disabled
+          - text: class. Sadly,
+          - code [ref=e553]: <a>
+          - text: s don’t support the disabled attribute.
+        - generic [ref=e554]:
+          - generic [ref=e556]:
+            - button "The current button" [ref=e557] [cursor=pointer]
+            - button "A second button item" [ref=e558] [cursor=pointer]
+            - button "A third button item" [ref=e559] [cursor=pointer]
+            - button "A fourth button item" [ref=e560] [cursor=pointer]
+            - button "A disabled button item" [disabled]
+          - generic [ref=e561]:
+            - generic [ref=e562]: HTML
+            - button "Copy to clipboard" [ref=e564] [cursor=pointer]:
+              - img [ref=e565]
+          - code [ref=e568]:
+            - generic [ref=e569]: <div class="list-group">
+            - generic [ref=e570]: <button type="button" class="list-group-item list-group-item-action active" aria-current="true">
+            - generic [ref=e571]: The current button
+            - generic [ref=e572]: </button>
+            - generic [ref=e573]: <button type="button" class="list-group-item list-group-item-action">A second button item</button>
+            - generic [ref=e574]: <button type="button" class="list-group-item list-group-item-action">A third button item</button>
+            - generic [ref=e575]: <button type="button" class="list-group-item list-group-item-action">A fourth button item</button>
+            - generic [ref=e576]: <button type="button" class="list-group-item list-group-item-action" disabled>A disabled button item</button>
+            - generic [ref=e577]: </div>
+        - 'heading "FlushLink to this section: Flush" [level=2] [ref=e578]':
+          - text: Flush
+          - 'link "Link to this section: Flush" [ref=e579] [cursor=pointer]':
+            - /url: "#flush"
+            - text: "#"
+        - paragraph [ref=e580]:
+          - text: Add
+          - code [ref=e581]: .list-group-flush
+          - text: to remove some borders and rounded corners to render list group items edge-to-edge in a parent container (e.g., cards).
+        - generic [ref=e582]:
+          - list [ref=e584]:
+            - listitem [ref=e585]: An item
+            - listitem [ref=e586]: A second item
+            - listitem [ref=e587]: A third item
+            - listitem [ref=e588]: A fourth item
+            - listitem [ref=e589]: And a fifth one
+          - generic [ref=e590]:
+            - generic [ref=e591]: HTML
+            - button "Copy to clipboard" [ref=e593] [cursor=pointer]:
+              - img [ref=e594]
+          - code [ref=e597]:
+            - generic [ref=e598]: <ul class="list-group list-group-flush">
+            - generic [ref=e599]: <li class="list-group-item">An item</li>
+            - generic [ref=e600]: <li class="list-group-item">A second item</li>
+            - generic [ref=e601]: <li class="list-group-item">A third item</li>
+            - generic [ref=e602]: <li class="list-group-item">A fourth item</li>
+            - generic [ref=e603]: <li class="list-group-item">And a fifth one</li>
+            - generic [ref=e604]: </ul>
+        - 'heading "NumberedLink to this section: Numbered" [level=2] [ref=e605]':
+          - text: Numbered
+          - 'link "Link to this section: Numbered" [ref=e606] [cursor=pointer]':
+            - /url: "#numbered"
+            - text: "#"
+        - paragraph [ref=e607]:
+          - text: Add the
+          - code [ref=e608]: .list-group-numbered
+          - text: modifier class (and optionally use an
+          - code [ref=e609]: <ol>
+          - text: element) to opt into numbered list group items. Numbers are generated via CSS (as opposed to a
+          - code [ref=e610]: <ol>
+          - text: s default browser styling) for better placement inside list group items and to allow for better customization.
+        - paragraph [ref=e611]:
+          - text: Numbers are generated by
+          - code [ref=e612]: counter-reset
+          - text: on the
+          - code [ref=e613]: <ol>
+          - text: ", and then styled and placed with a"
+          - code [ref=e614]: ::before
+          - text: pseudo-element on the
+          - code [ref=e615]: <li>
+          - text: with
+          - code [ref=e616]: counter-increment
+          - text: and
+          - code [ref=e617]: content
+          - text: .
+        - generic [ref=e618]:
+          - list [ref=e620]:
+            - listitem [ref=e621]: A list item
+            - listitem [ref=e622]: A list item
+            - listitem [ref=e623]: A list item
+          - generic [ref=e624]:
+            - generic [ref=e625]: HTML
+            - button "Copy to clipboard" [ref=e627] [cursor=pointer]:
+              - img [ref=e628]
+          - code [ref=e631]:
+            - generic [ref=e632]: <ol class="list-group list-group-numbered">
+            - generic [ref=e633]: <li class="list-group-item">A list item</li>
+            - generic [ref=e634]: <li class="list-group-item">A list item</li>
+            - generic [ref=e635]: <li class="list-group-item">A list item</li>
+            - generic [ref=e636]: </ol>
+        - paragraph [ref=e637]: These work great with custom content as well.
+        - generic [ref=e638]:
+          - list [ref=e640]:
+            - listitem [ref=e641]:
+              - generic [ref=e642]:
+                - generic [ref=e643]: Subheading
+                - text: Content for list item
+              - generic [ref=e644]: "14"
+            - listitem [ref=e645]:
+              - generic [ref=e646]:
+                - generic [ref=e647]: Subheading
+                - text: Content for list item
+              - generic [ref=e648]: "14"
+            - listitem [ref=e649]:
+              - generic [ref=e650]:
+                - generic [ref=e651]: Subheading
+                - text: Content for list item
+              - generic [ref=e652]: "14"
+          - generic [ref=e653]:
+            - generic [ref=e654]: HTML
+            - button "Copy to clipboard" [ref=e656] [cursor=pointer]:
+              - img [ref=e657]
+          - code [ref=e660]:
+            - generic [ref=e661]: <ol class="list-group list-group-numbered">
+            - generic [ref=e662]: <li class="list-group-item d-flex justify-content-between align-items-start">
+            - generic [ref=e663]: <div class="ms-2 me-auto">
+            - generic [ref=e664]: <div class="fw-bold">Subheading</div>
+            - generic [ref=e665]: Content for list item
+            - generic [ref=e666]: </div>
+            - generic [ref=e667]: <span class="badge theme-primary">14</span>
+            - generic [ref=e668]: </li>
+            - generic [ref=e669]: <li class="list-group-item d-flex justify-content-between align-items-start">
+            - generic [ref=e670]: <div class="ms-2 me-auto">
+            - generic [ref=e671]: <div class="fw-bold">Subheading</div>
+            - generic [ref=e672]: Content for list item
+            - generic [ref=e673]: </div>
+            - generic [ref=e674]: <span class="badge theme-primary">14</span>
+            - generic [ref=e675]: </li>
+            - generic [ref=e676]: <li class="list-group-item d-flex justify-content-between align-items-start">
+            - generic [ref=e677]: <div class="ms-2 me-auto">
+            - generic [ref=e678]: <div class="fw-bold">Subheading</div>
+            - generic [ref=e679]: Content for list item
+            - generic [ref=e680]: </div>
+            - generic [ref=e681]: <span class="badge theme-primary">14</span>
+            - generic [ref=e682]: </li>
+            - generic [ref=e683]: </ol>
+        - 'heading "HorizontalLink to this section: Horizontal" [level=2] [ref=e684]':
+          - text: Horizontal
+          - 'link "Link to this section: Horizontal" [ref=e685] [cursor=pointer]':
+            - /url: "#horizontal"
+            - text: "#"
+        - paragraph [ref=e686]:
+          - text: Add
+          - code [ref=e687]: .list-group-horizontal
+          - text: to change the layout of list group items from vertical to horizontal across all breakpoints. Alternatively, choose a responsive variant
+          - code [ref=e688]: ".list-group-horizontal-{sm|md|lg|xl|2xl}"
+          - text: to make a list group horizontal starting at that breakpoint’s
+          - code [ref=e689]: min-width
+          - text: . Currently
+          - strong [ref=e690]: horizontal list groups cannot be combined with flush list groups.
+        - paragraph [ref=e691]:
+          - strong [ref=e692]: "ProTip:"
+          - text: Want equal-width list group items when horizontal? Add
+          - code [ref=e693]: .flex-fill
+          - text: to each list group item.
+        - generic [ref=e694]:
+          - generic [ref=e695]:
+            - list [ref=e696]:
+              - listitem [ref=e697]: An item
+              - listitem [ref=e698]: A second item
+              - listitem [ref=e699]: A third item
+            - list [ref=e700]:
+              - listitem [ref=e701]: An item
+              - listitem [ref=e702]: A second item
+              - listitem [ref=e703]: A third item
+            - list [ref=e704]:
+              - listitem [ref=e705]: An item
+              - listitem [ref=e706]: A second item
+              - listitem [ref=e707]: A third item
+            - list [ref=e708]:
+              - listitem [ref=e709]: An item
+              - listitem [ref=e710]: A second item
+              - listitem [ref=e711]: A third item
+            - list [ref=e712]:
+              - listitem [ref=e713]: An item
+              - listitem [ref=e714]: A second item
+              - listitem [ref=e715]: A third item
+            - list [ref=e716]:
+              - listitem [ref=e717]: An item
+              - listitem [ref=e718]: A second item
+              - listitem [ref=e719]: A third item
+          - generic [ref=e720]:
+            - generic [ref=e721]: HTML
+            - button "Copy to clipboard" [ref=e723] [cursor=pointer]:
+              - img [ref=e724]
+          - code [ref=e727]:
+            - generic [ref=e728]: <ul class="list-group list-group-horizontal">
+            - generic [ref=e729]: <li class="list-group-item">An item</li>
+            - generic [ref=e730]: <li class="list-group-item">A second item</li>
+            - generic [ref=e731]: <li class="list-group-item">A third item</li>
+            - generic [ref=e732]: </ul>
+            - generic [ref=e733]: <ul class="list-group list-group-horizontal-sm">
+            - generic [ref=e734]: <li class="list-group-item">An item</li>
+            - generic [ref=e735]: <li class="list-group-item">A second item</li>
+            - generic [ref=e736]: <li class="list-group-item">A third item</li>
+            - generic [ref=e737]: </ul>
+            - generic [ref=e738]: <ul class="list-group list-group-horizontal-md">
+            - generic [ref=e739]: <li class="list-group-item">An item</li>
+            - generic [ref=e740]: <li class="list-group-item">A second item</li>
+            - generic [ref=e741]: <li class="list-group-item">A third item</li>
+            - generic [ref=e742]: </ul>
+            - generic [ref=e743]: <ul class="list-group list-group-horizontal-lg">
+            - generic [ref=e744]: <li class="list-group-item">An item</li>
+            - generic [ref=e745]: <li class="list-group-item">A second item</li>
+            - generic [ref=e746]: <li class="list-group-item">A third item</li>
+            - generic [ref=e747]: </ul>
+            - generic [ref=e748]: <ul class="list-group list-group-horizontal-xl">
+            - generic [ref=e749]: <li class="list-group-item">An item</li>
+            - generic [ref=e750]: <li class="list-group-item">A second item</li>
+            - generic [ref=e751]: <li class="list-group-item">A third item</li>
+            - generic [ref=e752]: </ul>
+            - generic [ref=e753]: <ul class="list-group list-group-horizontal-2xl">
+            - generic [ref=e754]: <li class="list-group-item">An item</li>
+            - generic [ref=e755]: <li class="list-group-item">A second item</li>
+            - generic [ref=e756]: <li class="list-group-item">A third item</li>
+            - generic [ref=e757]: </ul>
+        - 'heading "VariantsLink to this section: Variants" [level=2] [ref=e758]':
+          - text: Variants
+          - 'link "Link to this section: Variants" [ref=e759] [cursor=pointer]':
+            - /url: "#variants"
+            - text: "#"
+        - paragraph [ref=e760]: Use contextual classes to style list items with a stateful background and color.
+        - generic [ref=e761]:
+          - list [ref=e763]:
+            - listitem [ref=e764]: A simple default list group item
+            - listitem [ref=e765]: A simple primary list group item
+            - listitem [ref=e766]: A simple accent list group item
+            - listitem [ref=e767]: A simple success list group item
+            - listitem [ref=e768]: A simple danger list group item
+            - listitem [ref=e769]: A simple warning list group item
+            - listitem [ref=e770]: A simple info list group item
+            - listitem [ref=e771]: A simple inverse list group item
+            - listitem [ref=e772]: A simple secondary list group item
+          - generic [ref=e773]:
+            - generic [ref=e774]: HTML
+            - button "Copy to clipboard" [ref=e776] [cursor=pointer]:
+              - img [ref=e777]
+          - code [ref=e780]:
+            - generic [ref=e781]: <ul class="list-group">
+            - generic [ref=e782]: <li class="list-group-item">A simple default list group item</li>
+            - generic [ref=e784]: <li class="list-group-item theme-primary">A simple primary list group item</li>
+            - generic [ref=e785]: <li class="list-group-item theme-accent">A simple accent list group item</li>
+            - generic [ref=e786]: <li class="list-group-item theme-success">A simple success list group item</li>
+            - generic [ref=e787]: <li class="list-group-item theme-danger">A simple danger list group item</li>
+            - generic [ref=e788]: <li class="list-group-item theme-warning">A simple warning list group item</li>
+            - generic [ref=e789]: <li class="list-group-item theme-info">A simple info list group item</li>
+            - generic [ref=e790]: <li class="list-group-item theme-inverse">A simple inverse list group item</li>
+            - generic [ref=e791]: <li class="list-group-item theme-secondary">A simple secondary list group item</li>
+            - generic [ref=e792]: </ul>
+        - 'heading "For links and buttonsLink to this section: For links and buttons" [level=3] [ref=e793]':
+          - text: For links and buttons
+          - 'link "Link to this section: For links and buttons" [ref=e794] [cursor=pointer]':
+            - /url: "#for-links-and-buttons"
+            - text: "#"
+        - paragraph [ref=e795]:
+          - text: Contextual classes also work with
+          - code [ref=e796]: .list-group-item-action
+          - text: for
+          - code [ref=e797]: <a>
+          - text: and
+          - code [ref=e798]: <button>
+          - text: elements. Note the addition of the hover styles here not present in the previous example. Also supported is the
+          - code [ref=e799]: .active
+          - text: state; apply it to indicate an active selection on a contextual list group item.
+        - generic [ref=e800]:
+          - generic [ref=e802]:
+            - link "A simple default list group item" [ref=e803] [cursor=pointer]:
+              - /url: "#"
+            - link "A simple primary list group item" [ref=e804] [cursor=pointer]:
+              - /url: "#"
+            - link "A simple accent list group item" [ref=e805] [cursor=pointer]:
+              - /url: "#"
+            - link "A simple success list group item" [ref=e806] [cursor=pointer]:
+              - /url: "#"
+            - link "A simple danger list group item" [ref=e807] [cursor=pointer]:
+              - /url: "#"
+            - link "A simple warning list group item" [ref=e808] [cursor=pointer]:
+              - /url: "#"
+            - link "A simple info list group item" [ref=e809] [cursor=pointer]:
+              - /url: "#"
+            - link "A simple inverse list group item" [ref=e810] [cursor=pointer]:
+              - /url: "#"
+            - link "A simple secondary list group item" [ref=e811] [cursor=pointer]:
+              - /url: "#"
+          - generic [ref=e812]:
+            - generic [ref=e813]: HTML
+            - button "Copy to clipboard" [ref=e815] [cursor=pointer]:
+              - img [ref=e816]
+          - code [ref=e819]:
+            - generic [ref=e820]: <div class="list-group">
+            - generic [ref=e821]: <a href="#" class="list-group-item list-group-item-action">A simple default list group item</a>
+            - generic [ref=e823]: <a href="#" class="list-group-item list-group-item-action theme-primary">A simple primary list group item</a>
+            - generic [ref=e824]: <a href="#" class="list-group-item list-group-item-action theme-accent">A simple accent list group item</a>
+            - generic [ref=e825]: <a href="#" class="list-group-item list-group-item-action theme-success">A simple success list group item</a>
+            - generic [ref=e826]: <a href="#" class="list-group-item list-group-item-action theme-danger">A simple danger list group item</a>
+            - generic [ref=e827]: <a href="#" class="list-group-item list-group-item-action theme-warning">A simple warning list group item</a>
+            - generic [ref=e828]: <a href="#" class="list-group-item list-group-item-action theme-info">A simple info list group item</a>
+            - generic [ref=e829]: <a href="#" class="list-group-item list-group-item-action theme-inverse">A simple inverse list group item</a>
+            - generic [ref=e830]: <a href="#" class="list-group-item list-group-item-action theme-secondary">A simple secondary list group item</a>
+            - generic [ref=e831]: </div>
+        - group [ref=e832]:
+          - 'generic "Accessibility Tip: Using color to convey meaning" [ref=e833] [cursor=pointer]':
+            - img [ref=e834]
+            - text: "Accessibility Tip: Using color to convey meaning"
+        - 'heading "With badgesLink to this section: With badges" [level=2] [ref=e836]':
+          - text: With badges
+          - 'link "Link to this section: With badges" [ref=e837] [cursor=pointer]':
+            - /url: "#with-badges"
+            - text: "#"
+        - paragraph [ref=e838]:
+          - text: Add badges to any list group item to show unread counts, activity, and more with the help of some
+          - link "utilities" [ref=e839] [cursor=pointer]:
+            - /url: /docs/6.0/utilities/flex
+          - text: .
+        - generic [ref=e840]:
+          - list [ref=e842]:
+            - listitem [ref=e843]:
+              - text: A list item
+              - generic [ref=e844]: "14"
+            - listitem [ref=e845]:
+              - text: A second list item
+              - generic [ref=e846]: "2"
+            - listitem [ref=e847]:
+              - text: A third list item
+              - generic [ref=e848]: "1"
+          - generic [ref=e849]:
+            - generic [ref=e850]: HTML
+            - button "Copy to clipboard" [ref=e852] [cursor=pointer]:
+              - img [ref=e853]
+          - code [ref=e856]:
+            - generic [ref=e857]: <ul class="list-group">
+            - generic [ref=e858]: <li class="list-group-item d-flex justify-content-between align-items-center">
+            - generic [ref=e859]: A list item
+            - generic [ref=e860]: <span class="badge theme-primary">14</span>
+            - generic [ref=e861]: </li>
+            - generic [ref=e862]: <li class="list-group-item d-flex justify-content-between align-items-center">
+            - generic [ref=e863]: A second list item
+            - generic [ref=e864]: <span class="badge theme-primary">2</span>
+            - generic [ref=e865]: </li>
+            - generic [ref=e866]: <li class="list-group-item d-flex justify-content-between align-items-center">
+            - generic [ref=e867]: A third list item
+            - generic [ref=e868]: <span class="badge theme-primary">1</span>
+            - generic [ref=e869]: </li>
+            - generic [ref=e870]: </ul>
+        - 'heading "Custom contentLink to this section: Custom content" [level=2] [ref=e871]':
+          - text: Custom content
+          - 'link "Link to this section: Custom content" [ref=e872] [cursor=pointer]':
+            - /url: "#custom-content"
+            - text: "#"
+        - paragraph [ref=e873]:
+          - text: Add nearly any HTML within, even for linked list groups like the one below, with the help of
+          - link "flexbox utilities" [ref=e874] [cursor=pointer]:
+            - /url: /docs/6.0/utilities/flex
+          - text: .
+        - generic [ref=e875]:
+          - generic [ref=e877]:
+            - link "List group item heading 3 days ago Some placeholder content in a paragraph. And some small print." [ref=e878] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e879]:
+                - heading "List group item heading" [level=5] [ref=e880]
+                - generic [ref=e881]: 3 days ago
+              - paragraph [ref=e882]: Some placeholder content in a paragraph.
+              - text: And some small print.
+            - link "List group item heading 3 days ago Some placeholder content in a paragraph. And some muted small print." [ref=e883] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e884]:
+                - heading "List group item heading" [level=5] [ref=e885]
+                - generic [ref=e886]: 3 days ago
+              - paragraph [ref=e887]: Some placeholder content in a paragraph.
+              - text: And some muted small print.
+            - link "List group item heading 3 days ago Some placeholder content in a paragraph. And some muted small print." [ref=e888] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e889]:
+                - heading "List group item heading" [level=5] [ref=e890]
+                - generic [ref=e891]: 3 days ago
+              - paragraph [ref=e892]: Some placeholder content in a paragraph.
+              - text: And some muted small print.
+          - generic [ref=e893]:
+            - generic [ref=e894]: HTML
+            - button "Copy to clipboard" [ref=e896] [cursor=pointer]:
+              - img [ref=e897]
+          - code [ref=e900]:
+            - generic [ref=e901]: <div class="list-group">
+            - generic [ref=e902]: <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+            - generic [ref=e903]: <div class="d-flex w-100 justify-content-between">
+            - generic [ref=e904]: <h5 class="mb-1">List group item heading</h5>
+            - generic [ref=e905]: <small>3 days ago</small>
+            - generic [ref=e906]: </div>
+            - generic [ref=e907]: <p class="mb-1">Some placeholder content in a paragraph.</p>
+            - generic [ref=e908]: <small>And some small print.</small>
+            - generic [ref=e909]: </a>
+            - generic [ref=e910]: <a href="#" class="list-group-item list-group-item-action">
+            - generic [ref=e911]: <div class="d-flex w-100 justify-content-between">
+            - generic [ref=e912]: <h5 class="mb-1">List group item heading</h5>
+            - generic [ref=e913]: <small class="text-body-secondary">3 days ago</small>
+            - generic [ref=e914]: </div>
+            - generic [ref=e915]: <p class="mb-1">Some placeholder content in a paragraph.</p>
+            - generic [ref=e916]: <small class="text-body-secondary">And some muted small print.</small>
+            - generic [ref=e917]: </a>
+            - generic [ref=e918]: <a href="#" class="list-group-item list-group-item-action">
+            - generic [ref=e919]: <div class="d-flex w-100 justify-content-between">
+            - generic [ref=e920]: <h5 class="mb-1">List group item heading</h5>
+            - generic [ref=e921]: <small class="text-body-secondary">3 days ago</small>
+            - generic [ref=e922]: </div>
+            - generic [ref=e923]: <p class="mb-1">Some placeholder content in a paragraph.</p>
+            - generic [ref=e924]: <small class="text-body-secondary">And some muted small print.</small>
+            - generic [ref=e925]: </a>
+            - generic [ref=e926]: </div>
+        - 'heading "Checkboxes and radiosLink to this section: Checkboxes and radios" [level=2] [ref=e927]':
+          - text: Checkboxes and radios
+          - 'link "Link to this section: Checkboxes and radios" [ref=e928] [cursor=pointer]':
+            - /url: "#checkboxes-and-radios"
+            - text: "#"
+        - paragraph [ref=e929]:
+          - text: Place Bootstrap’s checkboxes and radios within list group items and customize as needed. You can use them without
+          - code [ref=e930]: <label>
+          - text: s, but please remember to include an
+          - code [ref=e931]: aria-label
+          - text: attribute and value for accessibility.
+        - generic [ref=e932]:
+          - list [ref=e934]:
+            - listitem [ref=e935]:
+              - checkbox "First checkbox" [ref=e936]
+              - generic [ref=e937]: First checkbox
+            - listitem [ref=e938]:
+              - checkbox "Second checkbox" [ref=e939]
+              - generic [ref=e940]: Second checkbox
+            - listitem [ref=e941]:
+              - checkbox "Third checkbox" [ref=e942]
+              - generic [ref=e943]: Third checkbox
+          - generic [ref=e944]:
+            - generic [ref=e945]: HTML
+            - button "Copy to clipboard" [ref=e947] [cursor=pointer]:
+              - img [ref=e948]
+          - code [ref=e951]:
+            - generic [ref=e952]: <ul class="list-group">
+            - generic [ref=e953]: <li class="list-group-item">
+            - generic [ref=e954]: <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+            - generic [ref=e955]: <label class="form-check-label" for="firstCheckbox">First checkbox</label>
+            - generic [ref=e956]: </li>
+            - generic [ref=e957]: <li class="list-group-item">
+            - generic [ref=e958]: <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+            - generic [ref=e959]: <label class="form-check-label" for="secondCheckbox">Second checkbox</label>
+            - generic [ref=e960]: </li>
+            - generic [ref=e961]: <li class="list-group-item">
+            - generic [ref=e962]: <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+            - generic [ref=e963]: <label class="form-check-label" for="thirdCheckbox">Third checkbox</label>
+            - generic [ref=e964]: </li>
+            - generic [ref=e965]: </ul>
+        - generic [ref=e966]:
+          - list [ref=e968]:
+            - listitem [ref=e969]:
+              - radio "First radio" [checked] [ref=e970]
+              - generic [ref=e971]: First radio
+            - listitem [ref=e972]:
+              - radio "Second radio" [ref=e973]
+              - generic [ref=e974]: Second radio
+            - listitem [ref=e975]:
+              - radio "Third radio" [ref=e976]
+              - generic [ref=e977]: Third radio
+          - generic [ref=e978]:
+            - generic [ref=e979]: HTML
+            - button "Copy to clipboard" [ref=e981] [cursor=pointer]:
+              - img [ref=e982]
+          - code [ref=e985]:
+            - generic [ref=e986]: <ul class="list-group">
+            - generic [ref=e987]: <li class="list-group-item">
+            - generic [ref=e988]: <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="firstRadio" checked>
+            - generic [ref=e989]: <label class="form-check-label" for="firstRadio">First radio</label>
+            - generic [ref=e990]: </li>
+            - generic [ref=e991]: <li class="list-group-item">
+            - generic [ref=e992]: <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="secondRadio">
+            - generic [ref=e993]: <label class="form-check-label" for="secondRadio">Second radio</label>
+            - generic [ref=e994]: </li>
+            - generic [ref=e995]: <li class="list-group-item">
+            - generic [ref=e996]: <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="thirdRadio">
+            - generic [ref=e997]: <label class="form-check-label" for="thirdRadio">Third radio</label>
+            - generic [ref=e998]: </li>
+            - generic [ref=e999]: </ul>
+        - paragraph [ref=e1000]:
+          - text: You can use
+          - code [ref=e1001]: .stretched-link
+          - text: "on"
+          - code [ref=e1002]: <label>
+          - text: s to make the whole list group item clickable.
+        - generic [ref=e1003]:
+          - list [ref=e1005]:
+            - listitem [ref=e1006]:
+              - checkbox "First checkbox" [ref=e1007]
+              - generic [ref=e1008]: First checkbox
+            - listitem [ref=e1009]:
+              - checkbox "Second checkbox" [ref=e1010]
+              - generic [ref=e1011]: Second checkbox
+            - listitem [ref=e1012]:
+              - checkbox "Third checkbox" [ref=e1013]
+              - generic [ref=e1014]: Third checkbox
+          - generic [ref=e1015]:
+            - generic [ref=e1016]: HTML
+            - button "Copy to clipboard" [ref=e1018] [cursor=pointer]:
+              - img [ref=e1019]
+          - code [ref=e1022]:
+            - generic [ref=e1023]: <ul class="list-group">
+            - generic [ref=e1024]: <li class="list-group-item">
+            - generic [ref=e1025]: <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched">
+            - generic [ref=e1026]: <label class="form-check-label stretched-link" for="firstCheckboxStretched">First checkbox</label>
+            - generic [ref=e1027]: </li>
+            - generic [ref=e1028]: <li class="list-group-item">
+            - generic [ref=e1029]: <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckboxStretched">
+            - generic [ref=e1030]: <label class="form-check-label stretched-link" for="secondCheckboxStretched">Second checkbox</label>
+            - generic [ref=e1031]: </li>
+            - generic [ref=e1032]: <li class="list-group-item">
+            - generic [ref=e1033]: <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckboxStretched">
+            - generic [ref=e1034]: <label class="form-check-label stretched-link" for="thirdCheckboxStretched">Third checkbox</label>
+            - generic [ref=e1035]: </li>
+            - generic [ref=e1036]: </ul>
+        - 'heading "CSSLink to this section: CSS" [level=2] [ref=e1037]':
+          - text: CSS
+          - 'link "Link to this section: CSS" [ref=e1038] [cursor=pointer]':
+            - /url: "#css"
+            - text: "#"
+        - 'heading "VariablesLink to this section: Variables" [level=3] [ref=e1039]':
+          - text: Variables
+          - 'link "Link to this section: Variables" [ref=e1040] [cursor=pointer]':
+            - /url: "#variables"
+            - text: "#"
+        - paragraph [ref=e1041]:
+          - text: List groups use local CSS variables on
+          - code [ref=e1042]: .list-group
+          - text: for real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.
+        - generic [ref=e1043]:
+          - generic [ref=e1044]:
+            - generic [ref=e1045]: SCSS
+            - button "Copy to clipboard" [ref=e1047] [cursor=pointer]:
+              - img [ref=e1048]
+          - code [ref=e1051]:
+            - generic [ref=e1052]: "--list-group-color: #{$list-group-color};"
+            - generic [ref=e1053]: "--list-group-bg: #{$list-group-bg};"
+            - generic [ref=e1054]: "--list-group-border-color: #{$list-group-border-color};"
+            - generic [ref=e1055]: "--list-group-border-width: #{$list-group-border-width};"
+            - generic [ref=e1056]: "--list-group-border-radius: #{$list-group-border-radius};"
+            - generic [ref=e1057]: "--list-group-item-padding-x: #{$list-group-item-padding-x};"
+            - generic [ref=e1058]: "--list-group-item-padding-y: #{$list-group-item-padding-y};"
+            - generic [ref=e1059]: "--list-group-action-color: #{$list-group-action-color};"
+            - generic [ref=e1060]: "--list-group-action-hover-color: #{$list-group-action-hover-color};"
+            - generic [ref=e1061]: "--list-group-action-hover-bg: #{$list-group-hover-bg};"
+            - generic [ref=e1062]: "--list-group-action-active-color: #{$list-group-action-active-color};"
+            - generic [ref=e1063]: "--list-group-action-active-bg: #{$list-group-action-active-bg};"
+            - generic [ref=e1064]: "--list-group-disabled-color: #{$list-group-disabled-color};"
+            - generic [ref=e1065]: "--list-group-disabled-bg: #{$list-group-disabled-bg};"
+            - generic [ref=e1066]: "--list-group-active-color: #{$list-group-active-color};"
+            - generic [ref=e1067]: "--list-group-active-bg: #{$list-group-active-bg};"
+            - generic [ref=e1068]: "--list-group-active-border-color: #{$list-group-active-border-color};"
+        - 'heading "Sass variablesLink to this section: Sass variables" [level=3] [ref=e1069]':
+          - text: Sass variables
+          - 'link "Link to this section: Sass variables" [ref=e1070] [cursor=pointer]':
+            - /url: "#sass-variables"
+            - text: "#"
+        - generic [ref=e1071]:
+          - generic [ref=e1072]:
+            - generic [ref=e1073]: SCSS
+            - button "Copy to clipboard" [ref=e1075] [cursor=pointer]:
+              - img [ref=e1076]
+          - code [ref=e1079]:
+            - generic [ref=e1080]: "$list-group-color: var(--fg-body);"
+            - generic [ref=e1081]: "$list-group-bg: var(--bg-body);"
+            - generic [ref=e1082]: "$list-group-border-color: var(--border-color);"
+            - generic [ref=e1083]: "$list-group-border-width: var(--border-width);"
+            - generic [ref=e1084]: "$list-group-border-radius: var(--border-radius);"
+            - generic [ref=e1085]: "$list-group-item-padding-y: $spacer * .5;"
+            - generic [ref=e1086]: "$list-group-item-padding-x: $spacer;"
+            - generic [ref=e1087]: "$list-group-hover-bg: var(--tertiary-bg);"
+            - generic [ref=e1088]: "$list-group-active-color: $component-active-color;"
+            - generic [ref=e1089]: "$list-group-active-bg: $component-active-bg;"
+            - generic [ref=e1090]: "$list-group-active-border-color: $list-group-active-bg;"
+            - generic [ref=e1091]: "$list-group-disabled-color: var(--secondary-color);"
+            - generic [ref=e1092]: "$list-group-disabled-bg: $list-group-bg;"
+            - generic [ref=e1093]: "$list-group-action-color: var(--secondary-color);"
+            - generic [ref=e1094]: "$list-group-action-hover-color: var(--fg-color);"
+            - generic [ref=e1095]: "$list-group-action-active-color: var(--fg-body);"
+            - generic [ref=e1096]: "$list-group-action-active-bg: var(--secondary-bg);"
+        - 'heading "JavaScript behaviorLink to this section: JavaScript behavior" [level=2] [ref=e1097]':
+          - text: JavaScript behavior
+          - 'link "Link to this section: JavaScript behavior" [ref=e1098] [cursor=pointer]':
+            - /url: "#javascript-behavior"
+            - text: "#"
+        - paragraph [ref=e1099]:
+          - text: Use the tab JavaScript plugin—include it individually or through the compiled
+          - code [ref=e1100]: bootstrap.js
+          - text: file—to extend our list group to create tabbable panes of local content.
+        - tabpanel [ref=e1101]:
+          - generic [ref=e1102]:
+            - tablist [ref=e1104]:
+              - tab "Home" [selected] [ref=e1105] [cursor=pointer]
+              - tab "Profile" [ref=e1106] [cursor=pointer]
+              - tab "Messages" [ref=e1107] [cursor=pointer]
+              - tab "Settings" [ref=e1108] [cursor=pointer]
+            - tabpanel "Home" [ref=e1111]:
+              - paragraph [ref=e1112]: Some placeholder content in a paragraph relating to "Home". And some more content, used here just to pad out and fill this tab panel. In production, you would obviously have more real content here. And not just text. It could be anything, really. Text, images, forms.
+        - generic [ref=e1113]:
+          - generic [ref=e1114]:
+            - generic [ref=e1115]: HTML
+            - button "Copy to clipboard" [ref=e1117] [cursor=pointer]:
+              - img [ref=e1118]
+          - code [ref=e1121]:
+            - generic [ref=e1122]: <div class="row">
+            - generic [ref=e1123]: <div class="col-4">
+            - generic [ref=e1124]: <div class="list-group" id="list-tab" role="tablist">
+            - generic [ref=e1125]: <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Home</a>
+            - generic [ref=e1126]: <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Profile</a>
+            - generic [ref=e1127]: <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">Messages</a>
+            - generic [ref=e1128]: <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">Settings</a>
+            - generic [ref=e1129]: </div>
+            - generic [ref=e1130]: </div>
+            - generic [ref=e1131]: <div class="col-8">
+            - generic [ref=e1132]: <div class="tab-content" id="nav-tabContent">
+            - generic [ref=e1133]: <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">...</div>
+            - generic [ref=e1134]: <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...</div>
+            - generic [ref=e1135]: <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
+            - generic [ref=e1136]: <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
+            - generic [ref=e1137]: </div>
+            - generic [ref=e1138]: </div>
+            - generic [ref=e1139]: </div>
+        - 'heading "Using data attributesLink to this section: Using data attributes" [level=3] [ref=e1140]':
+          - text: Using data attributes
+          - 'link "Link to this section: Using data attributes" [ref=e1141] [cursor=pointer]':
+            - /url: "#using-data-attributes"
+            - text: "#"
+        - paragraph [ref=e1142]:
+          - text: You can activate a list group navigation without writing any JavaScript by simply specifying
+          - code [ref=e1143]: data-bs-toggle="list"
+          - text: or on an element. Use these data attributes on
+          - code [ref=e1144]: .list-group-item
+          - text: .
+        - generic [ref=e1145]:
+          - generic [ref=e1146]:
+            - generic [ref=e1147]: HTML
+            - button "Copy to clipboard" [ref=e1149] [cursor=pointer]:
+              - img [ref=e1150]
+          - code [ref=e1153]:
+            - generic [ref=e1154]: <div role="tabpanel">
+            - generic [ref=e1155]: <!-- List group -->
+            - generic [ref=e1156]: <div class="list-group" id="myList" role="tablist">
+            - generic [ref=e1157]: <a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#home" role="tab">Home</a>
+            - generic [ref=e1158]: <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#profile" role="tab">Profile</a>
+            - generic [ref=e1159]: <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#messages" role="tab">Messages</a>
+            - generic [ref=e1160]: <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#settings" role="tab">Settings</a>
+            - generic [ref=e1161]: </div>
+            - generic [ref=e1162]: <!-- Tab panes -->
+            - generic [ref=e1163]: <div class="tab-content">
+            - generic [ref=e1164]: <div class="tab-pane active" id="home" role="tabpanel">...</div>
+            - generic [ref=e1165]: <div class="tab-pane" id="profile" role="tabpanel">...</div>
+            - generic [ref=e1166]: <div class="tab-pane" id="messages" role="tabpanel">...</div>
+            - generic [ref=e1167]: <div class="tab-pane" id="settings" role="tabpanel">...</div>
+            - generic [ref=e1168]: </div>
+            - generic [ref=e1169]: </div>
+        - 'heading "Via JavaScriptLink to this section: Via JavaScript" [level=3] [ref=e1170]':
+          - text: Via JavaScript
+          - 'link "Link to this section: Via JavaScript" [ref=e1171] [cursor=pointer]':
+            - /url: "#via-javascript"
+            - text: "#"
+        - paragraph [ref=e1172]: "Enable tabbable list item via JavaScript (each list item needs to be activated individually):"
+        - generic [ref=e1173]:
+          - generic [ref=e1174]:
+            - generic [ref=e1175]: JavaScript
+            - button "Copy to clipboard" [ref=e1177] [cursor=pointer]:
+              - img [ref=e1178]
+          - code [ref=e1181]:
+            - generic [ref=e1182]: const triggerTabList = document.querySelectorAll('#myTab a')
+            - generic [ref=e1183]: "triggerTabList.forEach(triggerEl => {"
+            - generic [ref=e1184]: const tabTrigger = new bootstrap.Tab(triggerEl)
+            - generic [ref=e1185]: "triggerEl.addEventListener('click', event => {"
+            - generic [ref=e1186]: event.preventDefault()
+            - generic [ref=e1187]: tabTrigger.show()
+            - generic [ref=e1188]: "})"
+            - generic [ref=e1189]: "})"
+        - paragraph [ref=e1190]: "You can activate individual list item in several ways:"
+        - generic [ref=e1191]:
+          - generic [ref=e1192]:
+            - generic [ref=e1193]: JavaScript
+            - button "Copy to clipboard" [ref=e1195] [cursor=pointer]:
+              - img [ref=e1196]
+          - code [ref=e1199]:
+            - generic [ref=e1200]: const triggerEl = document.querySelector('#myTab a[href="#profile"]')
+            - generic [ref=e1201]: bootstrap.Tab.getInstance(triggerEl).show() // Select tab by name
+            - generic [ref=e1202]: const triggerFirstTabEl = document.querySelector('#myTab li:first-child a')
+            - generic [ref=e1203]: bootstrap.Tab.getInstance(triggerFirstTabEl).show() // Select first tab
+        - 'heading "Fade effectLink to this section: Fade effect" [level=3] [ref=e1204]':
+          - text: Fade effect
+          - 'link "Link to this section: Fade effect" [ref=e1205] [cursor=pointer]':
+            - /url: "#fade-effect"
+            - text: "#"
+        - paragraph [ref=e1206]:
+          - text: To make tabs panel fade in, add
+          - code [ref=e1207]: .fade
+          - text: to each
+          - code [ref=e1208]: .tab-pane
+          - text: . The first tab pane must also have
+          - code [ref=e1209]: .show
+          - text: to make the initial content visible.
+        - generic [ref=e1210]:
+          - generic [ref=e1211]:
+            - generic [ref=e1212]: HTML
+            - button "Copy to clipboard" [ref=e1214] [cursor=pointer]:
+              - img [ref=e1215]
+          - code [ref=e1218]:
+            - generic [ref=e1219]: <div class="tab-content">
+            - generic [ref=e1220]: <div class="tab-pane fade show active" id="home" role="tabpanel">...</div>
+            - generic [ref=e1221]: <div class="tab-pane fade" id="profile" role="tabpanel">...</div>
+            - generic [ref=e1222]: <div class="tab-pane fade" id="messages" role="tabpanel">...</div>
+            - generic [ref=e1223]: <div class="tab-pane fade" id="settings" role="tabpanel">...</div>
+            - generic [ref=e1224]: </div>
+        - 'heading "MethodsLink to this section: Methods" [level=3] [ref=e1225]':
+          - text: Methods
+          - 'link "Link to this section: Methods" [ref=e1226] [cursor=pointer]':
+            - /url: "#methods"
+            - text: "#"
+        - paragraph [ref=e1228]:
+          - strong [ref=e1229]: All API methods are asynchronous and start a transition.
+          - text: They return to the caller as soon as the transition is started, but before it ends. In addition, a method call on a transitioning component will be ignored.
+          - link "Learn more in our JavaScript docs." [ref=e1230] [cursor=pointer]:
+            - /url: /docs/6.0/getting-started/javascript/#asynchronous-functions-and-transitions
+        - paragraph [ref=e1231]: Activates your content as a tab element.
+        - paragraph [ref=e1232]: "You can create a tab instance with the constructor, for example:"
+        - generic [ref=e1233]:
+          - generic [ref=e1234]:
+            - generic [ref=e1235]: JavaScript
+            - button "Copy to clipboard" [ref=e1237] [cursor=pointer]:
+              - img [ref=e1238]
+          - code [ref=e1241]:
+            - generic [ref=e1242]: const bsTab = new bootstrap.Tab('#myTab')
+        - table [ref=e1244]:
+          - rowgroup [ref=e1245]:
+            - row "Method Description" [ref=e1246]:
+              - columnheader "Method" [ref=e1247]
+              - columnheader "Description" [ref=e1248]
+          - rowgroup [ref=e1249]:
+            - row "dispose Destroys an element’s tab." [ref=e1250]:
+              - cell "dispose" [ref=e1251]:
+                - code [ref=e1252]: dispose
+              - cell "Destroys an element’s tab." [ref=e1253]
+            - 'row "getInstance Static method which allows you to get the tab instance associated with a DOM element, you can use it like this: bootstrap.Tab.getInstance(element)." [ref=e1254]':
+              - cell "getInstance" [ref=e1255]:
+                - code [ref=e1256]: getInstance
+              - 'cell "Static method which allows you to get the tab instance associated with a DOM element, you can use it like this: bootstrap.Tab.getInstance(element)." [ref=e1257]':
+                - text: "Static method which allows you to get the tab instance associated with a DOM element, you can use it like this:"
+                - code [ref=e1258]: bootstrap.Tab.getInstance(element)
+                - text: .
+            - 'row "getOrCreateInstance Static method which returns a tab instance associated to a DOM element or create a new one in case it wasn’t initialized. You can use it like this: bootstrap.Tab.getOrCreateInstance(element)." [ref=e1259]':
+              - cell "getOrCreateInstance" [ref=e1260]:
+                - code [ref=e1261]: getOrCreateInstance
+              - 'cell "Static method which returns a tab instance associated to a DOM element or create a new one in case it wasn’t initialized. You can use it like this: bootstrap.Tab.getOrCreateInstance(element)." [ref=e1262]':
+                - text: "Static method which returns a tab instance associated to a DOM element or create a new one in case it wasn’t initialized. You can use it like this:"
+                - code [ref=e1263]: bootstrap.Tab.getOrCreateInstance(element)
+                - text: .
+            - row "show Selects the given tab and shows its associated pane. Any other tab that was previously selected becomes unselected and its associated pane is hidden. Returns to the caller before the tab pane has actually been shown (i.e. before the shown.bs.tab event occurs)." [ref=e1264]:
+              - cell "show" [ref=e1265]:
+                - code [ref=e1266]: show
+              - cell "Selects the given tab and shows its associated pane. Any other tab that was previously selected becomes unselected and its associated pane is hidden. Returns to the caller before the tab pane has actually been shown (i.e. before the shown.bs.tab event occurs)." [ref=e1267]:
+                - text: Selects the given tab and shows its associated pane. Any other tab that was previously selected becomes unselected and its associated pane is hidden.
+                - strong [ref=e1268]: Returns to the caller before the tab pane has actually been shown
+                - text: (i.e. before the
+                - code [ref=e1269]: shown.bs.tab
+                - text: event occurs).
+        - 'heading "EventsLink to this section: Events" [level=3] [ref=e1270]':
+          - text: Events
+          - 'link "Link to this section: Events" [ref=e1271] [cursor=pointer]':
+            - /url: "#events"
+            - text: "#"
+        - paragraph [ref=e1272]: "When showing a new tab, the events fire in the following order:"
+        - list [ref=e1273]:
+          - listitem [ref=e1274]:
+            - code [ref=e1275]: hide.bs.tab
+            - text: (on the current active tab)
+          - listitem [ref=e1276]:
+            - code [ref=e1277]: show.bs.tab
+            - text: (on the to-be-shown tab)
+          - listitem [ref=e1278]:
+            - code [ref=e1279]: hidden.bs.tab
+            - text: (on the previous active tab, the same one as for the
+            - code [ref=e1280]: hide.bs.tab
+            - text: event)
+          - listitem [ref=e1281]:
+            - code [ref=e1282]: shown.bs.tab
+            - text: (on the newly-active just-shown tab, the same one as for the
+            - code [ref=e1283]: show.bs.tab
+            - text: event)
+        - paragraph [ref=e1284]:
+          - text: If no tab was already active, then the
+          - code [ref=e1285]: hide.bs.tab
+          - text: and
+          - code [ref=e1286]: hidden.bs.tab
+          - text: events will not be fired.
+        - table [ref=e1288]:
+          - rowgroup [ref=e1289]:
+            - row "Event type Description" [ref=e1290]:
+              - columnheader "Event type" [ref=e1291]
+              - columnheader "Description" [ref=e1292]
+          - rowgroup [ref=e1293]:
+            - row "hide.bs.tab This event fires when a new tab is to be shown (and thus the previous active tab is to be hidden). Use event.target and event.relatedTarget to target the current active tab and the new soon-to-be-active tab, respectively." [ref=e1294]:
+              - cell "hide.bs.tab" [ref=e1295]:
+                - code [ref=e1296]: hide.bs.tab
+              - cell "This event fires when a new tab is to be shown (and thus the previous active tab is to be hidden). Use event.target and event.relatedTarget to target the current active tab and the new soon-to-be-active tab, respectively." [ref=e1297]:
+                - text: This event fires when a new tab is to be shown (and thus the previous active tab is to be hidden). Use
+                - code [ref=e1298]: event.target
+                - text: and
+                - code [ref=e1299]: event.relatedTarget
+                - text: to target the current active tab and the new soon-to-be-active tab, respectively.
+            - row "hidden.bs.tab This event fires after a new tab is shown (and thus the previous active tab is hidden). Use event.target and event.relatedTarget to target the previous active tab and the new active tab, respectively." [ref=e1300]:
+              - cell "hidden.bs.tab" [ref=e1301]:
+                - code [ref=e1302]: hidden.bs.tab
+              - cell "This event fires after a new tab is shown (and thus the previous active tab is hidden). Use event.target and event.relatedTarget to target the previous active tab and the new active tab, respectively." [ref=e1303]:
+                - text: This event fires after a new tab is shown (and thus the previous active tab is hidden). Use
+                - code [ref=e1304]: event.target
+                - text: and
+                - code [ref=e1305]: event.relatedTarget
+                - text: to target the previous active tab and the new active tab, respectively.
+            - row "show.bs.tab This event fires on tab show, but before the new tab has been shown. Use event.target and event.relatedTarget to target the active tab and the previous active tab (if available) respectively." [ref=e1306]:
+              - cell "show.bs.tab" [ref=e1307]:
+                - code [ref=e1308]: show.bs.tab
+              - cell "This event fires on tab show, but before the new tab has been shown. Use event.target and event.relatedTarget to target the active tab and the previous active tab (if available) respectively." [ref=e1309]:
+                - text: This event fires on tab show, but before the new tab has been shown. Use
+                - code [ref=e1310]: event.target
+                - text: and
+                - code [ref=e1311]: event.relatedTarget
+                - text: to target the active tab and the previous active tab (if available) respectively.
+            - row "shown.bs.tab This event fires on tab show after a tab has been shown. Use event.target and event.relatedTarget to target the active tab and the previous active tab (if available) respectively." [ref=e1312]:
+              - cell "shown.bs.tab" [ref=e1313]:
+                - code [ref=e1314]: shown.bs.tab
+              - cell "This event fires on tab show after a tab has been shown. Use event.target and event.relatedTarget to target the active tab and the previous active tab (if available) respectively." [ref=e1315]:
+                - text: This event fires on tab show after a tab has been shown. Use
+                - code [ref=e1316]: event.target
+                - text: and
+                - code [ref=e1317]: event.relatedTarget
+                - text: to target the active tab and the previous active tab (if available) respectively.
+        - generic [ref=e1318]:
+          - generic [ref=e1319]:
+            - generic [ref=e1320]: JavaScript
+            - button "Copy to clipboard" [ref=e1322] [cursor=pointer]:
+              - img [ref=e1323]
+          - code [ref=e1326]:
+            - generic [ref=e1327]: const tabElms = document.querySelectorAll('a[data-bs-toggle="list"]')
+            - generic [ref=e1328]: "tabElms.forEach(tabElm => {"
+            - generic [ref=e1329]: "tabElm.addEventListener('shown.bs.tab', event => {"
+            - generic [ref=e1330]: event.target // newly activated tab
+            - generic [ref=e1331]: event.relatedTarget // previous active tab
+            - generic [ref=e1332]: "})"
+            - generic [ref=e1333]: "})"
+        - navigation [ref=e1334]:
+          - generic [ref=e1335]:
+            - link "← Previous Dropdown Components" [ref=e1336] [cursor=pointer]:
+              - /url: /docs/6.0/components/dropdown/
+              - generic [ref=e1337]: ← Previous
+              - generic [ref=e1338]: Dropdown
+              - generic [ref=e1339]: Components
+            - link "Next → Navbar Components" [ref=e1340] [cursor=pointer]:
+              - /url: /docs/6.0/components/navbar/
+              - generic [ref=e1341]: Next →
+              - generic [ref=e1342]: Navbar
+              - generic [ref=e1343]: Components
+  - contentinfo [ref=e1344]:
+    - generic [ref=e1346]:
+      - generic [ref=e1347]:
+        - link "Bootstrap" [ref=e1348] [cursor=pointer]:
+          - /url: /
+          - img "Bootstrap" [ref=e1349]
+          - generic [ref=e1351]: Bootstrap
+        - list [ref=e1352]:
+          - listitem [ref=e1353]:
+            - text: Designed and built with all the love in the world by the
+            - link "Bootstrap team" [ref=e1354] [cursor=pointer]:
+              - /url: /docs/6.0/about/team
+            - text: with the help of
+            - link "our contributors" [ref=e1355] [cursor=pointer]:
+              - /url: https://github.com/twbs/bootstrap/graphs/contributors
+            - text: .
+          - listitem [ref=e1356]:
+            - text: Code licensed
+            - link "MIT" [ref=e1357] [cursor=pointer]:
+              - /url: https://github.com/twbs/bootstrap/blob/main/LICENSE
+            - text: ", docs"
+            - link "CC BY 3.0" [ref=e1358] [cursor=pointer]:
+              - /url: https://creativecommons.org/licenses/by/3.0/
+            - text: .
+          - listitem [ref=e1359]: Currently v6.0.0-alpha1.
+      - generic [ref=e1360]:
+        - heading "Links" [level=5] [ref=e1361]
+        - list [ref=e1362]:
+          - listitem [ref=e1363]:
+            - link "Home" [ref=e1364] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=e1365]:
+            - link "Docs" [ref=e1366] [cursor=pointer]:
+              - /url: /docs/6.0/
+          - listitem [ref=e1367]:
+            - link "Examples" [ref=e1368] [cursor=pointer]:
+              - /url: /docs/6.0/examples
+          - listitem [ref=e1369]:
+            - link "Icons" [ref=e1370] [cursor=pointer]:
+              - /url: https://icons.getbootstrap.com/
+          - listitem [ref=e1371]:
+            - link "Blog" [ref=e1372] [cursor=pointer]:
+              - /url: https://blog.getbootstrap.com/
+          - listitem [ref=e1373]:
+            - link "Swag Store" [ref=e1374] [cursor=pointer]:
+              - /url: https://cottonbureau.com/people/bootstrap
+      - generic [ref=e1375]:
+        - heading "Guides" [level=5] [ref=e1376]
+        - list [ref=e1377]:
+          - listitem [ref=e1378]:
+            - link "Getting started" [ref=e1379] [cursor=pointer]:
+              - /url: /docs/6.0/getting-started
+          - listitem [ref=e1380]:
+            - link "Starter template" [ref=e1381] [cursor=pointer]:
+              - /url: /docs/6.0/examples/starter-template
+          - listitem [ref=e1382]:
+            - link "Webpack" [ref=e1383] [cursor=pointer]:
+              - /url: /docs/6.0/guides/webpack
+          - listitem [ref=e1384]:
+            - link "Parcel" [ref=e1385] [cursor=pointer]:
+              - /url: /docs/6.0/guides/parcel
+          - listitem [ref=e1386]:
+            - link "Vite" [ref=e1387] [cursor=pointer]:
+              - /url: /docs/6.0/guides/vite
+      - generic [ref=e1388]:
+        - heading "Projects" [level=5] [ref=e1389]
+        - list [ref=e1390]:
+          - listitem [ref=e1391]:
+            - link "Bootstrap 6" [ref=e1392] [cursor=pointer]:
+              - /url: https://github.com/twbs/bootstrap
+          - listitem [ref=e1393]:
+            - link "Bootstrap 5" [ref=e1394] [cursor=pointer]:
+              - /url: https://github.com/twbs/bootstrap/tree/v5-dev
+          - listitem [ref=e1395]:
+            - link "Icons" [ref=e1396] [cursor=pointer]:
+              - /url: https://github.com/twbs/icons
+          - listitem [ref=e1397]:
+            - link "Examples repo" [ref=e1398] [cursor=pointer]:
+              - /url: https://github.com/twbs/examples
+      - generic [ref=e1399]:
+        - heading "Community" [level=5] [ref=e1400]
+        - list [ref=e1401]:
+          - listitem [ref=e1402]:
+            - link "Issues" [ref=e1403] [cursor=pointer]:
+              - /url: https://github.com/twbs/bootstrap/issues
+          - listitem [ref=e1404]:
+            - link "Discussions" [ref=e1405] [cursor=pointer]:
+              - /url: https://github.com/twbs/bootstrap/discussions
+          - listitem [ref=e1406]:
+            - link "Corporate sponsors" [ref=e1407] [cursor=pointer]:
+              - /url: https://github.com/sponsors/twbs
+          - listitem [ref=e1408]:
+            - link "Open Collective" [ref=e1409] [cursor=pointer]:
+              - /url: https://opencollective.com/bootstrap
+          - listitem [ref=e1410]:
+            - link "Stack Overflow" [ref=e1411] [cursor=pointer]:
+              - /url: https://stackoverflow.com/questions/tagged/bootstrap-5
+  - textbox [ref=e1413]
+```

@@ -1,0 +1,937 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - button "Toggle theme (light)" [ref=e3] [cursor=pointer]:
+    - img [ref=e4]
+    - generic [ref=e6]: Toggle theme
+  - banner [ref=e7]:
+    - generic [ref=e8]:
+      - heading "Bootstrap ورقة الغش" [level=1] [ref=e9]:
+        - img "Bootstrap" [ref=e10]
+        - text: ورقة الغش
+      - link "جدول بيانات LTR" [ref=e11] [cursor=pointer]:
+        - /url: /docs/6.0/examples/cheatsheet/
+  - complementary [ref=e12]:
+    - heading "على هذه الصفحة" [level=2] [ref=e13]
+    - navigation [ref=e14]:
+      - list [ref=e15]:
+        - listitem [ref=e16]:
+          - button "المحتوى" [ref=e17] [cursor=pointer]
+        - listitem [ref=e18]:
+          - button "النماذج" [ref=e19] [cursor=pointer]
+        - listitem [ref=e20]:
+          - button "مكونات" [ref=e21] [cursor=pointer]
+  - main [ref=e22]:
+    - generic [ref=e23]:
+      - heading "المحتوى" [level=2] [ref=e24]
+      - article [ref=e25]:
+        - generic [ref=e26]:
+          - heading "النصوص" [level=3] [ref=e27]
+          - link "دليل الإستخدام" [ref=e28] [cursor=pointer]:
+            - /url: /docs/6.0/content/typography
+        - generic [ref=e29]:
+          - generic [ref=e31]:
+            - paragraph [ref=e32]: العرض 1
+            - paragraph [ref=e33]: العرض 2
+            - paragraph [ref=e34]: العرض 3
+            - paragraph [ref=e35]: العرض 4
+            - paragraph [ref=e36]: العرض 5
+            - paragraph [ref=e37]: العرض 6
+          - generic [ref=e39]:
+            - paragraph [ref=e40]: عنوان 1
+            - paragraph [ref=e41]: عنوان 2
+            - paragraph [ref=e42]: عنوان 3
+            - paragraph [ref=e43]: عنوان 4
+            - paragraph [ref=e44]: عنوان 5
+            - paragraph [ref=e45]: عنوان 6
+          - paragraph [ref=e48]: هذه قطعة إملائية متميزة، فهي مصممة لتكون بارزة من بين القطع الإملائية الأخرى.
+          - generic [ref=e50]:
+            - paragraph [ref=e51]:
+              - text: يمكنك استخدام تصنيف mark
+              - mark [ref=e52]: لتحديد
+              - text: نص.
+            - paragraph [ref=e53]:
+              - deletion [ref=e54]: من المفترض أن يتم التعامل مع هذا السطر كنص محذوف.
+            - paragraph [ref=e55]: من المفترض أن يتم التعامل مع هذا السطر على أنه لم يعد دقيقًا.
+            - paragraph [ref=e56]:
+              - insertion [ref=e57]: من المفترض أن يتم التعامل مع هذا السطر كإضافة إلى المستند.
+            - paragraph [ref=e58]: سيتم عرض النص في هذا السطر كما وتحته خط.
+            - paragraph [ref=e59]: من المفترض أن يتم التعامل مع هذا السطر على أنه يحوي تفاصيل صغيرة.
+            - paragraph [ref=e60]:
+              - strong [ref=e61]: هذا السطر يحوي نص عريض.
+            - paragraph [ref=e62]:
+              - emphasis [ref=e63]: هذا السطر يحوي نص مائل.
+          - separator [ref=e66]
+          - blockquote [ref=e69]:
+            - paragraph [ref=e70]: إقتباس مبهر، موضوع في عنصر blockquote
+            - generic [ref=e71]: — شخص مشهور في عنوان المصدر
+          - list [ref=e74]:
+            - listitem [ref=e75]: هذه قائمة عناصر.
+            - listitem [ref=e76]: بالرغم من أنها مصممة كي لا تظهر كذلك.
+            - listitem [ref=e77]: إلا أنها مجهزة كـ قائمة خلف الكواليس
+            - listitem [ref=e78]: هذا التصميم ينطبق فقد على القائمة الرئيسية
+            - listitem [ref=e79]:
+              - text: القوائم الفرعية
+              - list [ref=e80]:
+                - listitem [ref=e81]: لا تتأثر بهذا التصميم
+                - listitem [ref=e82]: فهي تظهر عليها علامات الترقيم
+                - listitem [ref=e83]: وتحتوي على مساحة فارغة بجوارها
+            - listitem [ref=e84]: قد يكون هذا التصميم مفيدًا في بعض الأحيان.
+          - list [ref=e87]:
+            - listitem [ref=e88]: هذا عنصر في قائمة.
+            - listitem [ref=e89]: وهذا أيضًا.
+            - listitem [ref=e90]: لكنهم يظهرون متجاورين.
+      - article [ref=e91]:
+        - generic [ref=e92]:
+          - heading "الصور" [level=3] [ref=e93]
+          - link "دليل الإستخدام" [ref=e94] [cursor=pointer]:
+            - /url: /docs/6.0/content/images
+        - generic [ref=e95]:
+          - 'img "Placeholder: صورة مستجيبة" [ref=e98]':
+            - generic [ref=e100]: صورة مستجيبة
+          - 'img "صورة عنصر نائب مربع عام مع حدود بيضاء حولها ، مما يجعلها تشبه صورة تم التقاطها بكاميرا فورية قديمة: 200x200" [ref=e103]':
+            - generic [ref=e105]: 200x200
+      - article [ref=e106]:
+        - generic [ref=e107]:
+          - heading "الجداول" [level=3] [ref=e108]
+          - link "دليل الإستخدام" [ref=e109] [cursor=pointer]:
+            - /url: /docs/6.0/content/tables
+        - generic [ref=e110]:
+          - table [ref=e113]:
+            - rowgroup [ref=e114]:
+              - row "# الاسم الاول الكنية الاسم المستعار" [ref=e115]:
+                - columnheader "#" [ref=e116]
+                - columnheader "الاسم الاول" [ref=e117]
+                - columnheader "الكنية" [ref=e118]
+                - columnheader "الاسم المستعار" [ref=e119]
+            - rowgroup [ref=e120]:
+              - row "1 Mark Otto @mdo" [ref=e121]:
+                - rowheader "1" [ref=e122]
+                - cell "Mark" [ref=e123]
+                - cell "Otto" [ref=e124]
+                - cell "@mdo" [ref=e125]
+              - row "2 Jacob Thornton @fat" [ref=e126]:
+                - rowheader "2" [ref=e127]
+                - cell "Jacob" [ref=e128]
+                - cell "Thornton" [ref=e129]
+                - cell "@fat" [ref=e130]
+              - row "3 John Doe @social" [ref=e131]:
+                - rowheader "3" [ref=e132]
+                - cell "John" [ref=e133]
+                - cell "Doe" [ref=e134]
+                - cell "@social" [ref=e135]
+          - table [ref=e138]:
+            - rowgroup [ref=e139]:
+              - row "# الاسم الاول الكنية الاسم المستعار" [ref=e140]:
+                - columnheader "#" [ref=e141]
+                - columnheader "الاسم الاول" [ref=e142]
+                - columnheader "الكنية" [ref=e143]
+                - columnheader "الاسم المستعار" [ref=e144]
+            - rowgroup [ref=e145]:
+              - row "1 Mark Otto @mdo" [ref=e146]:
+                - rowheader "1" [ref=e147]
+                - cell "Mark" [ref=e148]
+                - cell "Otto" [ref=e149]
+                - cell "@mdo" [ref=e150]
+              - row "2 Jacob Thornton @fat" [ref=e151]:
+                - rowheader "2" [ref=e152]
+                - cell "Jacob" [ref=e153]
+                - cell "Thornton" [ref=e154]
+                - cell "@fat" [ref=e155]
+              - row "3 John Doe @social" [ref=e156]:
+                - rowheader "3" [ref=e157]
+                - cell "John" [ref=e158]
+                - cell "Doe" [ref=e159]
+                - cell "@social" [ref=e160]
+          - table [ref=e163]:
+            - rowgroup [ref=e164]:
+              - row "Class عنوان عنوان" [ref=e165]:
+                - columnheader "Class" [ref=e166]
+                - columnheader "عنوان" [ref=e167]
+                - columnheader "عنوان" [ref=e168]
+            - rowgroup [ref=e169]:
+              - row "Default خلية خلية" [ref=e170]:
+                - rowheader "Default" [ref=e171]
+                - cell "خلية" [ref=e172]
+                - cell "خلية" [ref=e173]
+              - row "Primary خلية خلية" [ref=e174]:
+                - rowheader "Primary" [ref=e175]
+                - cell "خلية" [ref=e176]
+                - cell "خلية" [ref=e177]
+              - row "Accent خلية خلية" [ref=e178]:
+                - rowheader "Accent" [ref=e179]
+                - cell "خلية" [ref=e180]
+                - cell "خلية" [ref=e181]
+              - row "Success خلية خلية" [ref=e182]:
+                - rowheader "Success" [ref=e183]
+                - cell "خلية" [ref=e184]
+                - cell "خلية" [ref=e185]
+              - row "Danger خلية خلية" [ref=e186]:
+                - rowheader "Danger" [ref=e187]
+                - cell "خلية" [ref=e188]
+                - cell "خلية" [ref=e189]
+              - row "Warning خلية خلية" [ref=e190]:
+                - rowheader "Warning" [ref=e191]
+                - cell "خلية" [ref=e192]
+                - cell "خلية" [ref=e193]
+              - row "Info خلية خلية" [ref=e194]:
+                - rowheader "Info" [ref=e195]
+                - cell "خلية" [ref=e196]
+                - cell "خلية" [ref=e197]
+              - row "Inverse خلية خلية" [ref=e198]:
+                - rowheader "Inverse" [ref=e199]
+                - cell "خلية" [ref=e200]
+                - cell "خلية" [ref=e201]
+              - row "Secondary خلية خلية" [ref=e202]:
+                - rowheader "Secondary" [ref=e203]
+                - cell "خلية" [ref=e204]
+                - cell "خلية" [ref=e205]
+          - table [ref=e208]:
+            - rowgroup [ref=e209]:
+              - row "# الاسم الاول الكنية الاسم المستعار" [ref=e210]:
+                - columnheader "#" [ref=e211]
+                - columnheader "الاسم الاول" [ref=e212]
+                - columnheader "الكنية" [ref=e213]
+                - columnheader "الاسم المستعار" [ref=e214]
+            - rowgroup [ref=e215]:
+              - row "1 Mark Otto @mdo" [ref=e216]:
+                - rowheader "1" [ref=e217]
+                - cell "Mark" [ref=e218]
+                - cell "Otto" [ref=e219]
+                - cell "@mdo" [ref=e220]
+              - row "2 Jacob Thornton @fat" [ref=e221]:
+                - rowheader "2" [ref=e222]
+                - cell "Jacob" [ref=e223]
+                - cell "Thornton" [ref=e224]
+                - cell "@fat" [ref=e225]
+              - row "3 John Doe @social" [ref=e226]:
+                - rowheader "3" [ref=e227]
+                - cell "John" [ref=e228]
+                - cell "Doe" [ref=e229]
+                - cell "@social" [ref=e230]
+      - article [ref=e231]:
+        - generic [ref=e232]:
+          - heading "النماذج البيانية" [level=3] [ref=e233]
+          - link "دليل الإستخدام" [ref=e234] [cursor=pointer]:
+            - /url: /docs/6.0/content/figures
+        - figure "شرح للصورة أعلاه." [ref=e238]:
+          - 'img "Placeholder: 400x300" [ref=e239]':
+            - generic [ref=e241]: 400x300
+          - generic [ref=e242]: شرح للصورة أعلاه.
+    - generic [ref=e243]:
+      - heading "النماذج" [level=2] [ref=e244]
+      - article [ref=e245]:
+        - generic [ref=e246]:
+          - heading "نظرة عامة" [level=3] [ref=e247]
+          - link "دليل الإستخدام" [ref=e248] [cursor=pointer]:
+            - /url: /docs/6.0/forms/overview/
+        - generic [ref=e252]:
+          - generic [ref=e253]:
+            - generic [ref=e254]: البريد الإلكتروني
+            - textbox "البريد الإلكتروني" [ref=e255]
+            - generic [ref=e256]: لن نقوم بمشاركة بريدك الإلكتروني مع أي شخص آخر.
+          - generic [ref=e257]:
+            - generic [ref=e258]: كلمة السر
+            - textbox "كلمة السر" [ref=e259]
+          - generic [ref=e260]:
+            - generic [ref=e261]: قائمة اختيار
+            - combobox "قائمة اختيار" [ref=e262]:
+              - option "افتح قائمة الاختيار هذه" [selected]
+              - option "واحد"
+              - option "اثنان"
+              - option "ثلاثة"
+          - generic [ref=e263]:
+            - checkbox "اخترني" [ref=e264]
+            - generic [ref=e265]: اخترني
+          - group "أزرار الاختيار الأحادي" [ref=e266]:
+            - generic [ref=e267]: أزرار الاختيار الأحادي
+            - generic [ref=e268]:
+              - radio "الخيار الافتراضي" [checked] [ref=e269]
+              - generic [ref=e270]: الخيار الافتراضي
+            - generic [ref=e271]:
+              - radio "خيار آخر" [ref=e272]
+              - generic [ref=e273]: خيار آخر
+          - generic [ref=e274]:
+            - generic [ref=e275]: رفع
+            - button "رفع" [ref=e276] [cursor=pointer]
+          - generic [ref=e277]:
+            - switch "زر على شكل مفتاح اختيار." [checked] [ref=e278]
+            - generic [ref=e279]: زر على شكل مفتاح اختيار.
+          - generic [ref=e280]:
+            - generic [ref=e281]: مثال على حقل اختيار نطاقي
+            - slider "مثال على حقل اختيار نطاقي" [ref=e282]: "2.5"
+          - button "إرسال" [ref=e283] [cursor=pointer]
+      - article [ref=e284]:
+        - generic [ref=e285]:
+          - heading "الحقول المعطلة" [level=3] [ref=e286]
+          - link "دليل الإستخدام" [ref=e287] [cursor=pointer]:
+            - /url: /docs/6.0/forms/overview/#disabled-forms
+        - group "مثال على مجموعة الحقول المعطلة" [ref=e292]:
+          - generic [ref=e293]:
+            - generic [ref=e294]: حقل إدخال معطل
+            - textbox "حقل إدخال معطل" [disabled] [ref=e295]
+          - generic [ref=e296]:
+            - generic [ref=e297]: قائمة اختيار معطلة
+            - combobox "قائمة اختيار معطلة" [disabled] [ref=e298]:
+              - option "خيار معطل" [disabled] [selected]
+          - generic [ref=e300]:
+            - checkbox "زر اختيار معطل" [disabled] [ref=e301]
+            - generic [ref=e302]: زر اختيار معطل
+          - group "أزرار اختيار أحادي معطلين" [ref=e303]:
+            - generic [ref=e304]: أزرار اختيار أحادي معطلين
+            - generic [ref=e305]:
+              - radio "خيار معطل" [disabled] [ref=e306]
+              - generic [ref=e307]: خيار معطل
+            - generic [ref=e308]:
+              - radio "خيار آخر معطل" [disabled] [ref=e309]
+              - generic [ref=e310]: خيار آخر معطل
+          - generic [ref=e311]:
+            - generic [ref=e312]: رفع معطل
+            - button "رفع معطل" [disabled] [ref=e313]
+          - generic [ref=e314]:
+            - switch "زر معطل على شكل مفتاح اختيار." [checked] [disabled] [ref=e315]
+            - generic [ref=e316]: زر معطل على شكل مفتاح اختيار.
+          - generic [ref=e317]:
+            - generic [ref=e318]: حقل اختيار نطاقي معطل
+            - slider "حقل اختيار نطاقي معطل" [disabled]: "2.5"
+          - button "إرسال" [disabled]
+      - article [ref=e319]:
+        - generic [ref=e320]:
+          - heading "الأحجام" [level=3] [ref=e321]
+          - link "دليل الإستخدام" [ref=e322] [cursor=pointer]:
+            - /url: /docs/6.0/forms/form-control#sizing
+        - generic [ref=e323]:
+          - generic [ref=e325]:
+            - textbox ".form-control-lg مثال" [ref=e327]:
+              - /placeholder: حقل إدخال كبير
+            - combobox ".form-select-lg مثال" [ref=e329]:
+              - option "افتح قائمة الاختيار هذه" [selected]
+              - option "واحد"
+              - option "اثنان"
+              - option "ثلاثة"
+            - button "مثال على إدخال ملف كبير" [ref=e331] [cursor=pointer]
+          - generic [ref=e333]:
+            - textbox ".form-control-sm مثال" [ref=e335]:
+              - /placeholder: حقل إدخال صغير
+            - combobox ".form-select-sm مثال" [ref=e337]:
+              - option "افتح قائمة الاختيار هذه" [selected]
+              - option "واحد"
+              - option "اثنان"
+              - option "ثلاثة"
+            - button "مثال على إدخال ملف صغير" [ref=e339] [cursor=pointer]
+      - article [ref=e340]:
+        - generic [ref=e341]:
+          - heading "مجموعة الإدخال" [level=3] [ref=e342]
+          - link "دليل الإستخدام" [ref=e343] [cursor=pointer]:
+            - /url: /docs/6.0/forms/input-group
+        - generic [ref=e346]:
+          - generic [ref=e347]:
+            - generic [ref=e348]: أنا اسمي
+            - textbox "الاسم" [ref=e349]:
+              - /placeholder: فلان الفلاني
+          - generic [ref=e350]:
+            - textbox "الطعام المفضل" [ref=e351]:
+              - /placeholder: أنا أحب الكعك والقهوة
+            - generic [ref=e352]: وغيرها
+          - generic [ref=e353]: عنوان حسابك الشخصي
+          - generic [ref=e354]:
+            - textbox "عنوان حسابك الشخصي" [ref=e355]
+            - generic [ref=e357]: https://example.com/users/
+          - generic [ref=e358]:
+            - generic [ref=e360]: ".00"
+            - textbox "المبلغ (لأقرب دولار)" [ref=e361]
+            - generic [ref=e362]: $
+          - generic [ref=e363]:
+            - generic [ref=e364]: مع textarea
+            - textbox "مع textarea" [ref=e365]
+      - article [ref=e366]:
+        - generic [ref=e367]:
+          - heading "الحقول ذوي العناوين العائمة" [level=3] [ref=e368]
+          - link "دليل الإستخدام" [ref=e369] [cursor=pointer]:
+            - /url: /docs/6.0/forms/floating-labels
+        - generic [ref=e373]:
+          - generic [ref=e374]:
+            - textbox "البريد الالكتروني" [ref=e375]:
+              - /placeholder: name@example.com
+            - generic: البريد الالكتروني
+          - generic [ref=e376]:
+            - textbox "كلمة السر" [ref=e377]
+            - generic: كلمة السر
+      - article [ref=e378]:
+        - generic [ref=e379]:
+          - heading "التحقق" [level=3] [ref=e380]
+          - link "دليل الإستخدام" [ref=e381] [cursor=pointer]:
+            - /url: /docs/6.0/forms/validation
+        - generic [ref=e385]:
+          - generic [ref=e386]:
+            - generic [ref=e387]: الاسم الاول
+            - textbox "الاسم الاول" [ref=e388]: Mark
+            - generic [ref=e389]: يبدو صحيحًا!
+          - generic [ref=e390]:
+            - generic [ref=e391]: الكنية
+            - textbox "الكنية" [ref=e392]: Otto
+            - generic [ref=e393]: يبدو صحيحًا!
+          - generic [ref=e394]:
+            - generic [ref=e395]: اسم المستخدم
+            - generic [ref=e396]:
+              - textbox "اسم المستخدم" [ref=e397]
+              - generic [ref=e398]: "@"
+              - generic [ref=e399]: يرجى اختيار اسم مستخدم.
+          - generic [ref=e400]:
+            - generic [ref=e401]: مدينة
+            - textbox "مدينة" [ref=e402]
+            - generic [ref=e403]: يرجى إدخال مدينة صحيحة.
+          - generic [ref=e404]:
+            - generic [ref=e405]: حالة
+            - combobox "حالة" [ref=e406]:
+              - option "اختر..." [disabled] [selected]
+              - option "..."
+            - generic [ref=e407]: يرجى اختيار ولاية صحيحة.
+          - generic [ref=e408]:
+            - generic [ref=e409]: الرمز البريدي
+            - textbox "الرمز البريدي" [ref=e410]
+            - generic [ref=e411]: يرجى إدخال رمز بريدي صحيح.
+          - generic [ref=e413]:
+            - checkbox "أوافق على الشروط والأحكام" [ref=e414]
+            - generic [ref=e415]: أوافق على الشروط والأحكام
+            - generic [ref=e416]: تجب الموافقة قبل إرسال النموذج.
+          - button "إرسال النموذج" [ref=e418] [cursor=pointer]
+    - generic [ref=e419]:
+      - heading "العناصر" [level=2] [ref=e420]
+      - article [ref=e421]:
+        - generic [ref=e422]:
+          - heading "المطوية" [level=3] [ref=e423]
+          - link "دليل الإستخدام" [ref=e424] [cursor=pointer]:
+            - /url: /docs/6.0/components/accordion
+        - generic [ref=e428]:
+          - generic [ref=e429]:
+            - heading "عنصر المطوية الأول" [level=4] [ref=e430] [cursor=pointer]:
+              - button "عنصر المطوية الأول" [expanded] [ref=e431]
+            - generic [ref=e433]:
+              - strong [ref=e434]: هذا هو محتوى عنصر المطوية الأول.
+              - text: سيكون المحتوى مخفيًا بشكل إفتراضي حتى يقوم Bootstrap بإضافة الكلاسات اللازمة لكل عنصر في المطوية. هذه الكلاسات تتحكم بالمظهر العام ووتتحكم أيضا بإظهار وإخفاء أقسام المطوية عبر حركات CSS الإنتقالية. يمكنك تعديل أي من هذه عبر كلاسات CSS خاصة بك، او عبر تغيير القيم الإفتراضية المقدمة من Bootstrap. من الجدير بالذكر أنه يمكن وضع أي كود HTML هنا، ولكن الحركة الإنتقالية قد تحد من الoverflow.
+          - heading "عنصر المطوية الثاني" [level=4] [ref=e436] [cursor=pointer]:
+            - button "عنصر المطوية الثاني" [ref=e437]
+          - heading "عنصر المطوية الثالث" [level=4] [ref=e439] [cursor=pointer]:
+            - button "عنصر المطوية الثالث" [ref=e440]
+      - article [ref=e441]:
+        - generic [ref=e442]:
+          - heading "الإنذارات" [level=3] [ref=e443]
+          - link "دليل الإستخدام" [ref=e444] [cursor=pointer]:
+            - /url: /docs/6.0/components/alerts
+        - generic [ref=e445]:
+          - generic [ref=e447]:
+            - alert [ref=e448]:
+              - text: تنبيه primary بسيط مع
+              - link "رابط مثال" [ref=e449] [cursor=pointer]:
+                - /url: "#"
+              - text: . أعطها نقرة إذا أردت.
+              - button "قريب" [ref=e450] [cursor=pointer]
+            - alert [ref=e451]:
+              - text: تنبيه accent بسيط مع
+              - link "رابط مثال" [ref=e452] [cursor=pointer]:
+                - /url: "#"
+              - text: . أعطها نقرة إذا أردت.
+              - button "قريب" [ref=e453] [cursor=pointer]
+            - alert [ref=e454]:
+              - text: تنبيه success بسيط مع
+              - link "رابط مثال" [ref=e455] [cursor=pointer]:
+                - /url: "#"
+              - text: . أعطها نقرة إذا أردت.
+              - button "قريب" [ref=e456] [cursor=pointer]
+            - alert [ref=e457]:
+              - text: تنبيه danger بسيط مع
+              - link "رابط مثال" [ref=e458] [cursor=pointer]:
+                - /url: "#"
+              - text: . أعطها نقرة إذا أردت.
+              - button "قريب" [ref=e459] [cursor=pointer]
+            - alert [ref=e460]:
+              - text: تنبيه warning بسيط مع
+              - link "رابط مثال" [ref=e461] [cursor=pointer]:
+                - /url: "#"
+              - text: . أعطها نقرة إذا أردت.
+              - button "قريب" [ref=e462] [cursor=pointer]
+            - alert [ref=e463]:
+              - text: تنبيه info بسيط مع
+              - link "رابط مثال" [ref=e464] [cursor=pointer]:
+                - /url: "#"
+              - text: . أعطها نقرة إذا أردت.
+              - button "قريب" [ref=e465] [cursor=pointer]
+            - alert [ref=e466]:
+              - text: تنبيه inverse بسيط مع
+              - link "رابط مثال" [ref=e467] [cursor=pointer]:
+                - /url: "#"
+              - text: . أعطها نقرة إذا أردت.
+              - button "قريب" [ref=e468] [cursor=pointer]
+            - alert [ref=e469]:
+              - text: تنبيه secondary بسيط مع
+              - link "رابط مثال" [ref=e470] [cursor=pointer]:
+                - /url: "#"
+              - text: . أعطها نقرة إذا أردت.
+              - button "قريب" [ref=e471] [cursor=pointer]
+          - alert [ref=e474]:
+            - heading "أحسنت!" [level=4] [ref=e475]
+            - paragraph [ref=e476]: لقد نجحت في قراءة رسالة التنبيه المهمة هذه. سيتم تشغيل نص المثال هذا لفترة أطول قليلاً حتى تتمكن من رؤية كيفية عمل التباعد داخل التنبيه مع هذا النوع من المحتوى.
+            - separator
+            - paragraph [ref=e477]: كلما احتجت إلى ذلك ، تأكد من استخدام أدوات الهامش للحفاظ على الأشياء لطيفة ومرتبة.
+      - article [ref=e478]:
+        - generic [ref=e479]:
+          - heading "الشارة" [level=3] [ref=e480]
+          - link "دليل الإستخدام" [ref=e481] [cursor=pointer]:
+            - /url: /docs/6.0/components/badge
+        - generic [ref=e482]:
+          - generic [ref=e484]:
+            - paragraph [ref=e485]:
+              - text: مثال على عنوان
+              - generic [ref=e486]: جديد
+            - paragraph [ref=e487]:
+              - text: مثال على عنوان
+              - generic [ref=e488]: جديد
+            - paragraph [ref=e489]:
+              - text: مثال على عنوان
+              - generic [ref=e490]: جديد
+            - paragraph [ref=e491]:
+              - text: مثال على عنوان
+              - generic [ref=e492]: جديد
+            - paragraph [ref=e493]:
+              - text: مثال على عنوان
+              - generic [ref=e494]: جديد
+            - paragraph [ref=e495]:
+              - text: مثال على عنوان
+              - generic [ref=e496]: جديد
+            - paragraph [ref=e497]:
+              - text: مثال على عنوان
+              - generic [ref=e498]: جديد
+            - paragraph [ref=e499]:
+              - text: مثال على عنوان
+              - generic [ref=e500]: جديد
+          - generic [ref=e502]:
+            - generic [ref=e503]: Primary
+            - generic [ref=e504]: Accent
+            - generic [ref=e505]: Success
+            - generic [ref=e506]: Danger
+            - generic [ref=e507]: Warning
+            - generic [ref=e508]: Info
+            - generic [ref=e509]: Inverse
+            - generic [ref=e510]: Secondary
+      - article [ref=e511]:
+        - generic [ref=e512]:
+          - heading "مسار التنقل التفصيلي (فتات الخبز)" [level=3] [ref=e513]
+          - link "دليل الإستخدام" [ref=e514] [cursor=pointer]:
+            - /url: /docs/6.0/components/breadcrumb
+        - navigation "فتات الخبز" [ref=e518]:
+          - list [ref=e519]:
+            - listitem [ref=e520]:
+              - link "الصفحة الرئيسية" [ref=e521] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e522]:
+              - link "المكتبة" [ref=e523] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e524]: البيانات
+      - article [ref=e525]:
+        - generic [ref=e526]:
+          - heading "الأزرار" [level=3] [ref=e527]
+          - link "دليل الإستخدام" [ref=e528] [cursor=pointer]:
+            - /url: /docs/6.0/components/buttons
+        - generic [ref=e529]:
+          - generic [ref=e531]:
+            - button "Primary" [ref=e532] [cursor=pointer]
+            - button "Accent" [ref=e533] [cursor=pointer]
+            - button "Success" [ref=e534] [cursor=pointer]
+            - button "Danger" [ref=e535] [cursor=pointer]
+            - button "Warning" [ref=e536] [cursor=pointer]
+            - button "Info" [ref=e537] [cursor=pointer]
+            - button "Inverse" [ref=e538] [cursor=pointer]
+            - button "Secondary" [ref=e539] [cursor=pointer]
+            - button "رابط" [ref=e540] [cursor=pointer]
+          - generic [ref=e542]:
+            - button "Primary" [ref=e543] [cursor=pointer]
+            - button "Accent" [ref=e544] [cursor=pointer]
+            - button "Success" [ref=e545] [cursor=pointer]
+            - button "Danger" [ref=e546] [cursor=pointer]
+            - button "Warning" [ref=e547] [cursor=pointer]
+            - button "Info" [ref=e548] [cursor=pointer]
+            - button "Inverse" [ref=e549] [cursor=pointer]
+            - button "Secondary" [ref=e550] [cursor=pointer]
+          - generic [ref=e552]:
+            - button "زر صغير" [ref=e553] [cursor=pointer]
+            - button "زر قياسي" [ref=e554] [cursor=pointer]
+            - button "زر كبير" [ref=e555] [cursor=pointer]
+      - article [ref=e556]:
+        - generic [ref=e557]:
+          - heading "مجموعة الأزرار" [level=3] [ref=e558]
+          - link "دليل الإستخدام" [ref=e559] [cursor=pointer]:
+            - /url: /docs/6.0/components/button-group
+        - toolbar "شريط أدوات مع مجموعات أزرار" [ref=e563]:
+          - group "المجموعة الأولى" [ref=e564]:
+            - button "1" [ref=e565] [cursor=pointer]
+            - button "2" [ref=e566] [cursor=pointer]
+            - button "3" [ref=e567] [cursor=pointer]
+            - button "4" [ref=e568] [cursor=pointer]
+          - group "المجموعة الثانية" [ref=e569]:
+            - button "5" [ref=e570] [cursor=pointer]
+            - button "6" [ref=e571] [cursor=pointer]
+            - button "7" [ref=e572] [cursor=pointer]
+          - group "المجموعة الثالثة" [ref=e573]:
+            - button "8" [ref=e574] [cursor=pointer]
+      - article [ref=e575]:
+        - generic [ref=e576]:
+          - heading "البطاقة" [level=3] [ref=e577]
+          - link "دليل الإستخدام" [ref=e578] [cursor=pointer]:
+            - /url: /docs/6.0/components/card
+        - generic [ref=e582]:
+          - generic [ref=e584]:
+            - 'img "Placeholder: غطاء الصورة" [ref=e585]':
+              - generic [ref=e587]: غطاء الصورة
+            - generic [ref=e588]:
+              - heading "عنوان البطاقة" [level=5] [ref=e589]
+              - paragraph [ref=e590]: بعض الأمثلة السريعة للنصوص للبناء على عنوان البطاقة وتشكيل الجزء الأكبر من محتوى البطاقة.
+              - link "اذهب لمكان ما" [ref=e591] [cursor=pointer]:
+                - /url: "#"
+          - generic [ref=e593]:
+            - generic [ref=e594]: متميز
+            - generic [ref=e595]:
+              - heading "عنوان البطاقة" [level=5] [ref=e596]
+              - paragraph [ref=e597]: بعض الأمثلة السريعة للنصوص للبناء على عنوان البطاقة وتشكيل الجزء الأكبر من محتوى البطاقة.
+              - link "اذهب لمكان ما" [ref=e598] [cursor=pointer]:
+                - /url: "#"
+            - generic [ref=e599]: منذ يومان
+          - generic [ref=e601]:
+            - generic [ref=e602]:
+              - heading "عنوان البطاقة" [level=5] [ref=e603]
+              - paragraph [ref=e604]: بعض الأمثلة السريعة للنصوص للبناء على عنوان البطاقة وتشكيل الجزء الأكبر من محتوى البطاقة.
+            - list [ref=e605]:
+              - listitem [ref=e606]: عنصر
+              - listitem [ref=e607]: عنصر آخر
+              - listitem [ref=e608]: عنصر ثالث
+            - generic [ref=e609]:
+              - link "رابط البطاقة" [ref=e610] [cursor=pointer]:
+                - /url: "#"
+              - link "رابط آخر" [ref=e611] [cursor=pointer]:
+                - /url: "#"
+          - generic [ref=e614]:
+            - 'img "Placeholder: صورة" [ref=e616]':
+              - generic [ref=e618]: صورة
+            - generic [ref=e620]:
+              - heading "عنوان البطاقة" [level=5] [ref=e621]
+              - paragraph [ref=e622]: هذه بطاقة أعرض مع نص داعم تحتها كمقدمة طبيعية لمحتوى إضافي. هذا المحتوى أطول قليلاً.
+              - paragraph [ref=e623]: آخر تحديث منذ 3 دقائق
+      - article [ref=e624]:
+        - generic [ref=e625]:
+          - heading "شرائح العرض" [level=3] [ref=e626]
+          - link "دليل الإستخدام" [ref=e627] [cursor=pointer]:
+            - /url: /docs/6.0/components/carousel
+        - generic [ref=e631]:
+          - generic [ref=e632]:
+            - button "الشريحة الأولى" [ref=e633] [cursor=pointer]
+            - button "الشريحة الثانية" [ref=e634] [cursor=pointer]
+            - button "الشريحة الثالثة" [ref=e635] [cursor=pointer]
+          - 'img "Placeholder: الشريحة الأولى" [ref=e638]':
+            - generic [ref=e640]: الشريحة الأولى
+          - button "السابق" [ref=e641] [cursor=pointer]:
+            - generic [ref=e643]: السابق
+          - button "التالي" [ref=e644] [cursor=pointer]:
+            - generic [ref=e646]: التالي
+      - article [ref=e647]:
+        - generic [ref=e648]:
+          - heading "القوائم المنسدلة" [level=3] [ref=e649]
+          - link "دليل الإستخدام" [ref=e650] [cursor=pointer]:
+            - /url: /docs/6.0/components/dropdowns
+        - generic [ref=e651]:
+          - generic [ref=e654]:
+            - button "زر القائمة المنسدلة" [ref=e656] [cursor=pointer]
+            - button "زر القائمة المنسدلة" [ref=e658] [cursor=pointer]
+            - button "زر القائمة المنسدلة" [ref=e660] [cursor=pointer]
+          - generic [ref=e662]:
+            - generic [ref=e663]:
+              - button "Primary" [ref=e664] [cursor=pointer]
+              - button "تبديل القائمة المنسدلة" [ref=e665] [cursor=pointer]:
+                - generic [ref=e666]: تبديل القائمة المنسدلة
+            - generic [ref=e667]:
+              - button "Secondary" [ref=e668] [cursor=pointer]
+              - button "تبديل القائمة المنسدلة" [ref=e669] [cursor=pointer]:
+                - generic [ref=e670]: تبديل القائمة المنسدلة
+            - generic [ref=e671]:
+              - button "Success" [ref=e672] [cursor=pointer]
+              - button "تبديل القائمة المنسدلة" [ref=e673] [cursor=pointer]:
+                - generic [ref=e674]: تبديل القائمة المنسدلة
+            - generic [ref=e675]:
+              - button "Info" [ref=e676] [cursor=pointer]
+              - button "تبديل القائمة المنسدلة" [ref=e677] [cursor=pointer]:
+                - generic [ref=e678]: تبديل القائمة المنسدلة
+            - generic [ref=e679]:
+              - button "Warning" [ref=e680] [cursor=pointer]
+              - button "تبديل القائمة المنسدلة" [ref=e681] [cursor=pointer]:
+                - generic [ref=e682]: تبديل القائمة المنسدلة
+            - generic [ref=e683]:
+              - button "Danger" [ref=e684] [cursor=pointer]
+              - button "تبديل القائمة المنسدلة" [ref=e685] [cursor=pointer]:
+                - generic [ref=e686]: تبديل القائمة المنسدلة
+          - generic [ref=e689]:
+            - button "زر القائمة المنسدلة لليسار" [ref=e691] [cursor=pointer]
+            - button "زر القائمة المنسدلة للأعلى" [ref=e693] [cursor=pointer]
+            - button "زر القائمة المنسدلة لليمين" [ref=e695] [cursor=pointer]
+          - button "قائمة منسدلة بمحاذاة نهاية الزر" [ref=e700] [cursor=pointer]
+      - article [ref=e701]:
+        - generic [ref=e702]:
+          - heading "مجموعة العناصر" [level=3] [ref=e703]
+          - link "دليل الإستخدام" [ref=e704] [cursor=pointer]:
+            - /url: /docs/6.0/components/list-group
+        - generic [ref=e705]:
+          - list [ref=e708]:
+            - listitem: عنصر معطل
+            - listitem [ref=e709]: عنصر ثاني
+            - listitem [ref=e710]: عنصر ثالث
+            - listitem [ref=e711]: عنصر رابع
+            - listitem [ref=e712]: وعنصر خامس أيضًا
+          - list [ref=e715]:
+            - listitem [ref=e716]: عنصر
+            - listitem [ref=e717]: عنصر ثاني
+            - listitem [ref=e718]: عنصر ثالث
+            - listitem [ref=e719]: عنصر رابع
+            - listitem [ref=e720]: وعنصر خامس أيضًا
+          - generic [ref=e723]:
+            - link "عنصر مجموعة قائمة default بسيط" [ref=e724] [cursor=pointer]:
+              - /url: "#"
+            - link "عنصر مجموعة قائمة primary بسيط" [ref=e725] [cursor=pointer]:
+              - /url: "#"
+            - link "عنصر مجموعة قائمة accent بسيط" [ref=e726] [cursor=pointer]:
+              - /url: "#"
+            - link "عنصر مجموعة قائمة success بسيط" [ref=e727] [cursor=pointer]:
+              - /url: "#"
+            - link "عنصر مجموعة قائمة danger بسيط" [ref=e728] [cursor=pointer]:
+              - /url: "#"
+            - link "عنصر مجموعة قائمة warning بسيط" [ref=e729] [cursor=pointer]:
+              - /url: "#"
+            - link "عنصر مجموعة قائمة info بسيط" [ref=e730] [cursor=pointer]:
+              - /url: "#"
+            - link "عنصر مجموعة قائمة inverse بسيط" [ref=e731] [cursor=pointer]:
+              - /url: "#"
+            - link "عنصر مجموعة قائمة secondary بسيط" [ref=e732] [cursor=pointer]:
+              - /url: "#"
+      - article [ref=e733]:
+        - generic [ref=e734]:
+          - heading "التنقل" [level=3] [ref=e735]
+          - link "دليل الإستخدام" [ref=e736] [cursor=pointer]:
+            - /url: /docs/6.0/components/navs-tabs
+        - generic [ref=e737]:
+          - navigation [ref=e740]:
+            - link "نشط" [ref=e741] [cursor=pointer]:
+              - /url: "#"
+            - link "رابط" [ref=e742] [cursor=pointer]:
+              - /url: "#"
+            - link "رابط" [ref=e743] [cursor=pointer]:
+              - /url: "#"
+            - generic: معطل
+          - generic [ref=e745]:
+            - navigation [ref=e746]:
+              - tablist [ref=e747]:
+                - tab "الصفحة الرئيسية" [selected] [ref=e748] [cursor=pointer]
+                - tab "الملف الشخصي" [ref=e749] [cursor=pointer]
+                - tab "اتصل بنا" [ref=e750] [cursor=pointer]
+            - tabpanel "الصفحة الرئيسية" [ref=e752]:
+              - paragraph [ref=e753]: محتوى لتوضيح كيف يعمل التبويب. هذا المحتوى مرتبط بتبويب الصفحة الرئيسية. إذن، أمامنا بعض التحدّيات الصعبة. لكن لا يمكننا أن نعتمد على التطورات التكنولوجية وحدها في ميدان قوى السوق الحرة، لإخراجنا من هذه الورطة، لا سيّما أنها نفسها، مقرونة بالافتقار إلى البصيرة، هي التي أودت بنا إلى هذا التبدُّل المناخي في الدرجة الأولى.
+          - list [ref=e756]:
+            - listitem [ref=e757]:
+              - link "نشط" [ref=e758] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e759]:
+              - link "رابط" [ref=e760] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e761]:
+              - link "رابط" [ref=e762] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e763]:
+              - generic: معطل
+      - article [ref=e764]:
+        - generic [ref=e765]:
+          - heading "شريط التنقل" [level=3] [ref=e766]
+          - link "دليل الإستخدام" [ref=e767] [cursor=pointer]:
+            - /url: /docs/6.0/components/navbar
+        - generic [ref=e770]:
+          - navigation [ref=e771]:
+            - generic [ref=e772]:
+              - link "Bootstrap" [ref=e773] [cursor=pointer]:
+                - /url: "#"
+                - img "Bootstrap" [ref=e774]
+              - button "تبديل التنقل" [ref=e775] [cursor=pointer]
+          - navigation [ref=e777]:
+            - generic [ref=e778]:
+              - link "Bootstrap" [ref=e779] [cursor=pointer]:
+                - /url: "#"
+                - img "Bootstrap" [ref=e780]
+              - button "تبديل التنقل" [ref=e781] [cursor=pointer]
+      - article [ref=e783]:
+        - generic [ref=e784]:
+          - heading "ترقيم الصفحات" [level=3] [ref=e785]
+          - link "دليل الإستخدام" [ref=e786] [cursor=pointer]:
+            - /url: /docs/6.0/components/pagination
+        - generic [ref=e787]:
+          - navigation "مثال ترقيم الصفحات" [ref=e790]:
+            - list [ref=e791]:
+              - listitem [ref=e792]:
+                - link "1" [ref=e793] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e794]:
+                - link "2" [ref=e795] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e796]:
+                - link "3" [ref=e797] [cursor=pointer]:
+                  - /url: "#"
+          - navigation "مثال قياسي لترقيم الصفحات" [ref=e800]:
+            - list [ref=e801]:
+              - listitem [ref=e802]:
+                - link "السابق" [ref=e803] [cursor=pointer]:
+                  - /url: "#"
+                  - text: «
+              - listitem [ref=e804]:
+                - link "1" [ref=e805] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e806]:
+                - link "2" [ref=e807] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e808]:
+                - link "3" [ref=e809] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e810]:
+                - link "التالي" [ref=e811] [cursor=pointer]:
+                  - /url: "#"
+                  - text: »
+          - navigation "مثال آخر لترقيم الصفحات" [ref=e814]:
+            - list [ref=e815]:
+              - listitem [ref=e816]:
+                - generic: السابق
+              - listitem [ref=e817]:
+                - link "1" [ref=e818] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e819]:
+                - link "2" [ref=e820] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e821]:
+                - link "3" [ref=e822] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e823]:
+                - link "التالى" [ref=e824] [cursor=pointer]:
+                  - /url: "#"
+      - article [ref=e825]:
+        - generic [ref=e826]:
+          - heading "الصناديق المنبثقة" [level=3] [ref=e827]
+          - link "دليل الإستخدام" [ref=e828] [cursor=pointer]:
+            - /url: /docs/6.0/components/popover
+        - generic [ref=e829]:
+          - button "انقر لعرض/إخفاء الصندوق المنبثق" [ref=e832] [cursor=pointer]
+          - generic [ref=e834]:
+            - button "انبثاق إلى الأعلى" [ref=e835] [cursor=pointer]
+            - button "انبثاق إلى اليسار" [ref=e836] [cursor=pointer]
+            - button "انبثاق إلى الأسفل" [ref=e837] [cursor=pointer]
+            - button "انبثاق إلى اليمين" [ref=e838] [cursor=pointer]
+      - article [ref=e839]:
+        - generic [ref=e840]:
+          - heading "شريط التقدم" [level=3] [ref=e841]
+          - link "دليل الإستخدام" [ref=e842] [cursor=pointer]:
+            - /url: /docs/6.0/components/progress
+        - generic [ref=e843]:
+          - generic [ref=e845]:
+            - progressbar "مثال مع عنوان" [ref=e846]:
+              - generic [ref=e847]: 0%
+            - progressbar "مثال ناجح مع عنوان" [ref=e848]:
+              - generic [ref=e849]: 25%
+            - progressbar "مثال توضيح مع عنوان" [ref=e850]:
+              - generic [ref=e851]: 50%
+            - progressbar "مثال تنبيه مع عنوان" [ref=e852]:
+              - generic [ref=e853]: 75%
+            - progressbar "مثال خطر مع عنوان" [ref=e854]:
+              - generic [ref=e855]: 100%
+          - generic [ref=e858]:
+            - progressbar "القسم الأول - مثال افتراضي" [ref=e859]
+            - progressbar "القسم الثاني - مثال ناجح مقلّم متحرك" [ref=e861]
+      - article [ref=e863]:
+        - generic [ref=e864]:
+          - heading "المخطوطة" [level=3] [ref=e865]
+          - link "دليل الإستخدام" [ref=e866] [cursor=pointer]:
+            - /url: /docs/6.0/components/scrollspy
+        - generic [ref=e869]:
+          - navigation [ref=e870]:
+            - link "شريط التنقل" [ref=e871] [cursor=pointer]:
+              - /url: "#"
+            - list [ref=e872]:
+              - listitem [ref=e873]:
+                - link "@fat" [ref=e874] [cursor=pointer]:
+                  - /url: "#fat"
+                  - generic [ref=e875]: "@fat"
+              - listitem [ref=e876]:
+                - link "@mdo" [ref=e877] [cursor=pointer]:
+                  - /url: "#mdo"
+                  - generic [ref=e878]: "@mdo"
+              - listitem [ref=e879]:
+                - button "قائمة منسدلة" [ref=e880] [cursor=pointer]
+          - generic [ref=e881]:
+            - heading "@fat" [level=4] [ref=e882]
+            - paragraph [ref=e883]: محتوى لتوضيح كيف تعمل المخطوطة. ببساطة، المخطوطة عبارة عن منشور طويل يحتوي على عدة أقسام، ولديه شريط تنقل يسهل الوصول إلى هذه الأقسام الفرعية.
+            - heading "@mdo" [level=4] [ref=e884]
+            - paragraph [ref=e885]: بصرف النظر عن تحسيننا جدوى المكيّفات أو عدم تحسينها، فإن الطلب على الطاقة سيزداد. وطبقاً لما جاء في مقالة معهد ماساشوستس للتكنولوجيا، السالف ذكره، ثمَّة أمر يجب عدم إغفاله، وهو كيف أن هذا الطلب سيضغط على نظم توفير الطاقة الحالية. إذ لا بد من إعادة تأهيل كل شبكات الكهرباء، وتوسيعها لتلبية طلب الطاقة في زمن الذروة، خلال موجات الحرارة المتزايدة. فحين يكون الحر شديداً يجنح الناس إلى البقاء في الداخل، وإلى زيادة تشغيل المكيّفات، سعياً إلى جو لطيف وهم يستخدمون أدوات وأجهزة مختلفة أخرى.
+            - heading "واحد" [level=4] [ref=e886]
+            - paragraph [ref=e887]: وكل هذه الأمور المتزامنة من تشغيل الأجهزة، يزيد الضغط على شبكات الطاقة، كما أسلفنا. لكن مجرد زيادة سعة الشبكة ليس كافياً. إذ لا بد من تطوير الشبكات الذكية التي تستخدم الجسّاسات، ونظم المراقبة، والبرامج الإلكترونية، لتحديد متى يكون الشاغلون في المبنى، ومتى يكون ثمَّة حاجة إلى الطاقة، ومتى تكون الحرارة منخفضة، وبذلك يخرج الناس، فلا يستخدمون كثيراً من الكهرباء.
+            - heading "اثنان" [level=4] [ref=e888]
+            - paragraph [ref=e889]: مع الأسف، كل هذه الحلول المبتكرة مكلِّفة، وهذا ما يجعلها عديمة الجدوى في نظر بعض الشركات الخاصة والمواطن المتقشّف. إن بعض الأفراد الواعين بيئياً يبذلون قصارى جهدهم في تقليص استهلاكهم من الطاقة، ويعون جيداً أهمية أجهزة التكييف المجدية والأرفق بالبيئة. ولكن جهات كثيرة لن تتحرّك لمجرد حافز سلامة المناخ ووقف هدر الطاقة، ما دامت لا تحركها حوافز قانونية. وعلى الحكومات أن تُقدِم عند الاهتمام بالتغيّر المناخي، على وضع التشريعات المناسبة. فبالنظم والحوافز والدعم، يمكن دفع الشركات إلى اعتماد الحلول الأجدى في مكاتبها.
+            - heading "ثلاثة" [level=4] [ref=e890]
+            - paragraph [ref=e891]: وكما يتبيّن لنا، من عدد الحلول الملطِّفة للمشكلة، ومن تنوّعها، وهي الحلول التي أسلفنا الحديث عنها، فإن التكنولوجيا التي نحتاج إليها من أجل معالجة هذه التحديات، هي في مدى قدرتنا، لكنها ربما تتطلّب بعض التحسين، ودعماً استثمارياً أكبر!
+            - paragraph [ref=e892]: ولا مانع من إضافة محتوى آخر ليس تحت أي قسم معين.
+      - article [ref=e893]:
+        - generic [ref=e894]:
+          - heading "الدوائر المتحركة" [level=3] [ref=e895]
+          - link "دليل الإستخدام" [ref=e896] [cursor=pointer]:
+            - /url: /docs/6.0/components/spinners
+        - generic [ref=e897]:
+          - generic [ref=e899]:
+            - status [ref=e900]:
+              - generic [ref=e901]: جار التحميل...
+            - status [ref=e902]:
+              - generic [ref=e903]: جار التحميل...
+            - status [ref=e904]:
+              - generic [ref=e905]: جار التحميل...
+            - status [ref=e906]:
+              - generic [ref=e907]: جار التحميل...
+            - status [ref=e908]:
+              - generic [ref=e909]: جار التحميل...
+            - status [ref=e910]:
+              - generic [ref=e911]: جار التحميل...
+            - status [ref=e912]:
+              - generic [ref=e913]: جار التحميل...
+            - status [ref=e914]:
+              - generic [ref=e915]: جار التحميل...
+          - generic [ref=e917]:
+            - status [ref=e918]:
+              - generic [ref=e919]: جار التحميل...
+            - status [ref=e920]:
+              - generic [ref=e921]: جار التحميل...
+            - status [ref=e922]:
+              - generic [ref=e923]: جار التحميل...
+            - status [ref=e924]:
+              - generic [ref=e925]: جار التحميل...
+            - status [ref=e926]:
+              - generic [ref=e927]: جار التحميل...
+            - status [ref=e928]:
+              - generic [ref=e929]: جار التحميل...
+            - status [ref=e930]:
+              - generic [ref=e931]: جار التحميل...
+            - status [ref=e932]:
+              - generic [ref=e933]: جار التحميل...
+      - article [ref=e934]:
+        - generic [ref=e935]:
+          - heading "الإشعارات" [level=3] [ref=e936]
+          - link "دليل الإستخدام" [ref=e937] [cursor=pointer]:
+            - /url: /docs/6.0/components/toasts
+      - article [ref=e941]:
+        - generic [ref=e942]:
+          - heading "التلميحات" [level=3] [ref=e943]
+          - link "دليل الإستخدام" [ref=e944] [cursor=pointer]:
+            - /url: /docs/6.0/components/tooltip
+        - generic [ref=e947]:
+          - button "تلميح يظهر في الأعلى" [ref=e948] [cursor=pointer]
+          - button "تلميح يظهر على اليسار" [ref=e949] [cursor=pointer]
+          - button "تلميح يظهر في الأسفل" [ref=e950] [cursor=pointer]
+          - button "تلميح يظهر على اليمين" [ref=e951] [cursor=pointer]
+          - button "تلميح مع HTML" [ref=e952] [cursor=pointer]
+```

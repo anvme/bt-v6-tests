@@ -24,6 +24,7 @@
 <div class="bg-primary text-white py-4 px-3">
   <div class="container">
     <h1 class="h3 fw-bold mb-1">Bootstrap v6 — AST Pattern Analysis Report</h1>
+    <p class="small opacity-50 mb-1">Generated 2026-02-27 00:23:30 UTC</p>
     <p class="opacity-75 mb-1">Structural code patterns found via ast-grep (complements ESLint report)</p>
     <p class="small opacity-50 mb-3">These are not errors — they are opportunities for modernization that require human review</p>
     <div class="d-flex gap-3">
@@ -328,15 +329,15 @@ container.insertAdjacentHTML('beforeend', tpl)</code></pre></div></div>
         <thead class="table-light"><tr><th>File</th><th>Line</th><th>Current code</th><th>Suggested fix</th></tr></thead>
         <tbody>
           <tr>
-            <td class="font-monospace text-primary text-nowrap">util/template-factory.js</td>
-            <td class="font-monospace text-secondary text-nowrap">85:29</td>
-            <td class="code-current"><code class="language-javascript">const templateWrapper = document.createElement('div')</code></td>
-            <td class="code-fix">&mdash;</td>
-          </tr>
-          <tr>
             <td class="font-monospace text-primary text-nowrap">util/backdrop.js</td>
             <td class="font-monospace text-secondary text-nowrap">113:24</td>
             <td class="code-current"><code class="language-javascript">const backdrop = document.createElement('div')</code></td>
+            <td class="code-fix">&mdash;</td>
+          </tr>
+          <tr>
+            <td class="font-monospace text-primary text-nowrap">util/template-factory.js</td>
+            <td class="font-monospace text-secondary text-nowrap">85:29</td>
+            <td class="code-current"><code class="language-javascript">const templateWrapper = document.createElement('div')</code></td>
             <td class="code-fix">&mdash;</td>
           </tr>
           <tr>
@@ -648,16 +649,16 @@ el.ariaCurrent = null</code></pre></div></div>
             <td class="code-fix"><code class="language-javascript">this._element.ariaModal = null</code></td>
           </tr>
           <tr>
-            <td class="font-monospace text-primary text-nowrap">tooltip.js</td>
-            <td class="font-monospace text-secondary text-nowrap">294:7</td>
-            <td class="code-current"><code class="language-javascript">this._element.removeAttribute('aria-describedby')</code></td>
-            <td class="code-fix">&mdash;</td>
-          </tr>
-          <tr>
             <td class="font-monospace text-primary text-nowrap">carousel.js</td>
             <td class="font-monospace text-secondary text-nowrap">276:5</td>
             <td class="code-current"><code class="language-javascript">activeIndicator.removeAttribute('aria-current')</code></td>
             <td class="code-fix"><code class="language-javascript">activeIndicator.ariaCurrent = null</code></td>
+          </tr>
+          <tr>
+            <td class="font-monospace text-primary text-nowrap">tooltip.js</td>
+            <td class="font-monospace text-secondary text-nowrap">294:7</td>
+            <td class="code-current"><code class="language-javascript">this._element.removeAttribute('aria-describedby')</code></td>
+            <td class="code-fix">&mdash;</td>
           </tr>
         </tbody>
       </table>
@@ -699,16 +700,10 @@ el.matches('input, textarea')</code></pre></div></div>
             <td class="code-fix"><code class="language-javascript">this.matches('a, area')</code></td>
           </tr>
           <tr>
-            <td class="font-monospace text-primary text-nowrap">collapse.js</td>
-            <td class="font-monospace text-secondary text-nowrap">261:7</td>
-            <td class="code-current"><code class="language-javascript">if (event.target.tagName === 'A' || (event.delegateTarget &amp;&amp; event.delegateTarget.tagName === 'A')) {</code></td>
-            <td class="code-fix"><code class="language-javascript">if (event.target.matches('a') || (event.delegateTarget &amp;&amp; event.delegateTarget.tagName === 'A')) {</code></td>
-          </tr>
-          <tr>
-            <td class="font-monospace text-primary text-nowrap">collapse.js</td>
-            <td class="font-monospace text-secondary text-nowrap">261:64</td>
-            <td class="code-current"><code class="language-javascript">if (event.target.tagName === 'A' || (event.delegateTarget &amp;&amp; event.delegateTarget.tagName === 'A')) {</code></td>
-            <td class="code-fix"><code class="language-javascript">if (event.target.matches('a') || (event.delegateTarget &amp;&amp; event.delegateTarget.tagName === 'A')) {</code></td>
+            <td class="font-monospace text-primary text-nowrap">tab.js</td>
+            <td class="font-monospace text-secondary text-nowrap">273:30</td>
+            <td class="code-current"><code class="language-javascript">if (['A', 'AREA'].includes(this.tagName)) {</code></td>
+            <td class="code-fix"><code class="language-javascript">this.matches('a, area')</code></td>
           </tr>
           <tr>
             <td class="font-monospace text-primary text-nowrap">offcanvas.js</td>
@@ -721,18 +716,6 @@ el.matches('input, textarea')</code></pre></div></div>
             <td class="font-monospace text-secondary text-nowrap">253:32</td>
             <td class="code-current"><code class="language-javascript">if (/input|textarea/i.test(event.target.tagName)) {</code></td>
             <td class="code-fix"><code class="language-javascript">event.target.matches('input, textarea')</code></td>
-          </tr>
-          <tr>
-            <td class="font-monospace text-primary text-nowrap">dialog.js</td>
-            <td class="font-monospace text-secondary text-nowrap">229:30</td>
-            <td class="code-current"><code class="language-javascript">if (['A', 'AREA'].includes(this.tagName)) {</code></td>
-            <td class="code-fix"><code class="language-javascript">this.matches('a, area')</code></td>
-          </tr>
-          <tr>
-            <td class="font-monospace text-primary text-nowrap">tab.js</td>
-            <td class="font-monospace text-secondary text-nowrap">273:30</td>
-            <td class="code-current"><code class="language-javascript">if (['A', 'AREA'].includes(this.tagName)) {</code></td>
-            <td class="code-fix"><code class="language-javascript">this.matches('a, area')</code></td>
           </tr>
           <tr>
             <td class="font-monospace text-primary text-nowrap">datepicker.js</td>
@@ -751,6 +734,24 @@ el.matches('input, textarea')</code></pre></div></div>
             <td class="font-monospace text-secondary text-nowrap">468:7</td>
             <td class="code-current"><code class="language-javascript">if (this.tagName !== 'INPUT') {</code></td>
             <td class="code-fix">&mdash;</td>
+          </tr>
+          <tr>
+            <td class="font-monospace text-primary text-nowrap">dialog.js</td>
+            <td class="font-monospace text-secondary text-nowrap">229:30</td>
+            <td class="code-current"><code class="language-javascript">if (['A', 'AREA'].includes(this.tagName)) {</code></td>
+            <td class="code-fix"><code class="language-javascript">this.matches('a, area')</code></td>
+          </tr>
+          <tr>
+            <td class="font-monospace text-primary text-nowrap">collapse.js</td>
+            <td class="font-monospace text-secondary text-nowrap">261:7</td>
+            <td class="code-current"><code class="language-javascript">if (event.target.tagName === 'A' || (event.delegateTarget &amp;&amp; event.delegateTarget.tagName === 'A')) {</code></td>
+            <td class="code-fix"><code class="language-javascript">if (event.target.matches('a') || (event.delegateTarget &amp;&amp; event.delegateTarget.tagName === 'A')) {</code></td>
+          </tr>
+          <tr>
+            <td class="font-monospace text-primary text-nowrap">collapse.js</td>
+            <td class="font-monospace text-secondary text-nowrap">261:64</td>
+            <td class="code-current"><code class="language-javascript">if (event.target.tagName === 'A' || (event.delegateTarget &amp;&amp; event.delegateTarget.tagName === 'A')) {</code></td>
+            <td class="code-fix"><code class="language-javascript">if (event.target.matches('a') || (event.delegateTarget &amp;&amp; event.delegateTarget.tagName === 'A')) {</code></td>
           </tr>
           <tr>
             <td class="font-monospace text-primary text-nowrap">dropdown.js</td>
@@ -860,7 +861,7 @@ ac.abort() // removes all listeners</code></pre></div></div>
 </div>
 
 <footer class="text-center text-secondary small border-top py-4 mt-4">
-  Generated 2026-02-26 &middot; ast-grep &middot; Bootstrap v6 source (js/src/)
+  Generated 2026-02-27 &middot; ast-grep &middot; Bootstrap v6 source (js/src/)
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/prism.min.js"></script>

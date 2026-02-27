@@ -1,0 +1,755 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e4] [cursor=pointer]:
+    - /url: "#content"
+  - banner [ref=e5]:
+    - navigation "Main navigation" [ref=e6]:
+      - button "Toggle docs navigation" [ref=e8] [cursor=pointer]:
+        - img [ref=e9]
+      - link "Bootstrap" [ref=e11] [cursor=pointer]:
+        - /url: /
+        - img "Bootstrap" [ref=e12]
+      - generic [ref=e14]:
+        - button "Search (Ctrl+K)" [ref=e16] [cursor=pointer]:
+          - img [ref=e18]
+          - generic [ref=e20]:
+            - img [ref=e22]
+            - generic [ref=e24]: K
+        - button "Toggle navigation" [ref=e25] [cursor=pointer]:
+          - img [ref=e26]
+  - generic [ref=e28]:
+    - complementary
+    - main [ref=e29]:
+      - generic [ref=e30]:
+        - heading "Typography" [level=1] [ref=e31]
+        - paragraph [ref=e33]: Documentation and examples for Bootstrap typography, including global settings, headings, body text, lists, and more.
+        - link "GitHub Edit on GitHub" [ref=e35] [cursor=pointer]:
+          - /url: https://github.com/twbs/bootstrap/blob/v6.0.0-alpha1/site/src/content/docs/content/typography.mdx
+          - img "GitHub" [ref=e36]
+          - text: Edit on GitHub
+      - generic [ref=e38]:
+        - button "On this page" [ref=e40] [cursor=pointer]:
+          - text: On this page
+          - img [ref=e41]
+        - generic [ref=e44]:
+          - generic [ref=e45]:
+            - link "ads via Carbon" [ref=e46] [cursor=pointer]:
+              - /url: https://srv.carbonads.net/ads/click/x/GTND427UCVYIC2QNFTS4YKQUCA7D523UCAYDCZ3JCASI627MCA7D55QKF6SDPKQJC67D52QEC6SIE27UF67IKKQKC6SI5KJJCWYDVK3EHJNCLSIZ
+              - img "ads via Carbon" [ref=e47]
+            - link "Careers in tech are changing rapidly. Check out the latest AI job postings on Authentic Jobs!" [ref=e48] [cursor=pointer]:
+              - /url: https://srv.carbonads.net/ads/click/x/GTND427UCVYIC2QNFTS4YKQUCA7D523UCAYDCZ3JCASI627MCA7D55QKF6SDPKQJC67D52QEC6SIE27UF67IKKQKC6SI5KJJCWYDVK3EHJNCLSIZ
+          - link "ads via Carbon" [ref=e49] [cursor=pointer]:
+            - /url: http://carbonads.net/?utm_source=getbootstrapcom&utm_medium=ad_via_link&utm_campaign=in_unit&utm_term=carbon
+      - generic [ref=e50]:
+        - 'heading "Global settingsLink to this section: Global settings" [level=2] [ref=e51]':
+          - text: Global settings
+          - 'link "Link to this section: Global settings" [ref=e52] [cursor=pointer]':
+            - /url: "#global-settings"
+            - text: "#"
+        - paragraph [ref=e53]: Bootstrap sets basic global display, typography, and link styles. When more control is needed, check out our text utilities.
+        - list [ref=e54]:
+          - listitem [ref=e55]:
+            - text: Use a
+            - link "native font stack" [ref=e56] [cursor=pointer]:
+              - /url: /docs/6.0/content/reboot#native-font-stack
+            - text: that selects the best
+            - code [ref=e57]: font-family
+            - text: for each OS and device.
+          - listitem [ref=e58]:
+            - text: For a more inclusive and accessible type scale, we use the browser’s default root
+            - code [ref=e59]: font-size
+            - text: (typically 16px) so visitors can customize their browser defaults as needed.
+          - listitem [ref=e60]:
+            - text: Use the
+            - code [ref=e61]: $font-family-base
+            - text: ","
+            - code [ref=e62]: $font-size-base
+            - text: ", and"
+            - code [ref=e63]: $line-height-base
+            - text: attributes as our typographic base applied to the
+            - code [ref=e64]: <body>
+            - text: .
+          - listitem [ref=e65]:
+            - text: Set the global link color via
+            - code [ref=e66]: "--bs-link-color"
+            - text: .
+          - listitem [ref=e67]:
+            - text: Use
+            - code [ref=e68]: "--bs-body-bg"
+            - text: to set a
+            - code [ref=e69]: background-color
+            - text: on the
+            - code [ref=e70]: <body>
+            - text: (
+            - code [ref=e71]: "#fff"
+            - text: by default).
+        - paragraph [ref=e72]:
+          - text: These styles can be found within
+          - code [ref=e73]: _reboot.scss
+          - text: ", and the global variables are defined in"
+          - code [ref=e74]: _variables.scss
+          - text: . Make sure to set
+          - code [ref=e75]: $font-size-base
+          - text: in
+          - code [ref=e76]: rem
+          - text: .
+        - 'heading "HeadingsLink to this section: Headings" [level=2] [ref=e77]':
+          - text: Headings
+          - 'link "Link to this section: Headings" [ref=e78] [cursor=pointer]':
+            - /url: "#headings"
+            - text: "#"
+        - paragraph [ref=e79]:
+          - text: All HTML headings,
+          - code [ref=e80]: <h1>
+          - text: through
+          - code [ref=e81]: <h6>
+          - text: ", are available."
+        - table [ref=e83]:
+          - rowgroup [ref=e84]:
+            - row "Heading Example" [ref=e85]:
+              - columnheader "Heading" [ref=e86]
+              - columnheader "Example" [ref=e87]
+          - rowgroup [ref=e88]:
+            - row "<h1></h1> h1. Bootstrap heading" [ref=e89]:
+              - cell "<h1></h1>" [ref=e90]:
+                - code [ref=e91]: <h1></h1>
+              - cell "h1. Bootstrap heading" [ref=e92]
+            - row "<h2></h2> h2. Bootstrap heading" [ref=e93]:
+              - cell "<h2></h2>" [ref=e94]:
+                - code [ref=e95]: <h2></h2>
+              - cell "h2. Bootstrap heading" [ref=e96]
+            - row "<h3></h3> h3. Bootstrap heading" [ref=e97]:
+              - cell "<h3></h3>" [ref=e98]:
+                - code [ref=e99]: <h3></h3>
+              - cell "h3. Bootstrap heading" [ref=e100]
+            - row "<h4></h4> h4. Bootstrap heading" [ref=e101]:
+              - cell "<h4></h4>" [ref=e102]:
+                - code [ref=e103]: <h4></h4>
+              - cell "h4. Bootstrap heading" [ref=e104]
+            - row "<h5></h5> h5. Bootstrap heading" [ref=e105]:
+              - cell "<h5></h5>" [ref=e106]:
+                - code [ref=e107]: <h5></h5>
+              - cell "h5. Bootstrap heading" [ref=e108]
+            - row "<h6></h6> h6. Bootstrap heading" [ref=e109]:
+              - cell "<h6></h6>" [ref=e110]:
+                - code [ref=e111]: <h6></h6>
+              - cell "h6. Bootstrap heading" [ref=e112]
+        - generic [ref=e113]:
+          - generic [ref=e114]:
+            - generic [ref=e115]: HTML
+            - button "Copy to clipboard" [ref=e117] [cursor=pointer]:
+              - img [ref=e118]
+          - code [ref=e121]:
+            - generic [ref=e122]: <h1>h1. Bootstrap heading</h1>
+            - generic [ref=e123]: <h2>h2. Bootstrap heading</h2>
+            - generic [ref=e124]: <h3>h3. Bootstrap heading</h3>
+            - generic [ref=e125]: <h4>h4. Bootstrap heading</h4>
+            - generic [ref=e126]: <h5>h5. Bootstrap heading</h5>
+            - generic [ref=e127]: <h6>h6. Bootstrap heading</h6>
+        - paragraph [ref=e128]:
+          - code [ref=e129]: .h1
+          - text: through
+          - code [ref=e130]: .h6
+          - text: classes are also available, for when you want to match the font styling of a heading but cannot use the associated HTML element.
+        - generic [ref=e131]:
+          - generic [ref=e132]:
+            - paragraph [ref=e133]: h1. Bootstrap heading
+            - paragraph [ref=e134]: h2. Bootstrap heading
+            - paragraph [ref=e135]: h3. Bootstrap heading
+            - paragraph [ref=e136]: h4. Bootstrap heading
+            - paragraph [ref=e137]: h5. Bootstrap heading
+            - paragraph [ref=e138]: h6. Bootstrap heading
+          - generic [ref=e139]:
+            - generic [ref=e140]: HTML
+            - button "Copy to clipboard" [ref=e142] [cursor=pointer]:
+              - img [ref=e143]
+          - code [ref=e146]:
+            - generic [ref=e147]: <p class="h1">h1. Bootstrap heading</p>
+            - generic [ref=e148]: <p class="h2">h2. Bootstrap heading</p>
+            - generic [ref=e149]: <p class="h3">h3. Bootstrap heading</p>
+            - generic [ref=e150]: <p class="h4">h4. Bootstrap heading</p>
+            - generic [ref=e151]: <p class="h5">h5. Bootstrap heading</p>
+            - generic [ref=e152]: <p class="h6">h6. Bootstrap heading</p>
+        - paragraph [ref=e153]:
+          - text: Head to our
+          - link "font size utilities" [ref=e154] [cursor=pointer]:
+            - /url: /docs/6.0/utilities/font-size
+          - text: for more control over the
+          - code [ref=e155]: font-size
+          - text: and
+          - code [ref=e156]: line-height
+          - text: .
+        - 'heading "Customizing headingsLink to this section: Customizing headings" [level=3] [ref=e157]':
+          - text: Customizing headings
+          - 'link "Link to this section: Customizing headings" [ref=e158] [cursor=pointer]':
+            - /url: "#customizing-headings"
+            - text: "#"
+        - paragraph [ref=e159]: Use the included utility classes to recreate the small secondary heading text from Bootstrap 3.
+        - generic [ref=e160]:
+          - heading "Fancy display heading With faded secondary text" [level=3] [ref=e162]
+          - generic [ref=e163]:
+            - generic [ref=e164]: HTML
+            - button "Copy to clipboard" [ref=e166] [cursor=pointer]:
+              - img [ref=e167]
+          - code [ref=e170]:
+            - generic [ref=e171]: <h3>
+            - generic [ref=e172]: Fancy display heading
+            - generic [ref=e173]: <small class="text-body-secondary">With faded secondary text</small>
+            - generic [ref=e174]: </h3>
+        - 'heading "Inline text elementsLink to this section: Inline text elements" [level=2] [ref=e175]':
+          - text: Inline text elements
+          - 'link "Link to this section: Inline text elements" [ref=e176] [cursor=pointer]':
+            - /url: "#inline-text-elements"
+            - text: "#"
+        - paragraph [ref=e177]: Styling for common inline HTML5 elements.
+        - generic [ref=e178]:
+          - generic [ref=e179]:
+            - paragraph [ref=e180]:
+              - text: You can use the mark tag to
+              - mark [ref=e181]: highlight
+              - text: text.
+            - paragraph [ref=e182]:
+              - deletion [ref=e183]: This line of text is meant to be treated as deleted text.
+            - paragraph [ref=e184]: This line of text is meant to be treated as no longer accurate.
+            - paragraph [ref=e185]:
+              - insertion [ref=e186]: This line of text is meant to be treated as an addition to the document.
+            - paragraph [ref=e187]: This line of text will render as underlined.
+            - paragraph [ref=e188]: This line of text is meant to be treated as fine print.
+            - paragraph [ref=e189]:
+              - strong [ref=e190]: This line rendered as bold text.
+            - paragraph [ref=e191]:
+              - emphasis [ref=e192]: This line rendered as italicized text.
+          - generic [ref=e193]:
+            - generic [ref=e194]: HTML
+            - button "Copy to clipboard" [ref=e196] [cursor=pointer]:
+              - img [ref=e197]
+          - code [ref=e200]:
+            - generic [ref=e201]: <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+            - generic [ref=e202]: <p><del>This line of text is meant to be treated as deleted text.</del></p>
+            - generic [ref=e203]: <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+            - generic [ref=e204]: <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+            - generic [ref=e205]: <p><u>This line of text will render as underlined.</u></p>
+            - generic [ref=e206]: <p><small>This line of text is meant to be treated as fine print.</small></p>
+            - generic [ref=e207]: <p><strong>This line rendered as bold text.</strong></p>
+            - generic [ref=e208]: <p><em>This line rendered as italicized text.</em></p>
+        - paragraph [ref=e209]: "Beware that those tags should be used for semantic purpose:"
+        - list [ref=e210]:
+          - listitem [ref=e211]:
+            - code [ref=e212]: <mark>
+            - text: represents text which is marked or highlighted for reference or notation purposes.
+          - listitem [ref=e213]:
+            - code [ref=e214]: <small>
+            - text: represents side-comments and small print, like copyright and legal text.
+          - listitem [ref=e215]:
+            - code [ref=e216]: <s>
+            - text: represents element that are no longer relevant or no longer accurate.
+          - listitem [ref=e217]:
+            - code [ref=e218]: <u>
+            - text: represents a span of inline text which should be rendered in a way that indicates that it has a non-textual annotation.
+        - paragraph [ref=e219]: "If you want to style your text, you should use the following classes instead:"
+        - list [ref=e220]:
+          - listitem [ref=e221]:
+            - code [ref=e222]: .mark
+            - text: will apply the same styles as
+            - code [ref=e223]: <mark>
+            - text: .
+          - listitem [ref=e224]:
+            - code [ref=e225]: .small
+            - text: will apply the same styles as
+            - code [ref=e226]: <small>
+            - text: .
+          - listitem [ref=e227]:
+            - code [ref=e228]: .text-decoration-underline
+            - text: will apply the same styles as
+            - code [ref=e229]: <u>
+            - text: .
+          - listitem [ref=e230]:
+            - code [ref=e231]: .text-decoration-line-through
+            - text: will apply the same styles as
+            - code [ref=e232]: <s>
+            - text: .
+        - paragraph [ref=e233]:
+          - text: While not shown above, feel free to use
+          - code [ref=e234]: <b>
+          - text: and
+          - code [ref=e235]: <i>
+          - text: in HTML5.
+          - code [ref=e236]: <b>
+          - text: is meant to highlight words or phrases without conveying additional importance, while
+          - code [ref=e237]: <i>
+          - text: is mostly for voice, technical terms, etc.
+        - 'heading "Text utilitiesLink to this section: Text utilities" [level=2] [ref=e238]':
+          - text: Text utilities
+          - 'link "Link to this section: Text utilities" [ref=e239] [cursor=pointer]':
+            - /url: "#text-utilities"
+            - text: "#"
+        - paragraph [ref=e240]: Utility classes are available for most common text-related CSS properties.
+        - list [ref=e241]:
+          - listitem [ref=e242]:
+            - link "Font family" [ref=e243] [cursor=pointer]:
+              - /url: /docs/6.0/utilities/font-family
+          - listitem [ref=e244]:
+            - link "Font size" [ref=e245] [cursor=pointer]:
+              - /url: /docs/6.0/utilities/font-size
+          - listitem [ref=e246]:
+            - link "Font style" [ref=e247] [cursor=pointer]:
+              - /url: /docs/6.0/utilities/font-style
+          - listitem [ref=e248]:
+            - link "Font weight" [ref=e249] [cursor=pointer]:
+              - /url: /docs/6.0/utilities/font-weight
+          - listitem [ref=e250]:
+            - link "Line height" [ref=e251] [cursor=pointer]:
+              - /url: /docs/6.0/utilities/line-height
+          - listitem [ref=e252]:
+            - link "Text alignment" [ref=e253] [cursor=pointer]:
+              - /url: "%5B%5Bdocsref:/utilities/text-alignment%5D"
+          - listitem [ref=e254]:
+            - link "Text transform" [ref=e255] [cursor=pointer]:
+              - /url: "%5B%5Bdocsref:/utilities/text-transform%5D"
+          - listitem [ref=e256]:
+            - link "Text decoration" [ref=e257] [cursor=pointer]:
+              - /url: "%5B%5Bdocsref:/utilities/text-decoration%5D"
+          - listitem [ref=e258]:
+            - link "Text wrapping" [ref=e259] [cursor=pointer]:
+              - /url: "%5B%5Bdocsref:/utilities/text-wrapping%5D"
+          - listitem [ref=e260]:
+            - link "Vertical alignment" [ref=e261] [cursor=pointer]:
+              - /url: /docs/6.0/utilities/vertical-align
+        - paragraph [ref=e262]:
+          - text: Change text alignment, transform, style, weight, line-height, decoration and color with our text and
+          - link "color utilities" [ref=e263] [cursor=pointer]:
+            - /url: /docs/6.0/utilities/colors
+          - text: .
+        - 'heading "AbbreviationsLink to this section: Abbreviations" [level=2] [ref=e264]':
+          - text: Abbreviations
+          - 'link "Link to this section: Abbreviations" [ref=e265] [cursor=pointer]':
+            - /url: "#abbreviations"
+            - text: "#"
+        - paragraph [ref=e266]:
+          - text: Stylized implementation of HTML’s
+          - code [ref=e267]: <abbr>
+          - text: element for abbreviations and acronyms to show the expanded version on hover. Abbreviations have a default underline and gain a help cursor to provide additional context on hover and to users of assistive technologies.
+        - paragraph [ref=e268]:
+          - text: Add
+          - code [ref=e269]: .initialism
+          - text: to an abbreviation for a slightly smaller font-size.
+        - generic [ref=e270]:
+          - generic [ref=e271]:
+            - paragraph [ref=e272]: attr
+            - paragraph [ref=e273]: HTML
+          - generic [ref=e274]:
+            - generic [ref=e275]: HTML
+            - button "Copy to clipboard" [ref=e277] [cursor=pointer]:
+              - img [ref=e278]
+          - code [ref=e281]:
+            - generic [ref=e282]: <p><abbr title="attribute">attr</abbr></p>
+            - generic [ref=e283]: <p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr></p>
+        - 'heading "BlockquotesLink to this section: Blockquotes" [level=2] [ref=e284]':
+          - text: Blockquotes
+          - 'link "Link to this section: Blockquotes" [ref=e285] [cursor=pointer]':
+            - /url: "#blockquotes"
+            - text: "#"
+        - paragraph [ref=e286]:
+          - text: For quoting blocks of content from another source within your document. Wrap
+          - code [ref=e287]: <blockquote class="blockquote">
+          - text: around any HTML as the quote.
+        - generic [ref=e288]:
+          - blockquote [ref=e290]:
+            - paragraph [ref=e291]: A well-known quote, contained in a blockquote element.
+          - generic [ref=e292]:
+            - generic [ref=e293]: HTML
+            - button "Copy to clipboard" [ref=e295] [cursor=pointer]:
+              - img [ref=e296]
+          - code [ref=e299]:
+            - generic [ref=e300]: <blockquote class="blockquote">
+            - generic [ref=e301]: <p>A well-known quote, contained in a blockquote element.</p>
+            - generic [ref=e302]: </blockquote>
+        - 'heading "Naming a sourceLink to this section: Naming a source" [level=3] [ref=e303]':
+          - text: Naming a source
+          - 'link "Link to this section: Naming a source" [ref=e304] [cursor=pointer]':
+            - /url: "#naming-a-source"
+            - text: "#"
+        - paragraph [ref=e305]:
+          - text: The HTML spec requires that blockquote attribution be placed outside the
+          - code [ref=e306]: <blockquote>
+          - text: . When providing attribution, wrap your
+          - code [ref=e307]: <blockquote>
+          - text: in a
+          - code [ref=e308]: <figure>
+          - text: and use a
+          - code [ref=e309]: <figcaption>
+          - text: or a block level element (e.g.,
+          - code [ref=e310]: <p>
+          - text: ) with the
+          - code [ref=e311]: .blockquote-footer
+          - text: class. Be sure to wrap the name of the source work in
+          - code [ref=e312]: <cite>
+          - text: as well.
+        - generic [ref=e313]:
+          - figure "— Someone famous in Source Title" [ref=e315]:
+            - blockquote [ref=e316]:
+              - paragraph [ref=e317]: A well-known quote, contained in a blockquote element.
+            - generic [ref=e318]: — Someone famous in Source Title
+          - generic [ref=e319]:
+            - generic [ref=e320]: HTML
+            - button "Copy to clipboard" [ref=e322] [cursor=pointer]:
+              - img [ref=e323]
+          - code [ref=e326]:
+            - generic [ref=e327]: <figure>
+            - generic [ref=e328]: <blockquote class="blockquote">
+            - generic [ref=e329]: <p>A well-known quote, contained in a blockquote element.</p>
+            - generic [ref=e330]: </blockquote>
+            - generic [ref=e331]: <figcaption class="blockquote-footer">
+            - generic [ref=e332]: Someone famous in <cite title="Source Title">Source Title</cite>
+            - generic [ref=e333]: </figcaption>
+            - generic [ref=e334]: </figure>
+        - 'heading "AlignmentLink to this section: Alignment" [level=3] [ref=e335]':
+          - text: Alignment
+          - 'link "Link to this section: Alignment" [ref=e336] [cursor=pointer]':
+            - /url: "#alignment"
+            - text: "#"
+        - paragraph [ref=e337]: Use text utilities as needed to change the alignment of your blockquote.
+        - generic [ref=e338]:
+          - figure "— Someone famous in Source Title" [ref=e340]:
+            - blockquote [ref=e341]:
+              - paragraph [ref=e342]: A well-known quote, contained in a blockquote element.
+            - generic [ref=e343]: — Someone famous in Source Title
+          - generic [ref=e344]:
+            - generic [ref=e345]: HTML
+            - button "Copy to clipboard" [ref=e347] [cursor=pointer]:
+              - img [ref=e348]
+          - code [ref=e351]:
+            - generic [ref=e352]: <figure class="text-center">
+            - generic [ref=e353]: <blockquote class="blockquote">
+            - generic [ref=e354]: <p>A well-known quote, contained in a blockquote element.</p>
+            - generic [ref=e355]: </blockquote>
+            - generic [ref=e356]: <figcaption class="blockquote-footer">
+            - generic [ref=e357]: Someone famous in <cite title="Source Title">Source Title</cite>
+            - generic [ref=e358]: </figcaption>
+            - generic [ref=e359]: </figure>
+        - generic [ref=e360]:
+          - figure "— Someone famous in Source Title" [ref=e362]:
+            - blockquote [ref=e363]:
+              - paragraph [ref=e364]: A well-known quote, contained in a blockquote element.
+            - generic [ref=e365]: — Someone famous in Source Title
+          - generic [ref=e366]:
+            - generic [ref=e367]: HTML
+            - button "Copy to clipboard" [ref=e369] [cursor=pointer]:
+              - img [ref=e370]
+          - code [ref=e373]:
+            - generic [ref=e374]: <figure class="text-end">
+            - generic [ref=e375]: <blockquote class="blockquote">
+            - generic [ref=e376]: <p>A well-known quote, contained in a blockquote element.</p>
+            - generic [ref=e377]: </blockquote>
+            - generic [ref=e378]: <figcaption class="blockquote-footer">
+            - generic [ref=e379]: Someone famous in <cite title="Source Title">Source Title</cite>
+            - generic [ref=e380]: </figcaption>
+            - generic [ref=e381]: </figure>
+        - 'heading "ListsLink to this section: Lists" [level=2] [ref=e382]':
+          - text: Lists
+          - 'link "Link to this section: Lists" [ref=e383] [cursor=pointer]':
+            - /url: "#lists"
+            - text: "#"
+        - 'heading "UnstyledLink to this section: Unstyled" [level=3] [ref=e384]':
+          - text: Unstyled
+          - 'link "Link to this section: Unstyled" [ref=e385] [cursor=pointer]':
+            - /url: "#unstyled"
+            - text: "#"
+        - paragraph [ref=e386]:
+          - text: Remove the default
+          - code [ref=e387]: list-style
+          - text: and left margin on list items (immediate children only).
+          - strong [ref=e388]: This only applies to immediate children list items
+          - text: ", meaning you will need to add the class for any nested lists as well."
+        - generic [ref=e389]:
+          - list [ref=e391]:
+            - listitem [ref=e392]: This is a list.
+            - listitem [ref=e393]: It appears completely unstyled.
+            - listitem [ref=e394]: Structurally, it’s still a list.
+            - listitem [ref=e395]: However, this style only applies to immediate child elements.
+            - listitem [ref=e396]:
+              - text: "Nested lists:"
+              - list [ref=e397]:
+                - listitem [ref=e398]: are unaffected by this style
+                - listitem [ref=e399]: will still show a bullet
+                - listitem [ref=e400]: and have appropriate left margin
+            - listitem [ref=e401]: This may still come in handy in some situations.
+          - generic [ref=e402]:
+            - generic [ref=e403]: HTML
+            - button "Copy to clipboard" [ref=e405] [cursor=pointer]:
+              - img [ref=e406]
+          - code [ref=e409]:
+            - generic [ref=e410]: <ul class="list-unstyled">
+            - generic [ref=e411]: <li>This is a list.</li>
+            - generic [ref=e412]: <li>It appears completely unstyled.</li>
+            - generic [ref=e413]: <li>Structurally, it’s still a list.</li>
+            - generic [ref=e414]: <li>However, this style only applies to immediate child elements.</li>
+            - generic [ref=e415]: "<li>Nested lists:"
+            - generic [ref=e416]: <ul>
+            - generic [ref=e417]: <li>are unaffected by this style</li>
+            - generic [ref=e418]: <li>will still show a bullet</li>
+            - generic [ref=e419]: <li>and have appropriate left margin</li>
+            - generic [ref=e420]: </ul>
+            - generic [ref=e421]: </li>
+            - generic [ref=e422]: <li>This may still come in handy in some situations.</li>
+            - generic [ref=e423]: </ul>
+        - 'heading "InlineLink to this section: Inline" [level=3] [ref=e424]':
+          - text: Inline
+          - 'link "Link to this section: Inline" [ref=e425] [cursor=pointer]':
+            - /url: "#inline"
+            - text: "#"
+        - paragraph [ref=e426]:
+          - text: Remove a list’s bullets and apply some light
+          - code [ref=e427]: margin
+          - text: with a combination of two classes,
+          - code [ref=e428]: .list-inline
+          - text: and
+          - code [ref=e429]: .list-inline-item
+          - text: .
+        - generic [ref=e430]:
+          - list [ref=e432]:
+            - listitem [ref=e433]: This is a list item.
+            - listitem [ref=e434]: And another one.
+            - listitem [ref=e435]: But they’re displayed inline.
+          - generic [ref=e436]:
+            - generic [ref=e437]: HTML
+            - button "Copy to clipboard" [ref=e439] [cursor=pointer]:
+              - img [ref=e440]
+          - code [ref=e443]:
+            - generic [ref=e444]: <ul class="list-inline">
+            - generic [ref=e445]: <li class="list-inline-item">This is a list item.</li>
+            - generic [ref=e446]: <li class="list-inline-item">And another one.</li>
+            - generic [ref=e447]: <li class="list-inline-item">But they’re displayed inline.</li>
+            - generic [ref=e448]: </ul>
+        - 'heading "Description list alignmentLink to this section: Description list alignment" [level=3] [ref=e449]':
+          - text: Description list alignment
+          - 'link "Link to this section: Description list alignment" [ref=e450] [cursor=pointer]':
+            - /url: "#description-list-alignment"
+            - text: "#"
+        - paragraph [ref=e451]:
+          - text: Align terms and descriptions horizontally by using our grid system’s predefined classes (or semantic mixins). For longer terms, you can optionally add a
+          - code [ref=e452]: .text-truncate
+          - text: class to truncate the text with an ellipsis.
+        - generic [ref=e453]:
+          - generic [ref=e455]:
+            - term [ref=e456]: Description lists
+            - definition [ref=e457]: A description list is perfect for defining terms.
+            - term [ref=e458]: Term
+            - definition [ref=e459]:
+              - paragraph [ref=e460]: Definition for the term.
+              - paragraph [ref=e461]: And some more placeholder definition text.
+            - term [ref=e462]: Another term
+            - definition [ref=e463]: This definition is short, so no extra paragraphs or anything.
+            - term [ref=e464]: Truncated term is truncated
+            - definition [ref=e465]: This can be useful when space is tight. Adds an ellipsis at the end.
+            - term [ref=e466]: Nesting
+            - definition [ref=e467]:
+              - generic [ref=e468]:
+                - term [ref=e469]: Nested definition list
+                - definition [ref=e470]: I heard you like definition lists. Let me put a definition list inside your definition list.
+          - generic [ref=e471]:
+            - generic [ref=e472]: HTML
+            - button "Copy to clipboard" [ref=e474] [cursor=pointer]:
+              - img [ref=e475]
+          - code [ref=e478]:
+            - generic [ref=e479]: <dl class="row">
+            - generic [ref=e480]: <dt class="col-sm-3">Description lists</dt>
+            - generic [ref=e481]: <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
+            - generic [ref=e482]: <dt class="col-sm-3">Term</dt>
+            - generic [ref=e483]: <dd class="col-sm-9">
+            - generic [ref=e484]: <p>Definition for the term.</p>
+            - generic [ref=e485]: <p>And some more placeholder definition text.</p>
+            - generic [ref=e486]: </dd>
+            - generic [ref=e487]: <dt class="col-sm-3">Another term</dt>
+            - generic [ref=e488]: <dd class="col-sm-9">This definition is short, so no extra paragraphs or anything.</dd>
+            - generic [ref=e489]: <dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
+            - generic [ref=e490]: <dd class="col-sm-9">This can be useful when space is tight. Adds an ellipsis at the end.</dd>
+            - generic [ref=e491]: <dt class="col-sm-3">Nesting</dt>
+            - generic [ref=e492]: <dd class="col-sm-9">
+            - generic [ref=e493]: <dl class="row">
+            - generic [ref=e494]: <dt class="col-sm-4">Nested definition list</dt>
+            - generic [ref=e495]: <dd class="col-sm-8">I heard you like definition lists. Let me put a definition list inside your definition list.</dd>
+            - generic [ref=e496]: </dl>
+            - generic [ref=e497]: </dd>
+            - generic [ref=e498]: </dl>
+        - 'heading "Responsive font sizesLink to this section: Responsive font sizes" [level=2] [ref=e499]':
+          - text: Responsive font sizes
+          - 'link "Link to this section: Responsive font sizes" [ref=e500] [cursor=pointer]':
+            - /url: "#responsive-font-sizes"
+            - text: "#"
+        - paragraph [ref=e501]:
+          - text: Bootstrap uses CSS's
+          - code [ref=e502]: clamp()
+          - text: function to enable responsive font sizes, allowing text to scale more naturally across device and viewport sizes.
+        - 'heading "CSSLink to this section: CSS" [level=2] [ref=e503]':
+          - text: CSS
+          - 'link "Link to this section: CSS" [ref=e504] [cursor=pointer]':
+            - /url: "#css"
+            - text: "#"
+        - 'heading "Sass variablesLink to this section: Sass variables" [level=3] [ref=e505]':
+          - text: Sass variables
+          - 'link "Link to this section: Sass variables" [ref=e506] [cursor=pointer]':
+            - /url: "#sass-variables"
+            - text: "#"
+        - paragraph [ref=e507]: Headings have some dedicated variables for sizing and spacing.
+        - generic [ref=e508]:
+          - generic [ref=e509]:
+            - generic [ref=e510]: SCSS
+            - button "Copy to clipboard" [ref=e512] [cursor=pointer]:
+              - img [ref=e513]
+          - code [ref=e516]:
+            - generic [ref=e517]: "$headings-margin-bottom: $spacer * .5;"
+            - generic [ref=e518]: "$headings-font-family: null;"
+            - generic [ref=e519]: "$headings-font-style: null;"
+            - generic [ref=e520]: "$headings-font-weight: 500;"
+            - generic [ref=e521]: "$headings-line-height: 1.2;"
+            - generic [ref=e522]: "$headings-color: inherit;"
+        - paragraph [ref=e523]:
+          - text: Miscellaneous typography elements covered here and in
+          - link "Reboot" [ref=e524] [cursor=pointer]:
+            - /url: /docs/6.0/content/reboot
+          - text: also have dedicated variables.
+        - generic [ref=e525]:
+          - generic [ref=e526]:
+            - generic [ref=e527]: SCSS
+            - button "Copy to clipboard" [ref=e529] [cursor=pointer]:
+              - img [ref=e530]
+          - code [ref=e533]:
+            - generic [ref=e534]: "$small-font-size: .875em;"
+            - generic [ref=e535]: "$sub-sup-font-size: .75em;"
+            - generic [ref=e536]: "$initialism-font-size: $small-font-size;"
+            - generic [ref=e537]: "$blockquote-margin-y: $spacer;"
+            - generic [ref=e538]: "$blockquote-font-size: $font-size-base * 1.25;"
+            - generic [ref=e539]: "$blockquote-footer-color: var(--gray-600);"
+            - generic [ref=e540]: "$blockquote-footer-font-size: $small-font-size;"
+            - generic [ref=e541]: "$hr-margin-y: $spacer;"
+            - generic [ref=e542]: // scss-docs-start vr-variables
+            - generic [ref=e543]: "$vr-border-width: var(--border-width);"
+            - generic [ref=e544]: // scss-docs-end vr-variables
+            - generic [ref=e545]: "$legend-margin-bottom: .5rem;"
+            - generic [ref=e546]: "$legend-font-size: 1.5rem;"
+            - generic [ref=e547]: "$legend-font-weight: null;"
+            - generic [ref=e548]: "$dt-font-weight: $font-weight-bold;"
+            - generic [ref=e549]: "$list-inline-padding: .5rem;"
+            - generic [ref=e550]: "$mark-padding: .1875em;"
+            - generic [ref=e551]: "$mark-color: var(--fg-body);"
+            - generic [ref=e552]: "$mark-bg: light-dark(var(--yellow-100), var(--yellow-900));"
+        - 'heading "Sass mixinsLink to this section: Sass mixins" [level=3] [ref=e553]':
+          - text: Sass mixins
+          - 'link "Link to this section: Sass mixins" [ref=e554] [cursor=pointer]':
+            - /url: "#sass-mixins"
+            - text: "#"
+        - paragraph [ref=e555]: There are no dedicated mixins for typography.
+        - navigation [ref=e556]:
+          - generic [ref=e557]:
+            - link "← Previous Reboot Content" [ref=e558] [cursor=pointer]:
+              - /url: /docs/6.0/content/reboot/
+              - generic [ref=e559]: ← Previous
+              - generic [ref=e560]: Reboot
+              - generic [ref=e561]: Content
+            - link "Next → Images Content" [ref=e562] [cursor=pointer]:
+              - /url: /docs/6.0/content/images/
+              - generic [ref=e563]: Next →
+              - generic [ref=e564]: Images
+              - generic [ref=e565]: Content
+  - contentinfo [ref=e566]:
+    - generic [ref=e568]:
+      - generic [ref=e569]:
+        - link "Bootstrap" [ref=e570] [cursor=pointer]:
+          - /url: /
+          - img "Bootstrap" [ref=e571]
+          - generic [ref=e573]: Bootstrap
+        - list [ref=e574]:
+          - listitem [ref=e575]:
+            - text: Designed and built with all the love in the world by the
+            - link "Bootstrap team" [ref=e576] [cursor=pointer]:
+              - /url: /docs/6.0/about/team
+            - text: with the help of
+            - link "our contributors" [ref=e577] [cursor=pointer]:
+              - /url: https://github.com/twbs/bootstrap/graphs/contributors
+            - text: .
+          - listitem [ref=e578]:
+            - text: Code licensed
+            - link "MIT" [ref=e579] [cursor=pointer]:
+              - /url: https://github.com/twbs/bootstrap/blob/main/LICENSE
+            - text: ", docs"
+            - link "CC BY 3.0" [ref=e580] [cursor=pointer]:
+              - /url: https://creativecommons.org/licenses/by/3.0/
+            - text: .
+          - listitem [ref=e581]: Currently v6.0.0-alpha1.
+      - generic [ref=e582]:
+        - heading "Links" [level=5] [ref=e583]
+        - list [ref=e584]:
+          - listitem [ref=e585]:
+            - link "Home" [ref=e586] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=e587]:
+            - link "Docs" [ref=e588] [cursor=pointer]:
+              - /url: /docs/6.0/
+          - listitem [ref=e589]:
+            - link "Examples" [ref=e590] [cursor=pointer]:
+              - /url: /docs/6.0/examples
+          - listitem [ref=e591]:
+            - link "Icons" [ref=e592] [cursor=pointer]:
+              - /url: https://icons.getbootstrap.com/
+          - listitem [ref=e593]:
+            - link "Blog" [ref=e594] [cursor=pointer]:
+              - /url: https://blog.getbootstrap.com/
+          - listitem [ref=e595]:
+            - link "Swag Store" [ref=e596] [cursor=pointer]:
+              - /url: https://cottonbureau.com/people/bootstrap
+      - generic [ref=e597]:
+        - heading "Guides" [level=5] [ref=e598]
+        - list [ref=e599]:
+          - listitem [ref=e600]:
+            - link "Getting started" [ref=e601] [cursor=pointer]:
+              - /url: /docs/6.0/getting-started
+          - listitem [ref=e602]:
+            - link "Starter template" [ref=e603] [cursor=pointer]:
+              - /url: /docs/6.0/examples/starter-template
+          - listitem [ref=e604]:
+            - link "Webpack" [ref=e605] [cursor=pointer]:
+              - /url: /docs/6.0/guides/webpack
+          - listitem [ref=e606]:
+            - link "Parcel" [ref=e607] [cursor=pointer]:
+              - /url: /docs/6.0/guides/parcel
+          - listitem [ref=e608]:
+            - link "Vite" [ref=e609] [cursor=pointer]:
+              - /url: /docs/6.0/guides/vite
+      - generic [ref=e610]:
+        - heading "Projects" [level=5] [ref=e611]
+        - list [ref=e612]:
+          - listitem [ref=e613]:
+            - link "Bootstrap 6" [ref=e614] [cursor=pointer]:
+              - /url: https://github.com/twbs/bootstrap
+          - listitem [ref=e615]:
+            - link "Bootstrap 5" [ref=e616] [cursor=pointer]:
+              - /url: https://github.com/twbs/bootstrap/tree/v5-dev
+          - listitem [ref=e617]:
+            - link "Icons" [ref=e618] [cursor=pointer]:
+              - /url: https://github.com/twbs/icons
+          - listitem [ref=e619]:
+            - link "Examples repo" [ref=e620] [cursor=pointer]:
+              - /url: https://github.com/twbs/examples
+      - generic [ref=e621]:
+        - heading "Community" [level=5] [ref=e622]
+        - list [ref=e623]:
+          - listitem [ref=e624]:
+            - link "Issues" [ref=e625] [cursor=pointer]:
+              - /url: https://github.com/twbs/bootstrap/issues
+          - listitem [ref=e626]:
+            - link "Discussions" [ref=e627] [cursor=pointer]:
+              - /url: https://github.com/twbs/bootstrap/discussions
+          - listitem [ref=e628]:
+            - link "Corporate sponsors" [ref=e629] [cursor=pointer]:
+              - /url: https://github.com/sponsors/twbs
+          - listitem [ref=e630]:
+            - link "Open Collective" [ref=e631] [cursor=pointer]:
+              - /url: https://opencollective.com/bootstrap
+          - listitem [ref=e632]:
+            - link "Stack Overflow" [ref=e633] [cursor=pointer]:
+              - /url: https://stackoverflow.com/questions/tagged/bootstrap-5
+  - textbox [ref=e635]
+```

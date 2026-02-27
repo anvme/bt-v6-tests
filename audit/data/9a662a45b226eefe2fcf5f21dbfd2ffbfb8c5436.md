@@ -1,0 +1,280 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e4] [cursor=pointer]:
+    - /url: "#content"
+  - banner [ref=e5]:
+    - navigation "Main navigation" [ref=e6]:
+      - button "Toggle docs navigation" [ref=e8] [cursor=pointer]:
+        - img [ref=e9]
+      - link "Bootstrap" [ref=e11] [cursor=pointer]:
+        - /url: /
+        - img "Bootstrap" [ref=e12]
+      - generic [ref=e14]:
+        - button "Search (Ctrl+K)" [ref=e16] [cursor=pointer]:
+          - img [ref=e18]
+          - generic [ref=e20]:
+            - img [ref=e22]
+            - generic [ref=e24]: K
+        - button "Toggle navigation" [ref=e25] [cursor=pointer]:
+          - img [ref=e26]
+  - generic [ref=e28]:
+    - complementary
+    - main [ref=e29]:
+      - generic [ref=e30]:
+        - heading "Text wrapping" [level=1] [ref=e31]
+        - paragraph [ref=e33]: Utilities for controlling text wrapping, overflow, and word breaking behavior.
+        - generic [ref=e34]:
+          - link "GitHub Edit on GitHub" [ref=e35] [cursor=pointer]:
+            - /url: https://github.com/twbs/bootstrap/blob/v6.0.0-alpha1/site/src/content/docs/utilities/text-wrapping.mdx
+            - img "GitHub" [ref=e36]
+            - text: Edit on GitHub
+          - link "MDN MDN" [ref=e38] [cursor=pointer]:
+            - /url: https://developer.mozilla.org/en-US/docs/Web/CSS/white-space
+            - img "MDN" [ref=e39]
+            - text: MDN
+      - generic [ref=e41]:
+        - button "On this page" [ref=e43] [cursor=pointer]:
+          - text: On this page
+          - img [ref=e44]
+        - generic [ref=e47]:
+          - generic [ref=e48]:
+            - link "ads via Carbon" [ref=e49] [cursor=pointer]:
+              - /url: https://srv.carbonads.net/ads/click/x/GTND427UCVYIC2QNFTS4YKQUCA7D5KJECK7IEZ3JCASI653WCABD523KC67DT2JUCE7I527UF67I6537CVYI553EHEYI527LC6BIT23ECTNCYBZ52K
+              - img "ads via Carbon" [ref=e50]
+            - link "Servidores dedicados adaptados a sus aplicaciones profesionales. Implemente su infraestructura de forma rápida" [ref=e51] [cursor=pointer]:
+              - /url: https://srv.carbonads.net/ads/click/x/GTND427UCVYIC2QNFTS4YKQUCA7D5KJECK7IEZ3JCASI653WCABD523KC67DT2JUCE7I527UF67I6537CVYI553EHEYI527LC6BIT23ECTNCYBZ52K
+          - link "ads via Carbon" [ref=e52] [cursor=pointer]:
+            - /url: http://carbonads.net/?utm_source=getbootstrapcom&utm_medium=ad_via_link&utm_campaign=in_unit&utm_term=carbon
+      - generic [ref=e53]:
+        - table [ref=e55]:
+          - rowgroup [ref=e56]:
+            - row "Class Styles" [ref=e57]:
+              - columnheader "Class" [ref=e58]
+              - columnheader "Styles" [ref=e59]
+          - rowgroup [ref=e60]:
+            - 'row ".text-wrap white-space: wrap;" [ref=e61]':
+              - cell ".text-wrap" [ref=e62]
+              - 'cell "white-space: wrap;" [ref=e63]'
+            - 'row ".text-nowrap white-space: nowrap;" [ref=e64]':
+              - cell ".text-nowrap" [ref=e65]
+              - 'cell "white-space: nowrap;" [ref=e66]'
+            - 'row ".text-balance white-space: balance;" [ref=e67]':
+              - cell ".text-balance" [ref=e68]
+              - 'cell "white-space: balance;" [ref=e69]'
+            - 'row ".text-pretty white-space: pretty;" [ref=e70]':
+              - cell ".text-pretty" [ref=e71]
+              - 'cell "white-space: pretty;" [ref=e72]'
+            - 'row ".text-break word-wrap: break-word; word-break: break-word;" [ref=e73]':
+              - cell ".text-break" [ref=e74]
+              - 'cell "word-wrap: break-word; word-break: break-word;" [ref=e75]':
+                - text: "word-wrap: break-word;"
+                - text: "word-break: break-word;"
+        - 'heading "WrappingLink to this section: Wrapping" [level=2] [ref=e76]':
+          - text: Wrapping
+          - 'link "Link to this section: Wrapping" [ref=e77] [cursor=pointer]':
+            - /url: "#wrapping"
+            - text: "#"
+        - paragraph [ref=e78]:
+          - text: Control how text wraps inside an element with
+          - code [ref=e79]: text-wrap
+          - text: utilities. This is a newer CSS property that replaces the older
+          - code [ref=e80]: white-space
+          - text: property and adds new functionality.
+        - generic [ref=e81]:
+          - generic [ref=e82]:
+            - generic [ref=e83]: This text should wrap across multiple lines within the parent element.
+            - generic [ref=e84]: This text should not wrap across multiple lines within the parent element.
+            - generic [ref=e85]: This text should wrap in a balanced way across multiple lines within the parent element.
+            - generic [ref=e86]: This text should wrap in a pretty way across multiple lines within the parent element.
+          - generic [ref=e87]:
+            - generic [ref=e88]: HTML
+            - button "Copy to clipboard" [ref=e90] [cursor=pointer]:
+              - img [ref=e91]
+          - code [ref=e94]:
+            - generic [ref=e95]: <div class="text-wrap">…</div>
+            - generic [ref=e96]: <div class="text-nowrap">…</div>
+            - generic [ref=e97]: <div class="text-balance">…</div>
+            - generic [ref=e98]: <div class="text-pretty">…</div>
+        - 'heading "Word breakLink to this section: Word break" [level=2] [ref=e99]':
+          - text: Word break
+          - 'link "Link to this section: Word break" [ref=e100] [cursor=pointer]':
+            - /url: "#word-break"
+            - text: "#"
+        - paragraph [ref=e101]:
+          - text: Prevent long strings of text from breaking your components' layout by using
+          - code [ref=e102]: .text-break
+          - text: to set
+          - code [ref=e103]: "word-wrap: break-word"
+          - text: and
+          - code [ref=e104]: "word-break: break-word"
+          - text: . We use
+          - code [ref=e105]: word-wrap
+          - text: instead of the more common
+          - code [ref=e106]: overflow-wrap
+          - text: for wider browser support, and add the deprecated
+          - code [ref=e107]: "word-break: break-word"
+          - text: to avoid issues with flex containers.
+        - generic [ref=e108]:
+          - paragraph [ref=e110]: mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+          - generic [ref=e111]:
+            - generic [ref=e112]: HTML
+            - button "Copy to clipboard" [ref=e114] [cursor=pointer]:
+              - img [ref=e115]
+          - code [ref=e118]:
+            - generic [ref=e119]: <p class="text-break">mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
+        - paragraph [ref=e121]:
+          - text: Note that
+          - link "breaking words isn't possible in Arabic" [ref=e122] [cursor=pointer]:
+            - /url: https://rtlstyling.com/posts/rtl-styling#3.-line-break
+          - text: ", which is the most used RTL language. Therefore"
+          - code [ref=e123]: .text-break
+          - text: is removed from our RTL compiled CSS.
+        - 'heading "CSSLink to this section: CSS" [level=2] [ref=e124]':
+          - text: CSS
+          - 'link "Link to this section: CSS" [ref=e125] [cursor=pointer]':
+            - /url: "#css"
+            - text: "#"
+        - 'heading "Sass utilities APILink to this section: Sass utilities API" [level=3] [ref=e126]':
+          - text: Sass utilities API
+          - 'link "Link to this section: Sass utilities API" [ref=e127] [cursor=pointer]':
+            - /url: "#sass-utilities-api"
+            - text: "#"
+        - paragraph [ref=e128]:
+          - text: Text wrapping utilities are declared in our utilities API in
+          - code [ref=e129]: scss/_utilities.scss
+          - text: .
+          - link "Learn how to use the utilities API." [ref=e130] [cursor=pointer]:
+            - /url: /docs/6.0/utilities/api#using-the-api
+        - generic [ref=e131]:
+          - generic [ref=e132]:
+            - generic [ref=e133]: SCSS
+            - button "Copy to clipboard" [ref=e135] [cursor=pointer]:
+              - img [ref=e136]
+          - code [ref=e139]:
+            - generic [ref=e140]: "\"white-space\": ("
+            - generic [ref=e141]: "property: white-space,"
+            - generic [ref=e142]: "class: text,"
+            - generic [ref=e143]: "values: ("
+            - generic [ref=e144]: "wrap: normal,"
+            - generic [ref=e145]: "nowrap: nowrap,"
+            - generic [ref=e146]: )
+            - generic [ref=e147]: ),
+            - generic [ref=e148]: "\"word-wrap\": ("
+            - generic [ref=e149]: "property: word-wrap word-break,"
+            - generic [ref=e150]: "class: text,"
+            - generic [ref=e151]: "values: (break: break-word),"
+            - generic [ref=e152]: "rtl: false"
+            - generic [ref=e153]: ),
+        - navigation [ref=e154]:
+          - generic [ref=e155]:
+            - link "← Previous Text transform Type" [ref=e156] [cursor=pointer]:
+              - /url: /docs/6.0/utilities/text-transform/
+              - generic [ref=e157]: ← Previous
+              - generic [ref=e158]: Text transform
+              - generic [ref=e159]: Type
+            - link "Next → Vertical align Type" [ref=e160] [cursor=pointer]:
+              - /url: /docs/6.0/utilities/vertical-align/
+              - generic [ref=e161]: Next →
+              - generic [ref=e162]: Vertical align
+              - generic [ref=e163]: Type
+  - contentinfo [ref=e164]:
+    - generic [ref=e166]:
+      - generic [ref=e167]:
+        - link "Bootstrap" [ref=e168] [cursor=pointer]:
+          - /url: /
+          - img "Bootstrap" [ref=e169]
+          - generic [ref=e171]: Bootstrap
+        - list [ref=e172]:
+          - listitem [ref=e173]:
+            - text: Designed and built with all the love in the world by the
+            - link "Bootstrap team" [ref=e174] [cursor=pointer]:
+              - /url: /docs/6.0/about/team
+            - text: with the help of
+            - link "our contributors" [ref=e175] [cursor=pointer]:
+              - /url: https://github.com/twbs/bootstrap/graphs/contributors
+            - text: .
+          - listitem [ref=e176]:
+            - text: Code licensed
+            - link "MIT" [ref=e177] [cursor=pointer]:
+              - /url: https://github.com/twbs/bootstrap/blob/main/LICENSE
+            - text: ", docs"
+            - link "CC BY 3.0" [ref=e178] [cursor=pointer]:
+              - /url: https://creativecommons.org/licenses/by/3.0/
+            - text: .
+          - listitem [ref=e179]: Currently v6.0.0-alpha1.
+      - generic [ref=e180]:
+        - heading "Links" [level=5] [ref=e181]
+        - list [ref=e182]:
+          - listitem [ref=e183]:
+            - link "Home" [ref=e184] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=e185]:
+            - link "Docs" [ref=e186] [cursor=pointer]:
+              - /url: /docs/6.0/
+          - listitem [ref=e187]:
+            - link "Examples" [ref=e188] [cursor=pointer]:
+              - /url: /docs/6.0/examples
+          - listitem [ref=e189]:
+            - link "Icons" [ref=e190] [cursor=pointer]:
+              - /url: https://icons.getbootstrap.com/
+          - listitem [ref=e191]:
+            - link "Blog" [ref=e192] [cursor=pointer]:
+              - /url: https://blog.getbootstrap.com/
+          - listitem [ref=e193]:
+            - link "Swag Store" [ref=e194] [cursor=pointer]:
+              - /url: https://cottonbureau.com/people/bootstrap
+      - generic [ref=e195]:
+        - heading "Guides" [level=5] [ref=e196]
+        - list [ref=e197]:
+          - listitem [ref=e198]:
+            - link "Getting started" [ref=e199] [cursor=pointer]:
+              - /url: /docs/6.0/getting-started
+          - listitem [ref=e200]:
+            - link "Starter template" [ref=e201] [cursor=pointer]:
+              - /url: /docs/6.0/examples/starter-template
+          - listitem [ref=e202]:
+            - link "Webpack" [ref=e203] [cursor=pointer]:
+              - /url: /docs/6.0/guides/webpack
+          - listitem [ref=e204]:
+            - link "Parcel" [ref=e205] [cursor=pointer]:
+              - /url: /docs/6.0/guides/parcel
+          - listitem [ref=e206]:
+            - link "Vite" [ref=e207] [cursor=pointer]:
+              - /url: /docs/6.0/guides/vite
+      - generic [ref=e208]:
+        - heading "Projects" [level=5] [ref=e209]
+        - list [ref=e210]:
+          - listitem [ref=e211]:
+            - link "Bootstrap 6" [ref=e212] [cursor=pointer]:
+              - /url: https://github.com/twbs/bootstrap
+          - listitem [ref=e213]:
+            - link "Bootstrap 5" [ref=e214] [cursor=pointer]:
+              - /url: https://github.com/twbs/bootstrap/tree/v5-dev
+          - listitem [ref=e215]:
+            - link "Icons" [ref=e216] [cursor=pointer]:
+              - /url: https://github.com/twbs/icons
+          - listitem [ref=e217]:
+            - link "Examples repo" [ref=e218] [cursor=pointer]:
+              - /url: https://github.com/twbs/examples
+      - generic [ref=e219]:
+        - heading "Community" [level=5] [ref=e220]
+        - list [ref=e221]:
+          - listitem [ref=e222]:
+            - link "Issues" [ref=e223] [cursor=pointer]:
+              - /url: https://github.com/twbs/bootstrap/issues
+          - listitem [ref=e224]:
+            - link "Discussions" [ref=e225] [cursor=pointer]:
+              - /url: https://github.com/twbs/bootstrap/discussions
+          - listitem [ref=e226]:
+            - link "Corporate sponsors" [ref=e227] [cursor=pointer]:
+              - /url: https://github.com/sponsors/twbs
+          - listitem [ref=e228]:
+            - link "Open Collective" [ref=e229] [cursor=pointer]:
+              - /url: https://opencollective.com/bootstrap
+          - listitem [ref=e230]:
+            - link "Stack Overflow" [ref=e231] [cursor=pointer]:
+              - /url: https://stackoverflow.com/questions/tagged/bootstrap-5
+  - textbox [ref=e233]
+```
