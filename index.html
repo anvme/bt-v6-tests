@@ -20,6 +20,9 @@
   <div class="container">
     <span class="navbar-brand mb-0 h1">Bootstrap v6 — Quality Reports</span>
     <span class="navbar-text small" id="meta"></span>
+    <button class="btn btn-sm btn-outline-secondary ms-2" id="theme-toggle" type="button" aria-label="Toggle theme">
+      <i class="bi bi-sun-fill" id="theme-icon"></i>
+    </button>
   </div>
 </nav>
 
@@ -32,6 +35,30 @@
 </footer>
 
 <script>
+// Theme toggle (persisted in localStorage, default: dark)
+(function() {
+  const html = document.documentElement;
+  const saved = localStorage.getItem('bs-theme');
+  if (saved) html.setAttribute('data-bs-theme', saved);
+
+  const btn = document.getElementById('theme-toggle');
+  const icon = document.getElementById('theme-icon');
+
+  function updateIcon() {
+    const dark = html.getAttribute('data-bs-theme') === 'dark';
+    icon.className = dark ? 'bi bi-sun-fill' : 'bi bi-moon-fill';
+    btn.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+  }
+  updateIcon();
+
+  btn.addEventListener('click', () => {
+    const next = html.getAttribute('data-bs-theme') === 'dark' ? 'light' : 'dark';
+    html.setAttribute('data-bs-theme', next);
+    localStorage.setItem('bs-theme', next);
+    updateIcon();
+  });
+})();
+
 const reports = [
   {
     title: 'ESLint',
@@ -61,7 +88,7 @@ const reports = [
     title: 'Layout Audit',
     href: 'audit/index.html',
     icon: '\u{1F4D0}',
-    desc: '<i class="bi bi-browser-chrome"></i> <i class="bi bi-browser-firefox"></i> <i class="bi bi-browser-safari"></i> Playwright layout checks — 3 browsers × 7 viewports'
+    desc: 'Playwright visual / layout checks across 7 viewports'
   }
 ];
 
@@ -87,9 +114,7 @@ fetch('eslint-report.html', { method: 'HEAD' }).then(r => {
   const lm = r.headers.get('last-modified');
   if (lm) {
     const d = new Date(lm);
-    const label = 'Reports generated ' + d.toLocaleString();
-    document.getElementById('updated').textContent = label;
-    document.getElementById('meta').textContent = label;
+    document.getElementById('updated').textContent = 'Reports generated ' + d.toLocaleString();
   }
 }).catch(() => {});
 </script>
